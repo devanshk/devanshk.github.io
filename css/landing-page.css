@@ -168,3 +168,11 @@ footer {
 p.copyright {
     margin: 15px 0 0;
 }
+
+.fb:hover,
+.fb:focus,
+.fb.focus {
+  color: #3e79d2;
+  background-color: #3e79d2
+  text-decoration: none;
+}
