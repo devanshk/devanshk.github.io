@@ -35,7 +35,7 @@ h6 {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background: url(../img/starry_sky_transitioned.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -116,7 +116,7 @@ h6 {
 .banner {
     padding: 100px 0;
     color: #f8f8f8;
-    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background: url(../img/mountains.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -169,10 +169,39 @@ p.copyright {
     margin: 15px 0 0;
 }
 
+.fb{
+  transition: .25s ease-in-out;
+}
+
 .fb:hover,
-.fb:focus,
-.fb.focus {
-  color: #3e79d2;
-  background-color: #3e79d2
+.fb:focus {
+  background-color: #3e79d2;
+  color:white;
+  text-decoration: none;
+  cursor:pointer;
+  border-color: #76A5EC;
+}
+
+.github{
+  transition: .25s ease-in-out
+}
+
+.github:hover,
+.github:focus,
+.github.focus {
+  background-color: #8FDB43;
+  color:white;
+  text-decoration: none;
+}
+
+.linkedIn{
+  transition: .25s ease-in-out
+}
+.linkedIn:hover,
+.linkedIn:focus,
+.linkedIn.focus {
+  background-color: #059BFF;
+  color:white;
+  border-color: #49B3FA;
   text-decoration: none;
 }
