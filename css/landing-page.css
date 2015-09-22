@@ -183,7 +183,7 @@ p.copyright {
 }
 
 .github{
-  transition: .25s ease-in-out
+  transition: .1s ease-in-out;
 }
 
 .github:hover,
@@ -204,4 +204,25 @@ p.copyright {
   color:white;
   border-color: #49B3FA;
   text-decoration: none;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/*---Particle CSS---*/
+
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #00b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
