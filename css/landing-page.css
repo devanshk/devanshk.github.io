@@ -170,7 +170,7 @@ p.copyright {
 }
 
 .fb{
-  transition: .25s ease-in-out;
+  transition: .25s ease-out;
 }
 
 .fb:hover,
@@ -183,19 +183,20 @@ p.copyright {
 }
 
 .github{
-  transition: .1s ease-in-out;
+  transition: .25s ;
 }
 
 .github:hover,
 .github:focus,
 .github.focus {
   background-color: #8FDB43;
+  border-color: #AAEE66;
   color:white;
   text-decoration: none;
 }
 
 .linkedIn{
-  transition: .25s ease-in-out
+  transition: .25s ease-out
 }
 .linkedIn:hover,
 .linkedIn:focus,
