@@ -114,9 +114,9 @@ h6 {
 }
 
 .banner {
-    padding: 100px 0;
+    padding: 100px 50px;
     color: #f8f8f8;
-    background: url(../img/mountains.jpg) no-repeat center center;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -183,7 +183,7 @@ p.copyright {
 }
 
 .github{
-  transition: .25s ;
+  transition: .25s ease-out;
 }
 
 .github:hover,
