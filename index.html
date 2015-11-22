@@ -1,224 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Devansh Kukreja</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/landing-page.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+	<title>Devansh Kukreja</title>
+	<meta charset="utf-8">
+	<meta name="Devansh Kukreja" content="Devansh Kukreja">
+	<meta name="description" content="A developer, designer, and student"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand topnav" href="#">Devansh Kukreja</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+	<header>
+		<div class="logo">
+			<a href="index.html"><img src="img/logo.png" title="Devansh" alt="Devansh"
+				height="180"/></a>
+		</div><!-- end logo -->
 
+		<div id="menu_icon"></div>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">The Team</a></li>
+				<li><a href="#">Journal</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav><!-- end navigation menu -->
 
-    <!-- Header -->
-    <a name="about"></a>
-    <div class="intro-header">
-        <div class="container">
+		<div class="footer clearfix">
+			<ul class="social clearfix">
+				<li><a href="https://www.facebook.com/devansh.kukreja" class="fb" data-title="Facebook"></a></li>
+				<!--<li><a href="#" class="google" data-title="Google +"></a></li>-->
+				<!--<li><a href="#" class="behance" data-title="Behance"></a></li>-->
+				<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>
+				<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
+				<li><a href="https://github.com/devanshk" class="rss" data-title="GitHub"></a></li>
 
-          <div id="particles-js" class= "overlay"></div>
+			</ul><!-- end social -->
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="intro-message">
-                        <h1>Devansh Kukreja</h1>
-                        <h3>Hi, and welcome to my corner of the web!</h3>
-                        <hr class="intro-divider">
-                        <ul class="list-inline intro-social-buttons">
-                            <li>
-                                <a href="https://www.facebook.com/devansh.kukreja" class="btn btn-default btn-lg fb"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/devanshk" class="btn btn-default btn-lg github"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/devanshk" class="btn btn-default btn-lg linkedIn"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                            </li>
-                        </ul>
-                    </div>
-            </div>
+			<div class="rights">
+				<p>Copyright © 2015 Devansh Kukreja.</p>
+				<p>Made with <img width= "13px" src="img/heart.svg"> in Pittsburgh.</p>
+			</div><!-- end rights -->
+		</div ><!-- end footer -->
+	</header><!-- end header -->
 
-          </div>
+	<section class="main clearfix">
+		<div class="work">
+			<a href="https://github.com/devanshk/Duco">
+				<img src="img/duco.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Duco: Tinder for Art</h1>
+					</div> </div> </a> </div>
 
-        </div>
-        <!-- /.container -->
-    </div>
+		<div class="work">
+			<a href="inner.html">
+				<img src="img/freakency.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Freakency: Digital Whack-A-Mole</h1>
+					</div> </div> </a> </div>
 
-    <!-- /.intro-header -->
+		<div class="work">
+			<a href="http://devpost.com/software/medsync-android">
+				<img src="img/medsync.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>MedSync: Prescriptions Reimagined</h1>
+					</div> </div> </a> </div>
 
-    <!-- Page Content -->
+		<div class="work">
+			<a href="https://github.com/devanshk/Aware">
+				<img src="img/aware.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Aware: Motion Gesture Reaction</h1>
+					</div> </div> </a> </div>
 
-	<a  name="services"></a>
-    <div class="content-section-a">
+		<div class="work">
+			<a href="inner.html">
+				<img src="img/assist.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Assist: Veteran Healthcare Aid</h1>
+					</div> </div> </a> </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">I Design Apps</h2>
-                    <p class="lead">Every design starts with a list features. Based on those, I incorporate Android UX patterns, draw a user flow screen-by-screen, and sketch multiple layouts for each step. The first design may feel good, but you never know until you have more to compare with.</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
-                </div>
-            </div>
+		<div class="work">
+			<a href="inner.html">
+				<img src="img/afis.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>AFIS: Fingerprint Identification</h1>
+					</div> </div> </a> </div>
 
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Splashing Colors</h2>
-                    <p class="lead">Any app design needs to be intuitive in black and white, but colors add uniqueness and beauty. I digitize the sketches in Photoshop and experiment with color schemes. We're used to the world being lit from above, so objects placed higher should also be lighter.</p>
-                </div>
-                <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-b -->
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Developing the App</h2>
-                    <p class="lead">Here comes the most exciting part. With the design finished, I now open Android Studio and start coding. Each screen is recreated in xml, and </p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-
-	<a  name="contact"></a>
-    <div class="banner">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Say hi and let's grab coffee!</h2>
-                </div>
-                <div class="col-lg-6">
-                    <ul class="list-inline banner-social-buttons">
-                        <li>
-                            <a href="https://www.facebook.com/devansh.kukreja" class="btn btn-default btn-lg fb"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook</span></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/devanshk" class="btn btn-default btn-lg github"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/devanshk" class="btn btn-default btn-lg linkedIn"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.banner -->
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="text-muted">Made with <img width= "16px" src="img/heart.svg">  in Pittsburgh</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- scripts -->
-    <script src="particles.js"></script>
-    <script src="js/app.js"></script>
+		<div class="work">
+			<a href="http://steam4kids.net/">
+				<img src="img/steam4kids.png" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Steam4Kids: Co-founder</h1>
+					</div> </div> </a> </div>
+<!-- end main -->
 
 </body>
-
 </html>
