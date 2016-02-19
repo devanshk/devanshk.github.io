@@ -3,16 +3,13 @@
 <head>
 	<title>Devansh Kukreja</title>
 	<meta charset="utf-8">
-	<meta name="author" content="Devansh Kukreja">
+	<meta name="Devansh Kukreja" content="Devansh Kukreja">
 	<meta name="description" content="A developer, designer, and student"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-    <script type="text/javascript" src="js/map.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-
 </head>
 <body>
 
@@ -25,20 +22,18 @@
 		<div id="menu_icon"></div>
 		<nav>
 			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="resumes/Resume_Live.pdf">Resume</a></li>
-				<li><a href="contact.html" class="selected">Contact</a></li>
+				<li><a href="index.html" class="selected">Projects</a></li>
+				<li><a href="blog.html" class="selected">Blog</a></li>
+				<li><a href="resumes/Resume_v3.3.pdf">Resume</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
 
 		<div class="footer clearfix">
 			<ul class="social clearfix">
 				<li><a href="https://www.facebook.com/devansh.kukreja" class="fb" data-title="Facebook"></a></li>
-				<!--<li><a href="#" class="google" data-title="Google +"></a></li>-->
-				<!--<li><a href="#" class="behance" data-title="Behance"></a></li>-->
-				<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>
-				<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
 				<li><a href="https://github.com/devanshk" class="rss" data-title="GitHub"></a></li>
+
 			</ul><!-- end social -->
 
 			<div class="rights">
@@ -48,8 +43,20 @@
 		</div ><!-- end footer -->
 	</header><!-- end header -->
 
-	<section class="main clearfix" id="map">
-	</section><!-- end main/map -->
+	<section class="post-list">
+	  <div class="container">
+
+	    <h2>Writing..</h2>
+
+	    {% for post in paginator.posts %}
+	      <article class="post-item">
+	        <p><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>  — <strong><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></strong> — <span> {{ post.content | strip_html | truncatewords: 40 }}</span> <a class="post-link readmore" href="{{ post.url | prepend: site.baseurl }}">Read more</a></p>
+	      </article>
+	    {% endfor %}
+	  </div>
+	</section>
+
+<!-- end main -->
 
 </body>
 </html>
