@@ -706,6 +706,16 @@ a {
     padding-bottom:300px;
 }
 
+#copyright{
+    float:none;
+    font-family: 'Raleway';
+    color: #fff;
+    background-color: #519b65;
+    margin-top: -25px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
 body nav { /*Header Text Styling*/
     font-size:22px;
     font-family: 'Roboto', sans-serif;
@@ -722,6 +732,8 @@ body{
 
 footer{
     width:100%;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
 }
 #marker {
     height:100px;
