@@ -1,0 +1,194 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+    <title>Prantl's Bakery</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/dark-dashboard.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script type="text/javascript">
+    $(function () {
+    $('#pi1').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'January'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Sales',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 534
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 159
+            }, {
+                name: 'Carrot Cake',
+                y: 38
+            }]
+        }]
+    });
+        
+    $('#pi2').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'February'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Sales',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 498
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 287
+            }, {
+                name: 'Carrot Cake',
+                y: 27
+            }]
+        }]
+    });
+        
+    $('#pi3').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'March'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Sales',
+            colorByPoint: true,
+            data: [{
+                name: 'Burnt Almond Torte',
+                y: 512
+            }, {
+                name: 'Butter Cookie (dozen)',
+                y: 319
+            }, {
+                name: 'Carrot Cake',
+                y: 157
+            }]
+        }]
+    });
+});
+    </script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Devansh Kukreja">
+	<meta name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta name="description" content="Prantl's Bakery Redesign">
+</head>
+    
+<body>
+	<div id="top_row">
+        <nav>
+            <ul>
+                <li><a class="selected" href="dashboard.html">DASHBOARD</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="events.html">EVENTS</a> </li>
+                <li><a href="visit.html">VISIT</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a href="index.html">
+<!--            Prantl's Logo-->
+        <img src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+	
+	<div id="db">
+        
+        <div id="db_head">Admin Dashboard</div>
+            <center>
+                <p id="db_subheading">Product Sales 2016</p>
+            <div id="pi_tin">
+                <div id="pi1"></div>
+                <div id="pi2"></div>
+                <div id="pi3"></div>
+            </div>
+            </center>
+    </div>
+	
+	<footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/prantls_footer.png">
+        <div id="divide"></div>
+        <center>
+        <div class="grid">
+<!--            Got each of these icons from their respective companies then photoshopped them-->
+            <a href="https://www.facebook.com/PrantlsBakery"><img class="social" src="images/social_fb.png"> </a>
+            <a href="https://twitter.com/prantlsbakery">
+            <img class="social" src="images/social_twit.png"> </a>
+            <a href="https://www.instagram.com/prantls_bakery/">
+            <img class="social" src="images/social_in.png"> </a>
+        </div>
+        </center>
+	</footer>
+	
+</body>
+
+</html>

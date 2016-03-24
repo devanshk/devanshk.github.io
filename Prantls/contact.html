@@ -1,0 +1,100 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+    <title>Prantl's Bakery</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Devansh Kukreja">
+	<meta name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta name="description" content="Prantl's Bakery Redesign">
+	<!-- The title will appear in the menu bar of the browser -->
+</head>
+    
+<body>
+<!-- The BODY is where the main content goes -->
+	<div id="top_row">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">DASHBOARD</a> </li>
+                <li><a class="selected" href="contact.html">CONTACT</a> </li>
+                <li><a href="events.html">EVENTS</a> </li>
+                <li><a href="visit.html">VISIT</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a href="index.html">
+<!--            Prantl's Logo-->
+        <img src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+	
+	<div id="content">
+        <div id="eventHead">
+            Contact Us
+        </div>
+        
+        <center id="contact_central">
+        <form action="mailto:info@prantlsbakery.com"
+              onsubmit="return validate()"
+              id="contact_form">
+            <div id="name_container">
+            <label>Name (Required):</label><br>
+            <input type="text" name="Name" size="20" maxlength="250" placeholder="Your Name" required="true"> </div>
+            
+            <label>Zipcode</label> <br>
+            <input type="number" name="ZipCode" size="20" placeholder="15213" id="zipCoder">
+            
+            <br> <label>Email Address (Required):</label> <br>
+            <input type="email" name="Email" required="true" placeholder="abc@dfg.com">
+            
+            <br> Inquiry (Required):<br>
+            <textarea name="Inquiry" rows="10" cols="50" maxlength="1000" required="true"> </textarea>
+            
+            <br>
+            <input type="checkbox" name="subscribe">
+             I'd like to receive emails about Prantl's events and offers<br>
+            
+            <input type="image" value="Submit" src="images/submit.png" alt="Submit">
+
+        </form>
+            
+        <p>To get in contact with us</p>
+        </center>
+        <ol>
+            <li>Fill out the form</li>
+            <li>Submit</li>
+            <li>Wait for us to get back to you!</li>
+        </ol>
+        
+        
+	</div> <!-- Close content -->
+	
+	<footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/prantls_footer.png">
+        <div id="divide"></div>
+        <center>
+        <div class="grid">
+<!--            Got each of these icons from their respective companies then photoshopped them-->
+            <a href="https://www.facebook.com/PrantlsBakery"><img class="social" src="images/social_fb.png"> </a>
+            <a href="https://twitter.com/prantlsbakery">
+            <img class="social" src="images/social_twit.png"> </a>
+            <a href="https://www.instagram.com/prantls_bakery/">
+            <img class="social" src="images/social_in.png"> </a>
+        </div>
+        </center>
+	</footer>
+	
+</body>
+
+</html>

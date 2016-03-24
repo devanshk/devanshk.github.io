@@ -1,0 +1,133 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+    <title>Prantl's Bakery</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/ninja-slider.css" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/ninja-slider.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Devansh Kukreja">
+	<meta name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta name="description" content="Prantl's Bakery Redesign">
+	<!-- The title will appear in the menu bar of the browser -->
+</head>
+    
+<body>
+<!-- The BODY is where the main content goes -->
+    <div id="top_row">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">DASHBOARD</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="events.html">EVENTS</a> </li>
+                <li><a href="visit.html">VISIT</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a href="index.html">
+<!--            Prantl's Logo-->
+        <img src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+    
+    
+	
+	<div id="content"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+        
+        <div id="tile1">
+            <div id="BAT_title">Burnt Almond Torte</div>
+            <div id="BAT_subtitle">"The <b>Best Cake</b> America has Ever Made" - <a href="http://www.huffingtonpost.com/2014/04/14/prantls-torte-cake-almond_n_5133580.html">Huffington Post</a></div>
+            
+<!--            Found on GoldBelly's website, then color-corrected in Photoshop (https://www.goldbely.com/prantls-bakery/15395-burnt-almond-torte)-->
+            <img id="featurette" src="images/the-burnt-almond-torte.png"/>
+            
+            <center>
+<!--                Custom-created in Illustrator-->
+                <img id="down_arrow" src="images/solo_arrow.svg" alt="Down Arrow"
+                     onclick="scrollIndexAction();">
+            </center>
+        </div>
+        
+        <center>
+            <div id="marker"></div>
+            <div id="videoIntro">See us in Action</div>
+            <iframe width="504" height="378"
+            src="http://www.youtube.com/embed/iLhlZciMfoQ?autoplay=1&loop=1">
+            </iframe>
+        </center>
+        
+        <br> <br>
+        <hr/>
+        <div id="newsFeed">
+            <center>
+<!--                All found on their respective company's websites-->
+                <a href="http://www.pghcitypaper.com/pittsburgh/burnt-almond-torte-is-still-the-big-draw-at-prantls-bakery/Content?oid=1874228">
+                <img src="images/pgh.png"></a>
+
+                <a href="http://pittsburgh.cbslocal.com/2016/03/01/ring-in-spring-with-eat-drink-pittsburgh/">
+                <img src="images/cbs.png"></a>
+
+                <a href="http://www.post-gazette.com/life/food/2015/09/16/Prantl-s-creates-a-Macy-s-Thumbprint-look-alike/stories/201509160018"><img src="images/ppg.png"></a>
+            </center>
+        </div>
+        <hr/>
+        
+        <div id="tile2">
+            <h3>Holidays</h3>
+            <div id="ninjaCage">
+                <div id="ninja-slider">
+                    <div class="inner">
+                        <ul>
+<!--                            All images here pulled from Prantl's Facebook Page-->
+                            <li><a class="ns-img" href="images/image1.jpg"></a></li>
+                            <li><a class="ns-img" href="images/image2.jpg"></a></li>
+                            <li><a class="ns-img" href="images/image3.jpg"></a></li>
+                            <li><a class="ns-img" href="images/image4.jpg"></a></li>
+                            <li><a class="ns-img" href="images/image5.jpg"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="holidaysText">From Valentine’s Day, Christmas, Thanksgiving, and Mardi Gras, we have cakes for your favorite occasions! Easter is right around the corner. Check out our baked goods that are perfect for your fun, colorful weekend, ranging from Easter themed cookies, cakes, cupcakes, and more.</div>
+            
+            <a href="events.html"><div id="celebrationPlug">See More Events</div> </a>
+        </div>
+        
+        
+            
+	</div> <!-- Close content -->
+	
+    <div id="sidebar">
+        
+    </div>
+    
+	<footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/prantls_footer.png">
+        <div id="divide"></div>
+        <center>
+        <div class="grid">
+<!--            Got each of these icons from their respective companies then photoshopped them-->
+            <a href="https://www.facebook.com/PrantlsBakery"><img class="social" src="images/social_fb.png"> </a>
+            <a href="https://twitter.com/prantlsbakery">
+            <img class="social" src="images/social_twit.png"> </a>
+            <a href="https://www.instagram.com/prantls_bakery/">
+            <img class="social" src="images/social_in.png"> </a>
+        </div>
+        </center>
+	</footer>
+	
+</body>
+
+</html>

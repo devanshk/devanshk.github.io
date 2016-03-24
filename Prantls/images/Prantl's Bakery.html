@@ -1,0 +1,232 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html data-brackets-id='2180' lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head data-brackets-id='2181'>
+    <title data-brackets-id='2182'>Prantl's Bakery</title>
+    
+    <link data-brackets-id='2183' href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link data-brackets-id='2184' href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link data-brackets-id='2185' rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script data-brackets-id='2186' type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script data-brackets-id='2187' type="text/javascript" src="js/highcharts.js"></script>
+    <script data-brackets-id='2188' type="text/javascript" src="js/modules/exporting.js"></script>
+    <script data-brackets-id='2189' type="text/javascript" src="js/scripts.js"></script>
+    
+    <script data-brackets-id='2190'>
+        $(function () {
+            $('#shady-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: 'people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: ' people'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'people',
+                    data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                }]
+            });
+            
+            $('#downtown-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: ' people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'people'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'people',
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                }]
+            });
+            
+            $('#composite-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: ' people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'people'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'Downtown',
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                }, {
+                    name: 'Walnut St.',
+                    data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                }]
+            });
+        });
+    </script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta data-brackets-id='2191' charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta data-brackets-id='2192' name="author" content="Devansh Kukreja">
+	<meta data-brackets-id='2193' name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta data-brackets-id='2194' name="description" content="Prantl's Bakery Redesign">
+</head>
+    
+<body data-brackets-id='2195'>
+	<div data-brackets-id='2196' id="top_row">
+        <nav data-brackets-id='2197'>
+            <ul data-brackets-id='2198'>
+                <li data-brackets-id='2199'><a data-brackets-id='2200' href="contact.html">CONTACT</a> </li>
+                <li data-brackets-id='2201'><a data-brackets-id='2202' href="events.html">EVENTS</a> </li>
+                <li data-brackets-id='2203'><a data-brackets-id='2204' class="selected" href="visit.html">VISIT</a> </li>
+                <li data-brackets-id='2205'><a data-brackets-id='2206' href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a data-brackets-id='2207' href="index.html">
+        <img data-brackets-id='2208' src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+	
+	<div data-brackets-id='2209' id="content">
+        
+        <center data-brackets-id='2210'><div data-brackets-id='2211' id="eventHead">Visit Us!</div>
+        
+        <iframe data-brackets-id='2212' src="https://www.google.com/maps/d/embed?mid=z_dUJi7pW3pU.k852Fk2Cqzoo" width="100%" height="350"></iframe>    
+        
+        <div data-brackets-id='2213' class="wrapper_visit">
+            <center data-brackets-id='2214'>
+            <div data-brackets-id='2215' class="col-1-2">
+                <img data-brackets-id='2216' src="images/market_loc.jpg"/>
+                
+                <p data-brackets-id='2217'>Downtown
+438 Market Street
+Pittsburgh, PA 15222 <br data-brackets-id='2218'>
+General Information: 412-471-6861<br data-brackets-id='2219'>
+Email: <a data-brackets-id='2220' href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a><br data-brackets-id='2221'>
+
+Monday – Friday: 7am – 6pm
+Saturday: 9am – 4pm
+Sunday: 10am – 3pm</p>
+                <div data-brackets-id='2222' id="downtown-graph"></div>
+<!--                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.5417516799084!2d-80.00429904834648!3d40.441144879260854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f15696baf219%3A0x9e8bccef10009784!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1458750530683" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+            </div> </center>
+            
+            <center data-brackets-id='2223'>
+            <div data-brackets-id='2224' class="col-1-2">
+                <img data-brackets-id='2225' src="images/walnut_loc.jpg"/>
+                
+                <p data-brackets-id='2226'>Shadyside
+                    5525 Walnut Street
+                    Phone number: 412-621-2092
+                    Email: info@prantlsbakery.com
+
+                    Monday: 9am – 4pm
+                    Tuesday – Saturday: 7:30am – 6pm
+                    Sunday: 9am – 4pm</p>
+                <div data-brackets-id='2227' id="shady-graph"></div>
+<!--                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0693382408904!2d-79.93508404834621!3d40.45160227925975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f211aed70341%3A0x10db72884d553d04!2sPrantl&#39;s+Bakery!5e0!3m2!1sen!2sus!4v1458750509187" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        
+            </div> </center>
+<!--            <div id="composite-graph"></div>-->
+        </div>
+            
+        </center>
+        
+    </div>
+	
+	<footer data-brackets-id='2228'> <!-- Footer is new tag in HTML 5 -->
+		<hr data-brackets-id='2229'/> <!-- horizontal row -->
+		&copy; Jane Doe 2015
+	</footer>
+	
+</body>
+
+</html>

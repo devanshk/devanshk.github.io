@@ -1,0 +1,188 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+    <title>Prantl's Bakery</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Devansh Kukreja">
+	<meta name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta name="description" content="Prantl's Bakery Redesign">
+	<!-- The title will appear in the menu bar of the browser -->
+</head>
+    
+<body>
+<!-- The BODY is where the main content goes -->
+    <div id="top_row">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">DASHBOARD</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a class="selected" href="events.html">EVENTS</a> </li>
+                <li><a href="visit.html">VISIT</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a href="index.html">
+<!--            Prantl's Logo-->
+        <img src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+    
+	
+	<div id="content" class="padBottom"> <!-- Use div tag with an attribute of an id = content (i.e., this div's unique name) -->
+        <center>
+            <div id="eventHead">We Do Events!</div>
+            <div id="eventSubHead">Mouse over to learn more</div> </center>
+        <center>
+        <div class="grid">
+<!--            Found on an online icons site through Google-->
+            <div class="grid_item wedding_nav"
+                 onmouseover="showWedding();">
+                Weddings
+            </div>
+<!--            Found on an online icons site through Google-->
+            <div id="celebrations_nav"
+                 onmouseover="showCelebrations();"
+                 class="grid_item celebration_nav">
+                Celebrations
+            </div>
+        </div>
+            </center>
+        
+<!--        All images below were pulled from Prantl's Facebook Page-->
+        <img id="eventImage" src="images/wedding_cake.jpg"/>
+        
+        <div id="eventStuffCeleb">
+            <div id="eventBloc">
+                <div id="eventDescr1">
+                    <div class="event_h1">Celebrations</div>
+                    <p>Birthdays, anniversaries, showers, graduations, religious celebrations etc. We have baked special treats for each of life’s special events and can customize them to showcase your theme or ideas.</p>
+
+                    <a class="btn"
+                       onclick="scrollInfo()"> Learn More</a>
+                </div>
+            </div>
+
+            <img id="eventImage_right" src="images/sizesV2.png"/>
+
+            <div id="eventBloc_right">
+                <div id="eventDescr_right">
+                    <div class="event_right">Sizes</div>
+                    <p>We offer custom cake rounds sizes from 8”-12”. Sheet cakes can be ordered from the sizes of 1/4, 1/2, 3/4 and full. </p>
+                </div>
+            </div>
+
+            <img id="eventImage" src="images/pricingV2.png"/>
+
+            <div id="eventBloc_left">
+                <div id="eventDescr_left">
+                    <div class="event_left">Pricing</div>
+                    <p>Our cakes vary in price, depending on type, size, and “extras” such as decorations and personalizations.</p>
+                </div>
+            </div>
+
+            <img id="eventImage_right" src="images/deliveryV2.png"/>
+
+            <div id="eventBloc_right">
+                <div id="eventDescr_right">
+                    <div class="event_right">Delivery</div>
+                    <p>Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="eventStuffWed">
+            <div id="eventBloc">
+                <div id="eventDescr1">
+                    <div class="event_h1">Weddings</div>
+                    <p>Weddings are such a joyous occasion and each one is different! The same is true of our wedding cakes. We have an almost unlimited combination of flavors and styles to choose from.</p>
+
+                    <a class="btn"
+                       onclick="scrollInfoWed()"> Learn More</a>
+                </div>
+            </div>
+
+            <img id="eventImage_right" src="images/batter.png"/>
+
+            <div id="eventBloc_right">
+                <div id="eventDescr_right">
+                    <div class="event_right">Batters and Fillings</div>
+                    <p id="stuff1">Our most popular batter is yellow, but we also offer red velvet, chocolate, marble, and others upon request. As for fillings, we recommend white buttercream icing, chocolate fudge icing, strawberry crème filling, vanilla pastry cream, or one of several fruit fillings (lemon, raspberry, apricot, strawberry, etc.). That being said, if you have something special in mind it can’t hurt to ask!</p>
+                </div>
+            </div>
+
+            <img id="eventImage" src="images/sizes.png"/>
+
+            <div id="eventBloc_left">
+                <div id="eventDescr_left">
+                    <div class="event_left">Sizes</div>
+                    <p>To keep proportionality and maintain structure, wedding cakes come in certain sizes with certain tier dimensions. If the size of the wedding party falls in between cake sizes, we can offer additional sheet cakes up to the amount of slices required.</p>
+                </div>
+            </div>
+
+            <img id="eventImage_right" src="images/price.png"/>
+
+            <div id="eventBloc_right">
+                <div id="eventDescr_right">
+                    <div class="event_right">Pricing</div>
+                    <p>Our wedding cakes vary in price, depending on type, size, and “extras” such as special fillings, pillars, etc. We'll always be upfront about cost and can give you an estimate when you call.</p>
+                </div>
+            </div>
+
+            <img id="eventImage" src="images/delicacies.png"/>
+
+            <div id="eventBloc_left">
+                <div id="eventDescr_left">
+                    <div class="event_left">Other Delicacies</div>
+                    <p>Our wedding cakes are really just the beginning. Lots of folks opt for Individual desserts (3” mini-cakes, cupcakes, etc.) and of course there’s always room in the celebration for Cookie Trays, Monogrammed Petit Fours, Junior Pastry Trays, Grooms’ Cakes, Shower Cakes, Monogrammed Cookies, Wedding Challah, Breakfast Trays, etc.</p>
+                </div>
+            </div>
+
+            <img id="eventImage_right" src="images/delivery.png"/>
+
+            <div id="eventBloc_right">
+                <div id="eventDescr_right">
+                    <div class="event_right">Delivery</div>
+                    <p>We co-ordinate with the reception venue, florist, etc. for the timing of the delivery of the cake. Delivery fees vary by location. Smaller cakes can be packed by us to facilitate pick-up at the bakery.</p>
+                </div>
+            </div>
+        </div>
+        
+        <center>
+        <div id="interest">
+            <p>Interested?</p>
+            <a href="contact.html"><div class="btn_contact">Contact Us</div></a>
+        </div>
+            </center>
+            
+	</div> <!-- Close content -->
+    
+	<footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/prantls_footer.png">
+        <div id="divide"></div>
+        <center>
+        <div class="grid">
+<!--            Got each of these icons from their respective companies then photoshopped them-->
+            <a href="https://www.facebook.com/PrantlsBakery"><img class="social" src="images/social_fb.png"> </a>
+            <a href="https://twitter.com/prantlsbakery">
+            <img class="social" src="images/social_twit.png"> </a>
+            <a href="https://www.instagram.com/prantls_bakery/">
+            <img class="social" src="images/social_in.png"> </a>
+        </div>
+        </center>
+	</footer>
+	
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html> 	<!-- Tells the browser this is HTML 5 -->
+<html lang="en"> 	<!-- Root of the html document and is in English -->
+
+<head>
+    <title>Prantl's Bakery</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='http://db.onlinewebfonts.com/c/bc631c193c0378652b0527fd402592fa?family=PeachesandCreamBlackW00-Rg' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+    <script type="text/javascript" src="js/highcharts.js"></script>
+    <script type="text/javascript" src="js/modules/exporting.js"></script>
+    <script type="text/javascript" src="js/dark-unica.js"></script>
+    
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script>
+        $(function () {
+            $('#shady-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: 'people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                series: [{
+                    name: 'people',
+                    data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                }]
+            });
+            
+            $('#downtown-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: ' people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                series: [{
+                    name: 'people',
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                }]
+            });
+            
+            $('#composite-graph').highcharts({
+                chart: {
+                    type: 'area'
+                },
+                title: {
+                    text: 'Popular Times',
+                    x: -20 //center
+                },
+                subtitle: {
+                    text: '(avg per day)',
+                    x: -20
+                },
+                xAxis: {
+                    title:{
+                      text: 'Time'  
+                    },
+                    categories: ['7am', '8am', '9am', '10am', '11am', '12pm',
+                        '1pm', '2pm', '3pm', '4pm', '5pm']
+                },
+                yAxis: {
+                    title: {
+                        text: ' people'
+                    },
+                    plotLines: [{
+                        value: 0,
+                        width: 1,
+                        color: '#808080'
+                    }]
+                },
+                tooltip: {
+                    valueSuffix: 'people'
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'right',
+                    verticalAlign: 'middle',
+                    borderWidth: 0
+                },
+                series: [{
+                    name: 'Downtown',
+                    data: [24, 12, 16, 8, 11, 19, 15, 18, 13, 21, 35]
+                }, {
+                    name: 'Walnut St.',
+                    data: [10, 8, 24, 5, 7, 32, 16, 18, 27, 39, 32]
+                }]
+            });
+        });
+    </script>
+    
+	<!-- META tags help search engines identify your content more easily -->
+	<meta charset="utf-8" /> <!-- Specifies the character encoding for the HTML document -->
+	<meta name="author" content="Devansh Kukreja">
+	<meta name="keywords" content="Prantl's Bakery, Walnut St, Bakery, Pittsburgh, Burnt Almond Torte">
+	<meta name="description" content="Prantl's Bakery Redesign">
+</head>
+    
+<body>
+	<div id="top_row">
+        <nav>
+            <ul>
+                <li><a href="dashboard.html">DASHBOARD</a> </li>
+                <li><a href="contact.html">CONTACT</a> </li>
+                <li><a href="events.html">EVENTS</a> </li>
+                <li><a class="selected" href="visit.html">VISIT</a> </li>
+                <li><a href="about.html">ABOUT</a> </li>
+            </ul>
+        </nav>
+        
+        <a href="index.html">
+<!--            Prantl's Logo-->
+        <img src="images/nav_logo.png"
+         id="nav_logo" alt="Nav_Logo"/> </a>
+    </div>
+	
+	<div id="content">
+        
+        <center><div id="eventHead">Visit Us!</div>
+        
+        <iframe src="https://www.google.com/maps/d/embed?mid=z_dUJi7pW3pU.k852Fk2Cqzoo" width="90%" height="350"></iframe>    
+        <br><br><br><br><br>
+        
+        <div class="wrapper_visit">
+            <center>
+            <div class="col-1-2 leftFloat">
+                <p class="visit_loc_name">Downtown</p>
+<!--                Found on images taken near a location on Google Maps Street View-->
+                <img src="images/market_loc.jpg"/>
+                <table>
+                    <tr>
+                        <td><p>438 Market Street Pittsburgh, PA 15222</p></td>
+                    </tr> <tr>
+                        <td><p>412-471-6861</p></td>
+                    </tr> <tr>
+                        <td><p>Email: <a href="mailto:infoms@prantlsbakery.com">infoms@prantlsbakery.com</a></p></td>
+                    </tr>
+                </table>
+                <table class='Hour_Table'>
+                    <tr><th colspan="2">Hours of Operation:</th></tr>
+                    <tr>
+                        <td><p>Monday-Friday:</p></td>
+                        <td><p>7am - 6pm</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Saturday:</p></td>
+                        <td><p>9am - 4pm</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sunday:</p></td>
+                        <td><p>10am - 3pm</p></td>
+                    </tr>
+                </table>
+                <br>
+                <div id="downtown-graph"></div>
+                
+            </div> </center>
+            <center>
+                <div class="divider"></div>
+            </center>
+            
+            <center>
+            <div class="col-1-2 rightFloat">
+                <p class="visit_loc_name">Walnut St.</p>
+<!--                I personally visited the location and took this picture-->
+                <img src="images/walnut_loc.jpg"/>
+                
+                <table>
+                    <tr>
+                        <td><p>Shadyside 5525 Walnut Street</p></td>
+                    </tr> <tr>
+                        <td><p>412-621-2092</p></td>
+                    </tr> <tr>
+                        <td><p>Email: <a href="mailto:info@prantlsbakery.com">info@prantlsbakery.com</a></p></td>
+                    </tr>
+                </table>
+                <table class='Hour_Table'>
+                    <tr><th colspan="2">Hours of Operation:</th></tr>
+                    <tr>
+                        <td><p>Monday:</p></td>
+                        <td><p>9am - 4pm</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Tuesday-Saturday:</p></td>
+                        <td><p>7:30am - 6pm</p></td>
+                    </tr>
+                    <tr>
+                        <td><p>Sunday:</p></td>
+                        <td><p>9am - 4pm</p></td>
+                    </tr>
+                </table>
+                <br>
+                <div id="shady-graph"></div>
+        
+            </div> </center>
+        </div>
+        </center>
+        
+    </div>
+	
+	<footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/prantls_footer.png">
+        <div id="divide"></div>
+        <center>
+        <div class="grid">
+<!--            Got each of these icons from their respective companies then photoshopped them-->
+            <a href="https://www.facebook.com/PrantlsBakery"><img class="social" src="images/social_fb.png"> </a>
+            <a href="https://twitter.com/prantlsbakery">
+            <img class="social" src="images/social_twit.png"> </a>
+            <a href="https://www.instagram.com/prantls_bakery/">
+            <img class="social" src="images/social_in.png"> </a>
+        </div>
+        </center>
+	</footer>
+	
+</body>
+
+</html>
