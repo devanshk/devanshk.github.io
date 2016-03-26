@@ -1,22 +1,10 @@
-/*
-Count down until any date script-
-By JavaScript Kit (www.javascriptkit.com)
-Over 200+ free scripts here!
-Modified by Robert M. Kuhnhenn, D.O. 
-on 5/30/2006 to count down to a specific date AND time,
-and on 1/10/2010 to include time zone offset.
-*/
+var year=2016;
+var month=10;
+var day=7;
+var hour=6;
+var minute=0; 
+var tz=-5; //Offset from UTC
 
-/*  Change the items below to create your countdown target date and announcement once the target date and time are reached.  */
-var current="BIB X has begun!";        //—>enter what you want the script to display when the target date and time are reached, limit to 20 characters
-var year=2016;        //—>Enter the count down target date YEAR
-var month=10;          //—>Enter the count down target date MONTH
-var day=7;           //—>Enter the count down target date DAY
-var hour=6;          //—>Enter the count down target date HOUR (24 hour clock)
-var minute=0;        //—>Enter the count down target date MINUTE
-var tz=-5;            //—>Offset for your timezone in hours from UTC (see http://wwp.greenwichmeantime.com/index.htm to find the timezone offset for your location)
-
-//—>    DO NOT CHANGE THE CODE BELOW!    <—
 var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
 
 function countdown(yr,m,d,hr,min){
@@ -35,11 +23,14 @@ var todaystring=Date.parse(todaystring1)+(tz*1000*60*60);
 var futurestring1=(montharray[m-1]+" "+d+", "+yr+" "+hr+":"+min);
 var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
 var dd=futurestring-todaystring;
+    
 var dday=Math.floor(dd/(60*60*1000*24)*1);
 var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
 var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
 var dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
-if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){
+    
+if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){ //If we've already passed the event time, zero everything out instead of going negative
+    //Also our base case
     $("#days").html(0);
     $("#hours").html(0);
     $("#minutes").html(0);
@@ -51,6 +42,7 @@ else {
     $("#hours").html(dhour);
     $("#minutes").html(dmin);
     $("#seconds").html(dsec);
+    //Run the countdown function again. Recursion ftw.
     setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
     }
 }
