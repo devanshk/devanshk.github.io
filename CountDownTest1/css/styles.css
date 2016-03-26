@@ -43,8 +43,8 @@
 
 body{
     background-color: black;
-    background: url(images/bg_min.jpg);*/
-    background-repeat: r;
+    background: /*url(images/bg_min.jpg);*/
+/*    background-repeat: repeat;*/
     background-size:cover;
     background-attachment: fixed;
 }
