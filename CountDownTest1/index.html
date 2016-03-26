@@ -10,17 +10,20 @@
         <script type="text/javascript">
         $(function(){
             countdown(year,month,day,hour,minute);
-            $("#cover").fadeTo(1500,0);
+            $("#cover").fadeTo(2000,0);
         });
         </script>
     </head>
 
-    <body>
+    <body>        
+        <div id="cover" onclick="swapBG();"></div>
         
-        <div id="cover"></div>
+        <video id="vid" muted autoplay loop src="videos/bib_bg.mp4"></video>
+        
+        <div id="darkness"></div>
         
         <center>
-            <img id="logo" src="images/xxx.svg" alt="BIB Logo" draggable="false">
+            <img id="logo" src="images/xxx.svg" alt="BIB Logo">
         </center>
         
         <div id="countdown_container">

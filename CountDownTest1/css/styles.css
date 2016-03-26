@@ -7,9 +7,28 @@
 #cover{
     width:100%;
     height:100%;
-    position: fixed;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
     background-color: black;
     z-index: 9999;
+    opacity: 1;
+}
+
+#darkness{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    z-index: -10;
+    opacity: 0.8;
+    z-index: 0;
 }
 
 #logo{
@@ -17,6 +36,7 @@
     width: 50%;
     padding-top: 10%;
     opacity: 0.9;
+    z-index: 10;
 }
 
 body{
@@ -34,6 +54,17 @@ body{
     margin-right:16%;
     position: absolute;
     bottom: 200;
+    z-index: 10;
+}
+
+#vid{
+    position: fixed;
+    left:0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -999;
+    
 }
 
 .unit{
@@ -41,9 +72,9 @@ body{
     float:left;
     text-align: right;
     font-family: 'Suranna', serif;
-    font-size: 80px; 
+    font-size: 80px;
     font-weight: normal;
-    color: #827357;
+    color: #bca67d;
 }
 
 .unit p{
@@ -51,7 +82,7 @@ body{
     font-size: 20px;
     font-weight: 400;
     color: white;
-    opacity: .25;
+    opacity: .4;
     text-align: left;
     margin-top: 10px;
 }
@@ -60,20 +91,20 @@ body{
     color:transparent;
 }
 #line1{
-    background-color: #726247;
+    /*First Line Stuff Here*/
 }
 #line2{
-    background-color: #726247;
     opacity: 0.6;
 }
 #bar{
     margin-top: -40px;
 }
 #days, #minutes, #hours, #seconds{
-    opacity: .8;
+    opacity: .9;
 }
 
 hr{
+    background-color: #9f8b66;
     float:left;
     margin-top: 0px;
     margin-bottom: 0px;

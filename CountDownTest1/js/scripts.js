@@ -1,3 +1,13 @@
+function swapBG(){
+    console.log("Doing Things!");
+    var bef = $("#vid").css("visibility");
+    if (bef == "visible") $("#vid").css("visibility", "hidden");
+    else $("#vid").css("visibility", "visible");
+    console.log(bef.toString());
+}
+
+
+
 var year=2016;
 var month=10;
 var day=7;
