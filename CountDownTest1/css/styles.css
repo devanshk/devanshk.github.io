@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'Keep Calm';
+  src: url(keep_calm.ttf)
+  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
+}
+
+#logo{
+    height: 50%;
+    width: 50%;
+    padding-top: 10%;
+    opacity: .7;
+}
+
+body{
+    background-color: black;
+    background: url(images/bg_min.jpg);*/
+    background-repeat: r;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+#countdown_container{
+    width:68%;
+    height:50px;
+    margin-left: 16%;
+    margin-right:16%;
+    position: absolute;
+    bottom: 200;
+}
+
+.unit{
+    width:14%;
+    float:left;
+    text-align: right;
+    font-family: 'Suranna', serif;
+    font-size: 80px; 
+    font-weight: normal;
+    color: #827357;
+}
+
+.unit p{
+    font-family: 'Helvetica';
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    opacity: .25;
+    text-align: left;
+    margin-top: 10px;
+}
+
+.filler{
+    color:transparent;
+}
+#line1{
+    background-color: #726247;
+}
+#line2{
+    background-color: #726247;
+    opacity: 0.6;
+}
+#bar{
+    margin-top: -40px;
+}
+#days, #minutes, #hours, #seconds{
+    opacity: .8;
+}
+
+hr{
+    float:left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 0px;
+    height: 3px;
+}

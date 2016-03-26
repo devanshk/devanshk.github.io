@@ -1,0 +1,66 @@
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <script type="text/javascript">
+        $(function(){
+           countdown(year,month,day,hour,minute);
+        });
+        </script>
+    </head>
+
+    <body>
+        
+        <center>
+            <img id="logo" src="images/xxx.svg" alt="BIB Logo">
+        </center>
+        
+        <div id="countdown_container">
+            <div class="unit">
+                <div id="days">01</div>
+                <div id="bar">
+                    <hr noshade width="66.666%"
+                        id="line1">
+                    <hr id="line2" width="33.333%">
+                </div>
+                <p>DAYS</p>
+            </div>
+            <div class="unit filler">.</div>
+            <div class="unit">
+                <div id="hours">02</div>
+                <div id="bar">
+                    <hr noshade width="66.666%"
+                        id="line1">
+                    <hr id="line2" width="33.333%">
+                </div>
+                <p>HOURS</p>
+            </div>
+            <div class="unit filler">.</div>
+            <div class="unit">
+                <div id="minutes">03</div>
+                <div id="bar">
+                    <hr noshade width="66.666%"
+                        id="line1">
+                    <hr id="line2" width="33.333%">
+                </div>
+                <p>MINUTES</p>
+            </div>
+            <div class="unit filler">.</div>
+            <div class="unit">
+                <div id="seconds">04</div>
+                <div id="bar">
+                    <hr noshade width="66.666%"
+                        id="line1">
+                    <hr id="line2" width="33.333%">
+                </div>
+                <p>SECONDS</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
