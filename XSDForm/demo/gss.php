@@ -21,7 +21,7 @@ $xmlCurrentContent = stripslashes($xmlContent);
 <script>
 $(document).ready(function() {
 	var xmlCurrentContent = '<?php echo base64_encode($xmlCurrentContent);?>'
-	getXSDForm("gssform","formDivId",xmlCurrentContent);
+	getXSDForm("gssform","formDivId", xmlCurrentContent);
 });
 </script>
 </head>
