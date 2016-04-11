@@ -36,7 +36,7 @@ body{
 }
 
 #logo{
-    height: 50%;
+    height: auto;
     width: 50%;
     padding-top: 10%;
     opacity: 0.9;

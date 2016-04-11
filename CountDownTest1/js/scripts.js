@@ -1,9 +1,27 @@
+var pos = 0;
+
 function swapBG(){
-    console.log("Doing Things!");
-    var bef = $("#vid").css("visibility");
-    if (bef == "visible") $("#vid").css("visibility", "hidden");
-    else $("#vid").css("visibility", "visible");
-    console.log(bef.toString());
+//    console.log("Doing Things!");
+//    var bef = $("#vid").css("visibility");
+//    if (bef == "visible") $("#vid").css("visibility", "hidden");
+//    else $("#vid").css("visibility", "visible");
+//    console.log(bef.toString());
+    
+    pos++;
+    if (pos%5 == 0){            $("#logo").attr("src","images/xxx.svg");
+    }
+    if (pos%5 == 1){
+    $("#logo").attr("src","images/logo1.png");
+    }
+    if (pos%5 == 2){
+    $("#logo").attr("src","images/logo2.png");
+    }
+    if (pos%5 == 3){
+    $("#logo").attr("src","images/logo3.png");
+    }
+    if (pos%5 == 4){
+    $("#logo").attr("src","images/logo4.png");
+    }
 }
 
 
