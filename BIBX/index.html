@@ -1,0 +1,116 @@
+<html lang="en">
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <script type="text/javascript">
+        $(function(){
+            countdown(year,month,day,hour,minute);
+            $("#cover").fadeTo(2000,0);
+        });
+        </script>
+    </head>
+
+    <body>        
+        <div id="cover" onclick="swapBG();"></div>
+        
+        <!--Here's the navbar-->
+        <div id="header_wrapper" style="position:fixed; width:100%;">
+            <center>
+                <div id="header" class="clearfix">
+                    <ul>
+                        <li><a href="history.html">history</a></li>
+                        <li><a href="board.html">board</a></li>
+                        <li><a href="charity.html">charity</a></li>
+                        <li><a class="logo" href="index.html"></a></li>
+                        <li><a href="teams.html">teams</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="tickets.html">tickets</a></li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+        
+        <video id="vid" style="z-index:-990" muted autoplay loop src="videos/bib_bg_b&w.mp4"></video>
+        
+        <div id="darkness"></div>
+        
+        <div id="tile1" style="width:100%; height:100%;">
+            <center>
+                <img id="logo" src="images/logo2.png" alt="BIB Logo">
+            </center>
+
+            <div id="countdown_container">
+                <div class="unit">
+                    <div id="days">01</div>
+                    <div id="bar">
+                        <hr noshade width="66.666%"
+                            id="line1">
+                        <hr id="line2" width="33.333%">
+                    </div>
+                    <p>DAYS</p>
+                </div>
+                <div class="unit filler">.</div>
+                <div class="unit">
+                    <div id="hours">02</div>
+                    <div id="bar">
+                        <hr noshade width="66.666%"
+                            id="line1">
+                        <hr id="line2" width="33.333%">
+                    </div>
+                    <p>HOURS</p>
+                </div>
+                <div class="unit filler">.</div>
+                <div class="unit">
+                    <div id="minutes">03</div>
+                    <div id="bar">
+                        <hr noshade width="66.666%"
+                            id="line1">
+                        <hr id="line2" width="33.333%">
+                    </div>
+                    <p>MINUTES</p>
+                </div>
+                <div class="unit filler">.</div>
+                <div class="unit">
+                    <div id="seconds">04</div>
+                    <div id="bar">
+                        <hr noshade width="66.666%"
+                            id="line1">
+                        <hr id="line2" width="33.333%">
+                    </div>
+                    <p>SECONDS</p>
+                </div>
+            </div>
+        </div>
+        
+        <!--The Dance-->
+        <div class="tile">
+        
+            <img src="images/bg_min.jpg">
+        </div>
+        
+        <!--The Legacy-->
+        <div class="tile">
+        
+            <img src="images/bg_min.jpg">
+        </div>
+        
+        <!--The Charity-->
+        <div class="tile">
+        
+            <img class="tile_right" src="images/bg_min.jpg">
+        </div>
+        
+        
+        <!--Our Sponsors-->
+        
+        <div class="tile">
+        
+        </div>
+        
+    </body>
+</html>
