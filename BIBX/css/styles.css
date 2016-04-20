@@ -30,19 +30,34 @@ button:hover{
 /*Tile Styling*/
 .tile{
     background-color: #eee;
-    width:97%;
+    width:94%;
     height:60%;
     margin:0px;
     left:0;
     right:0;
     padding-left: 3%;
-    border-top: 
+    padding-right: 3%;
 }
 
 .tile img{
     height:60%;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+}
+
+.tile h1{
+    font-family: 'Proxima Nova';
+    font-size: 400%;
+    color: #2e2e2e;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 30px;
+}
+
+.tile p{
+    width: 55%;
+    font-size: 1.7vw;
+    font-family: 'Proxima Nova';
 }
 
 .tile:nth-child(even) img{
@@ -63,7 +78,6 @@ button:hover{
 
 .tile:nth-child(even) h1{
     float:left;
-    margin-right: 80%;
 }
 
 .tile:nth-child(even) p{
@@ -75,24 +89,38 @@ button:hover{
     float:left;
 }
 
-.tile h1{
-    font-family: 'Proxima Nova';
-    font-size: 4em;
-    color: #2e2e2e;
-    margin-bottom: 0px;
+.tile:nth-child(odd) h1{
+    float:right;
+    text-align: right;
 }
 
-.tile p{
-    width: 55%;
-    font-size: 1.4em;
-    font-family: 'Proxima Nova';
+.tile:nth-child(odd) p{
+    float:right;
+    margin-left: 55%;
+    text-align: right;
 }
-/*End Tile Styling*/
+
+.tile:nth-child(odd) button{
+    float:right;
+}
+
+/* Specific Tile Styles */
+
+#the_charity a{
+    -webkit-transition: color 0.3s ease; /* Safari */
+    transition: color 0.3s ease;
+    color: #bfa71f;
+    text-decoration: none;
+    
+}
+#the_charity a:hover{
+    color: #dbc024;
+}
 
 /*NavBar Styling*/
 #header_wrapper {
     width:100%;
-    position:fixed;
+    position:absolute;
     z-index:10;
 }
 
