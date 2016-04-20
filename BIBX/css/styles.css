@@ -41,6 +41,8 @@ button:hover{
 
 .tile img{
     height:60%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 .tile:nth-child(even) img{
