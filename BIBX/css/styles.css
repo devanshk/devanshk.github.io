@@ -10,7 +10,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 /* Button */
-button{
+.button{
     border-radius: 0px;
     background:transparent;
     font-size: 1em;
@@ -20,9 +20,10 @@ button{
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
     color: #2e2e2e;
+    text-decoration: none;
 }
 
-button:hover{
+.button:hover{
     background: #2e2e2e;
     color: #fff;
 }
@@ -85,7 +86,7 @@ button:hover{
     margin-right: 55%;
 }
 
-.tile:nth-child(even) button{
+.tile:nth-child(even) .button{
     float:left;
 }
 
@@ -100,20 +101,21 @@ button:hover{
     text-align: right;
 }
 
-.tile:nth-child(odd) button{
+.tile:nth-child(odd) .button{
     float:right;
 }
 
 /* Specific Tile Styles */
 
-#the_charity a{
-    -webkit-transition: color 0.3s ease; /* Safari */
-    transition: color 0.3s ease;
+#the_charity a:not(.button){
+    -webkit-transition: all 0.3s ease; /* Safari */
+    transition: all 0.3s ease;
     color: #bfa71f;
     text-decoration: none;
     
 }
-#the_charity a:hover{
+
+#the_charity a:not(.button):hover{
     color: #dbc024;
 }
 
@@ -149,7 +151,14 @@ button:hover{
     color: white;
     font-size: 1em;
     font-family: 'Proxima Nova';
-}    
+    opacity: 0.6;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+#header a:hover{
+    opacity:1;
+}
 
     
 #header ul li a.logo {
@@ -161,6 +170,7 @@ button:hover{
     width:215px;
     margin-top:-41px;
     padding: 0;
+    opacity: 1;
 }
 
 .clearfix {
