@@ -9,37 +9,93 @@ font-family: 'Proxima Nova';
 src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
+/* Button */
+button{
+    border-radius: 0px;
+    background:transparent;
+    font-size: 1em;
+    font-family: 'Proxima Nova';
+    border: solid 1px #2e2e2e;
+    padding:8px 25px;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+    color: #2e2e2e;
+}
+
+button:hover{
+    background: #2e2e2e;
+    color: #fff;
+}
+
 /*Tile Styling*/
 .tile{
-    background-color: #dedede;
-    width:100%;
-    height:50%;
+    background-color: #eee;
+    width:97%;
+    height:60%;
     margin:0px;
     left:0;
     right:0;
+    padding-left: 3%;
+    border-top: 
 }
 
 .tile img{
-    height:100%;
+    height:60%;
 }
 
 .tile:nth-child(even) img{
     -webkit-clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
     float:right;
+    position:absolute;
+    right:0;
 }
 
 .tile:nth-child(odd) img{
     -webkit-clip-path: polygon(0% 0, 45% 0, 100% 100%, 0% 100%);
     clip-path: polygon(55% 0, 100% 0, 100% 100%, 0% 100%);
     float:left;
+    position:absolute;
+    left:0;
+}
+
+.tile:nth-child(even) h1{
+    float:left;
+    margin-right: 80%;
+}
+
+.tile:nth-child(even) p{
+    float:left;
+    margin-right: 55%;
+}
+
+.tile:nth-child(even) button{
+    float:left;
+}
+
+.tile h1{
+    font-family: 'Proxima Nova';
+    font-size: 4em;
+    color: #2e2e2e;
+    margin-bottom: 0px;
+}
+
+.tile p{
+    width: 55%;
+    font-size: 1.4em;
+    font-family: 'Proxima Nova';
 }
 /*End Tile Styling*/
 
 /*NavBar Styling*/
+#header_wrapper {
+    width:100%;
+    position:fixed;
+    z-index:10;
+}
+
 #header {
     height:3.7%;
-    z-index: 9999;
     margin:auto;
     margin-top: 50px;
 }
@@ -56,13 +112,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 #header a {
-    padding:0 14px;
+    padding:0 24.9px;
     text-align:center;
     display:block;
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
-    font-family: 'Proxima Nova'
+    font-size: 1em;
+    font-family: 'Proxima Nova';
 }    
 
     
@@ -97,7 +153,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     bottom: 0;
     right: 0;
     background-color: black;
-    z-index: 9999;
+    z-index: 100;
     opacity: 1;
 }
 
@@ -110,7 +166,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     bottom: 0;
     right: 0;
     background-color: black;
-    z-index: -10;
+    z-index: 0;
     opacity: 0.8;
 }
 
@@ -149,7 +205,7 @@ body{
     top:0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -999;
+    z-index: -100;
     
 }
 
@@ -197,3 +253,4 @@ hr{
     border-width: 0px;
     height: 3px;
 }
+
