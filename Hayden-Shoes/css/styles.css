@@ -1,0 +1,525 @@
+/* Using #fa0865 as the highlight color
+
+@font-face {
+  font-family: 'Keep Calm';
+  src: url(keep_calm.ttf)
+  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
+}
+
+@font-face {
+font-family: 'Proxima Nova';
+src: url("Proxima_Nova_Regular.otf") format("opentype");
+}
+
+/* Shop Styling */
+#left{
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: aqua;
+    background-image: url(images/store_shoes.jpg);
+    float:left;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    color: #2e2e2e;
+}
+#right{
+    width:50%;
+    height:100%;
+    position:fixed;
+    top:0;
+    right:0;
+    background-color: blue;
+    background-image: url(images/store_other.jpg);
+    background-position: right;
+    float:left;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    color: #2e2e2e;
+}
+
+#shopping{
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#left:hover{
+    -webkit-filter: brightness(180%);
+    filter: brightness(180%);
+    color: #fa0865;
+}
+
+#right:hover{
+    -webkit-filter: brightness(180%);
+    filter: brightness(180%);
+    color: #d90758;
+}
+
+#shopping h1{
+    margin-top:45vh;
+    text-align: center;
+    font-family: 'Proxima Nova';
+    font-size: 400%;
+    background-color: #d0d0d0;
+}
+
+/* Button */
+.button{
+    border-radius: 0px;
+    font-size: 1em;
+    font-family: 'Proxima Nova';
+    padding-top: 7%;
+    padding-bottom: 7%;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+    color: #eee;
+    background-color: #2e2e2e;
+    text-decoration: none;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+}
+
+.button:hover{
+    background: #fa0865;
+    color: #fff;
+}
+
+/*Hero Launchpage Styling*/
+#tile1 h1{
+    color: white;
+    font-family: 'Keep Calm';
+    font-size: 5vw;
+    text-align: center;
+    padding-top: 40vh;
+    -ms-transform: skewY(-5deg); /* IE 9 */
+    -webkit-transform: skewY(-5deg); /* Safari */
+    transform: skewY(-5deg); /* Standard syntax */
+}
+
+/* Mens Selection Styling */
+#shopping{
+    position:absolute;
+    top: 14%;
+}
+
+#shopping img{
+    width:100%;
+    height:100%;
+}
+
+#shopping [id^="unit"]{
+    float:left;
+    position:relative;
+    width: 27vw;
+    height: 27vw;
+    margin-left: 4.6%;
+    margin-top: 30px;
+    border: 0;
+    transition: all 0.3s ease 0s;
+    background:transparent;
+    overflow: hidden;
+}
+#shopping [id^="unit"] h1{
+    width:100%;
+    height:30px;
+    position:absolute;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin: 0;
+    font-size: 1.4em;
+    background: #fa0865;
+    color:white;
+    font-weight: 100;
+    bottom:-40px;
+    
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+#shopping [id^="unit"] h1:hover{
+    background: #ff7f8e;
+}
+
+#shopping img:hover{
+    box-shadow: inset 0 0 0 5px #3071A9;
+}
+
+/* Shopping Card Sidebar Styling */
+#items{
+    overflow-y: scroll;
+    height:100%;
+}
+
+#items #explore_store{
+    width:30%;
+    font-family: 'Proxima Nova';
+}
+
+#items a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.underline_btn
+{
+    width: 80%;
+    height: 1px;
+    background-color: #1d1d1d;
+    margin-top: 4px;
+    margin-left: 10%;
+    margin-right: 10%;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#filler{
+    height: 30px;
+    width:100%;
+    float:left;
+}
+
+#cart_sidebar{
+    height:100%;
+    width:30%;
+    background: #eee;
+    position:fixed;
+    right: -30%;
+    top: 0px;
+    z-index: 13;
+    -webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
+}
+
+#cart_sidebar h1{
+    font-family: 'Proxima Nova';
+    text-align: center;
+    font-size: 1.5em;
+    color: #333333;
+    margin-top: 7vh;
+}
+#cancel{
+    position:absolute;
+    right: 7%;
+    top:0.8%;
+    font-size: 3em;
+    font-family: 'Proxima Nova';
+    color: #333333;
+}
+
+#shoe {
+    width: 80%;
+    padding-left: 10%;
+    padding-right:10%;
+    float:left;
+    margin-bottom: 7%;
+}
+
+#shoe img{
+    width: 40%;
+    margin-top: 5%;
+    float:left;
+}
+
+#shoe h1{
+    width:40%;
+    float:left;
+    margin-left: 5%;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+#shoe p{
+    width:40%;
+    float:left;
+    margin-left: 5%;
+    font-family: 'Proxima Nova'
+}
+
+/*NavBar Styling*/
+#header_wrapper {
+    width:100%;
+    position:absolute;
+    padding-left:8%;
+    z-index:10;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3), rgba(0,0,0,0));  /*Standard syntax */
+}
+
+#header_backing {
+    height:11%;
+    width:100%;
+    position:absolute;
+    margin-top: 0%;
+    padding-left:7%;
+    padding-bottom: 20px;
+    z-index:10;
+    background: #eee;
+}
+
+#header {
+    height:3.7%;
+    margin:auto;
+    margin-top: 50px;
+}
+
+#header ul {
+    margin:0 auto;
+    width:515px;
+    padding:12px;
+    list-style: none;
+}
+
+#header li {
+    float: left;
+}
+
+#header a {
+    padding:0 24.9px;
+    text-align:center;
+    display:block;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Proxima Nova';
+    opacity: 0.75;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+#header a:hover{
+    opacity:1;
+}
+
+#header ul li a.logo {
+    background: url(images/logo_white.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:100px;
+    display:block;
+    width:100px;
+    margin-top:-41px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#header ul li a.logo_black {
+    background: url(images/logo_black.svg);
+    background-repeat:no-repeat;
+    background-size: contain;
+    height:100px;
+    display:block;
+    width:100px;
+    margin-top:-41px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0;
+}
+
+#charity_header{
+    height:50%;
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
+    filter: hue-rotate(50%);
+    z-index:0;
+}
+
+#charity_header img{
+    width: 100%;
+}
+
+#cover_ellipse
+{
+    width:100%;
+    height:100%;
+    background-color: #eee;
+    position:absolute;
+    -webkit-clip-path: ellipse(100% 70% at 50% 100%);
+    clip-path: ellipse(90% 90% at 50% 2%);
+    margin-top: 15%;
+}
+
+.clearfix 
+{
+  *zoom: 1;
+}
+
+.clearfix:after 
+{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#nav_cart{
+    position: absolute;
+    right:10%;
+    width:%;
+}
+#nav_cart #first{
+    float:left;
+    margin-right: 10px;
+    padding-top: 10px;;
+}
+#nav_cart #second{
+    margin-left: 0px;
+    background-color: transparent;
+    border-radius: 100%;
+    border: solid 1px white;
+    width: 20px;
+    height: 20px;
+    padding:10px;
+    float:left;
+}
+/*End Navbar Stying*/
+
+#cover
+{
+    width:100%;
+    height:100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    z-index: 100;
+    opacity: 1;
+}
+
+#darkness
+{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    z-index: 11;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+#logo
+{
+    height: auto;
+    width: 50%;
+    padding-top: 10%;
+    opacity: 0.9;
+    z-index: 10;
+}
+
+body
+{
+    background-color: #141414;
+    background-repeat: repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    margin:0px;
+}
+
+#countup
+{
+    color: #e3e3e3;
+    font-family: 'Keep Calm';
+    font-size: 2em;
+    width:100%;
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+}
+#countup b
+{
+    font-size: 2.25em;
+    color: #fa0865;
+    font-weight: 400;
+}
+
+#vid
+{
+    position: fixed;
+    left:0;
+    top:0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -100;
+    -webkit-filter: brightness(80%);
+    filter: brightness(80%);
+}
+
+hr{
+    background-color: #9f8b66;
+    float:left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-width: 0px;
+    height: 3px;
+}
+
+.mission-background{
+    /*background-image:url(data);*/
+    width:100%;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background: url(../images/mission_bg.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    margin:0 auto;
+    height:100vh;
+    -webkit-filter: brightness(55%);
+    filter: brightness(55%);
+}
+
+.mission {
+    vertical-align: center;
+    margin:auto;
+    height:62vh;
+    width:80vh;
+    border:1px solid white;
+    position:absolute;
+    top:54%;
+    left:50%;
+    margin-top:-31vh;
+    margin-left:-40vh;
+    background-color: rgba(0,0,0,0.5);
+    text-align:center;
+    font-family:"Proxima Nova";
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.mission-body{
+    color:white;
+}
+
+/* Bonus Utility Classes */
+.hr
+{
+    width: 80%;
+    height: 1px;
+    background-color: #bcbcbc;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.zoomimg 
+{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .5s ease;
+}
+
+.zoomimg:hover 
+{
+    cursor: pointer;
+    background-size: 150% 150%;
+}
