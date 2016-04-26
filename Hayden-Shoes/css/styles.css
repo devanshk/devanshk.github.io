@@ -537,7 +537,7 @@ hr{
 
 /* Mobile Responsive Media Queries */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     #shopping [id^="unit"]{
         width: 42.5vw;
         height: 42.5vw;
