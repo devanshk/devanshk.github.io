@@ -30,7 +30,7 @@ function countup(yr,m,d,hr,min){ //Update the "shoes donated" as a fn of time
     var futurestring=(today.getTimezoneOffset()*(1000*60))-Date.parse(futurestring1);
     var dd=todaystring-futurestring;
     
-    var tare = 2921277318000 //Zeroing out
+    var tare = 2921387216000 //Zeroing out
 
     var shoes = Math.floor((dd-tare)/4000);
     
