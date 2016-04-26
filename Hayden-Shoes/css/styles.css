@@ -103,7 +103,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 /* Mens Selection Styling */
 #shopping{
     position:absolute;
-    top: 14%;
+    top: 20%;
 }
 
 #shopping img{
@@ -358,6 +358,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #nav_cart{
     position: absolute;
     right:10%;
+    margin-top: -10px;
 }
 #nav_cart #first{
     float:left;
@@ -373,6 +374,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     height: 20px;
     padding:10px;
     float:left;
+    margin-top: -2px;
 }
 /*End Navbar Stying*/
 
@@ -423,6 +425,7 @@ body
     background-size:cover;
     background-attachment: fixed;
     margin:0px;
+    overflow-x:hidden;
 }
 
 #countup
@@ -481,7 +484,6 @@ hr{
 .mission {
 /*    vertical-align: center;*/
     margin:auto;
-    height:62vh;
     width:80vh;
     border:1px solid white;
     position:absolute;
@@ -494,10 +496,15 @@ hr{
     font-family:"Proxima Nova";
     padding-left:15px;
     padding-right:15px;
+    padding-bottom: 15px;
 }
 
 .mission-body{
     color:white;
+    overflow-x:hidden;
+}
+.mission-body h1 {
+    color: #ff085e;
 }
 
 .chatbox{
@@ -537,7 +544,7 @@ hr{
 
 /* Mobile Responsive Media Queries */
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
     #shopping [id^="unit"]{
         width: 42.5vw;
         height: 42.5vw;
@@ -556,4 +563,24 @@ hr{
     #shoe p{
         width:100%;
     }
+    
+    #header a {
+        font-size: 1.7em;
+    }
+    
+    #nav_cart #first{
+        font-size: 1em;
+    }
+    #nav_cart #second{
+        line-height: 20px;
+        margin-top: 5px;
+    }
+    
+    .mission {
+        margin:auto;
+        width:70%;
+        margin-left: -35%;
+        margin-top: -35vh;
+    }
+    
 }
