@@ -10,10 +10,27 @@
         <script type="text/javascript">
         $(function(){
             countdown(year,month,day,hour,minute);
-            $("#cover").fadeTo(2000,0);
-            setTimeout('$("#cover").hide()',2000);
+            $("#cover").fadeTo(2500,0);
+            setTimeout('$("#cover").hide()', 2500);
         });
         </script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // to fade in on page load
+                $("body").css("display", "none");
+                $("body").fadeIn(400); 
+                // to fade out before redirect
+                $('a').click(function(e){
+                    redirect = $(this).attr('href');
+                    e.preventDefault();
+                    $('body').fadeOut(400, function(){
+                        document.location.href = redirect
+                    });
+                });
+            })
+        </script>
+        
     </head>
 
     <body>        
