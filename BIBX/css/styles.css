@@ -5,7 +5,7 @@
 }
 @font-face {
   font-family: 'Gotham_Med';
-  src: url(Gotham_Med.ttf)
+  src: url(Gotham_Med.TTF)
   format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
 }
 
