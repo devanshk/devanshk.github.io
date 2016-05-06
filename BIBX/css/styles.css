@@ -257,6 +257,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     margin-top: 15%;
 }
 
+#board_header{
+    z-index:0;
+}
+#board_header img{
+    width: 100%;
+}
+
 .clearfix {
   *zoom: 1;
 }
