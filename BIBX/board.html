@@ -26,9 +26,9 @@
 
     <body>        
         <!--Here's the navbar-->
-        <div id="header_wrapper" style="position:relative;">
+        <div id="header_wrapper">
             <center>
-                <div id="header" class="clearfix" style="background-color:#141414;">
+                <div id="header" style="background-color:#141414; height:36px">
                     <ul>
                         <li><a href="history.html">History</a></li>
                         <li><a href="board.html">Board</a></li>
@@ -42,12 +42,11 @@
             </center>
         </div>
         
-        <div id="board_header">
-            <div id="cover_ellipse"></div>
+        <div id="board_header" style="z-index:0;">
+            <div id="cover_ellipse" style="background-color:#141414; z-index:0;"></div>
             <img src="images/board_min.jpg">
+            <h1>Meet our Team</h1>
         </div>
-        
-        <img src="images/pittsburgh_promise.svg" width="500px" height="500px" style="z-index:500">
         
     </body>
 </html>

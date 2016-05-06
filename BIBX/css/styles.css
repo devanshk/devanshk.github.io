@@ -258,6 +258,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 #board_header{
+    position:relative;
     z-index:0;
 }
 #board_header img{
@@ -442,4 +443,13 @@ body {
     .tile {
         height:30vh;
     }
+}
+
+#board_header h1 {
+    color:white;
+    position:absolute;
+    bottom:25%;
+    width:100%;
+    text-align: center;
+    font-family: 'Gotham'
 }
