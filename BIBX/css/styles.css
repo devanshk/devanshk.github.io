@@ -151,7 +151,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     background-image: url(images/bg_min_blur.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    transition: all .3s ease;
 /*    -webkit-filter: brightness(50%) blur(4px);*/
+}
+.history_tile:hover{
+    background-size: 105% 105%;
 }
 .history_tile h1{
     font-family: 'Gotham_Med';
