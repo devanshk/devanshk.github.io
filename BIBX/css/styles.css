@@ -20,6 +20,15 @@ font-family: 'Proxima Nova';
 src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
+.history_tile video{
+    min-width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
 /* Button */
 .button{
     border-radius: 0px;
@@ -173,6 +182,9 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     top:50%;
     width:100%;
     transform:translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px 0px;
+    z-index: 10;
 }
 
 #tint{
@@ -180,7 +192,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     height:100%;
     position: absolute;
     top:0px;
-    opacity:0.1;
+    opacity:0.4;
+    z-index:9;
 }
 
 /* Board Tiles */

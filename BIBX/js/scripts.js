@@ -1,5 +1,22 @@
 var pos = 0;
 
+var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function play(a){
+    $("#"+a +" video").get(0).play();
+}
+function pause(a){
+    $("#"+a +" video").get(0).pause();
+}
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
+
 function b(name, pos, full){
     this.name = name;
     this.pos = pos;
