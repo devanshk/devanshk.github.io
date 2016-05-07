@@ -263,6 +263,14 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     transition: all 0.3s;
 }
 
+#header .active{
+    opacity:1;
+    background-color: rgba(0,0,0,0.2);
+    padding-top:4px;
+    padding-bottom:4px;
+    margin-top:-4px;
+}
+
 #header a:hover{
     opacity:1;
 }
@@ -390,7 +398,7 @@ body{
 }
 
 .unit p{
-    font-family: 'Helvetica';
+    font-family: 'Gotham';
     font-size: 20px;
     font-weight: 400;
     color: white;
