@@ -1,12 +1,12 @@
 var pos = 0;
 
+function b(name, pos, full){
+    this.name = name;
+    this.pos = pos;
+    this.full = full;
+}
+
 function swapBG(){
-//    console.log("Doing Things!");
-//    var bef = $("#vid").css("visibility");
-//    if (bef == "visible") $("#vid").css("visibility", "hidden");
-//    else $("#vid").css("visibility", "visible");
-//    console.log(bef.toString());
-    
     pos++;
     if (pos%5 == 0){            $("#logo").attr("src","images/xxx.svg");
     }
@@ -22,6 +22,24 @@ function swapBG(){
     if (pos%5 == 4){
     $("#logo").attr("src","images/logo4.png");
     }
+}
+
+function generateBoardPics(){
+    board = [new b('rohan','Co-Chair', 'Rohan Shah'), new b('piyush','Co-Chair', 'Piyush Puri'), new b('esha','Co-Chair', 'Isha Mehra'),
+            new b('sruthi','Design', 'Sruthi Ramesh'), new b('devansh','Tech Ops', 'Devansh Kukreja'), new b('sharanya','Sponsorship', 'Sharanya Bhatheja'),
+            new b('aatish','Liason', 'Aatish Nayak'), new b('akhil','Operations', 'Akhil Kemburu'), new b('sai','Registration', 'Sai Dhulipalla'),
+            new b('hardik','Mixer', 'Hardik Singh'), new b('nikita','Admin', 'Nikita Bokil'), new b('jappmann','PITT', 'Jappmann Monga'),
+            new b('kunal','Sponsorship', 'Kunal Sinha'), new b('isha','Liason', 'Isha Laad'), new b('kaveen','Finance', 'Kaveen Singh'),
+             new b('nandini','Operations', 'Nandini Ramakrishnan'), new b('aishwarya','PITT', 'Aishwarya Gaje'), new b('raashmi','Public Relations', 'Raashmi Krishnasamy'),
+            new b('sachi','Public Relations', 'Sachi Belani')];
+    
+    out= "";
+    for (var i=0; i<board.length; i++){
+        out += '<div class="board_tile"><div class="board_text"><div class="center_vertical"><h1>'+board[i].full+'</h1><div class="board_hr"></div><h3>'+board[i].pos+'</h3></div></div><img src="images/board/'+board[i].name+'.jpg"></div>'
+        
+//        out += '<div class="board_tile"><img src="images/board/'+board[i].name+'.jpg"></div>'
+    }
+    $("#board_grid").html(out);
 }
 
 

@@ -9,6 +9,7 @@
         
         <script type="text/javascript">
             $(document).ready(function(){
+                generateBoardPics();
                 // to fade in on page load
                 $("body").css("display", "none");
                 $("body").fadeIn(400); 
@@ -24,11 +25,11 @@
         </script>
     </head>
 
-    <body>        
+    <body>
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
-                <div id="header" style="background-color:#141414; height:36px">
+                <div id="header" class="clearfix">
                     <ul>
                         <li><a href="history.html">History</a></li>
                         <li><a href="board.html">Board</a></li>
@@ -46,6 +47,20 @@
             <div id="cover_ellipse" style="background-color:#141414; z-index:0;"></div>
             <img src="images/board_min.jpg">
             <h1>Meet our Team</h1>
+        </div>
+        
+        <div id="board_grid">
+            <div class="board_tile">
+                <div class="board_text">
+                    <div class="center_vertical">
+                        <h1>Piyush Puri</h1>
+                        <div class="board_hr"></div>
+                        <h3>Co-Chair</h3>
+                    </div>
+                
+                </div>
+                <img src="images/board/piyush.jpg">
+            </div>
         </div>
         
     </body>
