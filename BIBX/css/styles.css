@@ -188,7 +188,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     position:absolute;
     width:90%;
     margin-left:5%;
-    margin-top:-11%;
+    margin-top:-15%;
 }
 .board_tile{
     width:30%;
@@ -199,6 +199,9 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 .board_tile img{
     width:100%;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+    opacity:0.3;
 }
 
 .board_text{
@@ -206,18 +209,19 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     height:100%;
     background-color:#9f8b66;
     color: white;
-    opacity:0;
     font-family: 'Gotham';
     position:absolute;
     text-align:center;
+    opacity:0;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
+    z-index:-3;
 }
 .board_text h1,h3{
     cursor:default;
 }
-.board_text:hover{
-    opacity:0.7;
+.board_tile img:hover{
+    opacity:1;
 }
 
 /*NavBar Styling*/
