@@ -212,35 +212,44 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     position:relative;
 }
 .board_tile img{
+    position: relative;
     width:100%;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
+    
+    z-index: 1;
 }
 
 .board_text{
     width:100%;
-    height:100%;
-    background-color:#9f8b66;
+    height:3.4vw;
+    padding: 4px 0px;
+    background-color:rgba(144, 122, 83, 0.85);
     color: white;
     font-family: 'Gotham';
+    font-size: 0.9vw;
     position:absolute;
+    bottom:0;
     text-align:center;
     opacity:1;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
-    z-index: -3;
+    z-index: 999;
 }
 .board_text h1,h3{
     cursor:default;
 }
-.board_text:hover{
-    opacity:0.8;
+
+.board_text h1{
+        margin-bottom: 2px;
+        font-size: 1vw;
+        text-transform: uppercase;
 }
-.board_tile img:hover{
-    opacity: 0.3;
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+.board_text h3{
+    margin-top:2px;
+    font-size: 0.8vw;
 }
+
 
 /*NavBar Styling*/
 #header_wrapper {
@@ -436,7 +445,7 @@ body{
     opacity: 0.6;
 }
 #bar{
-    margin-top: -40px;
+    margin-top: 0px;
 }
 #days, #minutes, #hours, #seconds{
     opacity: .9;
@@ -456,7 +465,9 @@ hr{
 .board_hr{
     width:80%;
     margin-left:10%;
-    height:1.5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    height:1px;
     background-color: black;
     opacity:0.3
 }
@@ -493,7 +504,7 @@ body {
   left: 50%;
   margin-left:-20px;
   width: 40px;
-  height: 40px;
+  height: 40px;2
   background-image: url(images/down_arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -526,6 +537,12 @@ body {
 @media only screen and (max-width: 1000px) {
     .tile {
         height:30vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .board_tile{
+        width:30%;
     }
 }
 

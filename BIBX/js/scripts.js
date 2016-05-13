@@ -42,13 +42,25 @@ function swapBG(){
 }
 
 function generateBoardPics(){
-    board = [new b('rohan','Co-Chair', 'Rohan Shah'), new b('piyush','Co-Chair', 'Piyush Puri'), new b('esha','Co-Chair', 'Isha Mehra'),
-            new b('sruthi','Design', 'Sruthi Ramesh'), new b('devansh','Tech Ops', 'Devansh Kukreja'), new b('sharanya','Sponsorship', 'Sharanya Bhatheja'),
-            new b('aatish','Liason', 'Aatish Nayak'), new b('akhil','Operations', 'Akhil Kemburu'), new b('sai','Registration', 'Sai Dhulipalla'),
-            new b('hardik','Mixer', 'Hardik Singh'), new b('nikita','Admin', 'Nikita Bokil'), new b('jappmann','PITT', 'Jappmann Monga'),
-            new b('kunal','Sponsorship', 'Kunal Sinha'), new b('isha','Liason', 'Isha Laad'), new b('kaveen','Finance', 'Kaveen Singh'),
-             new b('nandini','Operations', 'Nandini Ramakrishnan'), new b('aishwarya','PITT', 'Aishwarya Gaje'), new b('raashmi','Public Relations', 'Raashmi Krishnasamy'),
-            new b('sachi','Public Relations', 'Sachi Belani')];
+    board = [new b('rohan','Co-Chair', 'Rohan Shah'),
+             new b('piyush','Co-Chair', 'Piyush Puri'),
+             new b('esha','Co-Chair', 'Isha Mehra'),
+             new b('sruthi','Design', 'Sruthi Ramesh'),
+             new b('devansh','Tech Ops', 'Devansh Kukreja'),
+             new b('sharanya','Sponsorship', 'Sharanya Bhatheja'),
+             new b('kunal','Sponsorship', 'Kunal Sinha'),
+             new b('aatish','Liason', 'Aatish Nayak'),
+             new b('akhil','Operations', 'Akhil Kemburu'),
+             new b('sai','Registration', 'Sai Dhulipalla'),
+             new b('hardik','Mixer', 'Hardik Singh'),
+             new b('nikita','Admin', 'Nikita Bokil'),
+             new b('jappmann','PITT', 'Jappmann Monga'),
+             new b('aishwarya','PITT', 'Aishwarya Gaje'),
+             new b('isha','Liason', 'Isha Laad'),
+             new b('kaveen','Finance', 'Kaveen Singh'),
+             new b('nandini','Operations', 'Nandini Ramakrishnan'),
+             new b('raashmi','Public Relations', 'Raashmi Krishnasamy'),
+             new b('sachi','Public Relations', 'Sachi Belani')];
     
     out= "";
     for (var i=0; i<board.length; i++){
