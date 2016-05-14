@@ -54,8 +54,8 @@ function generateBoardPics(){
              new b('sai','Registration', 'Sai Dhulipalla'),
              new b('hardik','Mixer', 'Hardik Singh'),
              new b('nikita','Admin', 'Nikita Bokil'),
-             new b('jappmann','PITT', 'Jappmann Monga'),
-             new b('aishwarya','PITT', 'Aishwarya Gaje'),
+             new b('jappmann','Pitt PR', 'Jappmann Monga'),
+             new b('aishwarya','Pitt PR', 'Aishwarya Gaje'),
              new b('isha','Liason', 'Isha Laad'),
              new b('kaveen','Finance', 'Kaveen Singh'),
              new b('nandini','Operations', 'Nandini Ramakrishnan'),
@@ -69,6 +69,20 @@ function generateBoardPics(){
 //        out += '<div class="board_tile"><img src="images/board/'+board[i].name+'.jpg"></div>'
     }
     $("#board_grid").html(out);
+}
+
+function toggleSidebar(){
+    var opac = $("#sidebar_cover").css("opacity");
+    if (opac == 0){
+        $("#sidebar_cover").css("visibility", "visible");
+        $("#sidebar_cover").css("opacity", 0.8);
+        $("#sidebar").css("left", 0);
+    }
+    else{
+        $("#sidebar_cover").css("opacity", 0);
+        $("#sidebar").css("left", '-30%');
+        setTimeout('$("#sidebar_cover").css("visibility", "hidden");', 200);
+    }
 }
 
 
