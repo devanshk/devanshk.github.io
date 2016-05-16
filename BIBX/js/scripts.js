@@ -50,17 +50,17 @@ function generateBoardPics(){
              new b('sharanya','Sponsorship', 'Sharanya Bhatheja'),
              new b('kunal','Sponsorship', 'Kunal Sinha'),
              new b('aatish','Liason', 'Aatish Nayak'),
-             new b('akhil','Operations', 'Akhil Kemburu'),
+             new b('isha','Liason', 'Isha Laad'),
              new b('sai','Registration', 'Sai Dhulipalla'),
-             new b('hardik','Mixer', 'Hardik Singh'),
-             new b('nikita','Admin', 'Nikita Bokil'),
+             new b('raashmi','Public Relations', 'Raashmi Krishnasamy'),
+             new b('sachi','Public Relations', 'Sachi Belani'),
              new b('jappmann','Pitt PR', 'Jappmann Monga'),
              new b('aishwarya','Pitt PR', 'Aishwarya Gaje'),
-             new b('isha','Liason', 'Isha Laad'),
              new b('kaveen','Finance', 'Kaveen Singh'),
+             new b('akhil','Operations', 'Akhil Kemburu'),
              new b('nandini','Operations', 'Nandini Ramakrishnan'),
-             new b('raashmi','Public Relations', 'Raashmi Krishnasamy'),
-             new b('sachi','Public Relations', 'Sachi Belani')];
+             new b('hardik','Mixer', 'Hardik Singh'),
+             new b('nikita','Admin', 'Nikita Bokil')];
     
     out= "";
     for (var i=0; i<board.length; i++){
@@ -85,6 +85,19 @@ function toggleSidebar(){
     }
 }
 
+function toggleSnapchat(){
+    var opac = $("#snapcode_cover").css("opacity");
+    if (opac == 0){
+        $("#snapcode_cover").css("visibility", "visible");
+        $("#snapcode_cover").css("opacity", 0.8);
+        $("#snapcode_container").css("top", "10%");
+    }
+    else{
+        $("#snapcode_cover").css("opacity", 0);
+        $("#snapcode_container").css("top", '100%');
+        setTimeout('$("#snapcode_cover").css("visibility", "hidden");', 200);
+    }
+}
 
 
 var year=2016;

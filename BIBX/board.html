@@ -58,7 +58,14 @@
         </div>
         <div id="sidebar_cover" onclick="toggleSidebar();"></div>
         <!-- Mischief Managed -->
-        
+        <!-- Snapcode Magic -->
+        <div id="snapcode_container">
+            <img id="snapcode" src="images/snapcode.png">
+            <h1>Bhangra in the Burgh X</h1>
+            <h3>bibx</h3>
+            </div>
+        <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
+        <!-- Snap U L8r -->
         
         <div id="board_header" style="z-index:0;">
             <div id="cover_ellipse" style="background-color:#141414; z-index:0;"></div>
@@ -66,7 +73,7 @@
             <h1>Meet our Team</h1>
         </div>
         
-        <div id="board_grid">
+        <div id="board_grid" style="position: relative;">
             <div class="board_tile">
                 <div class="board_text">
                     <div class="center_vertical">
@@ -79,6 +86,33 @@
                 <img src="images/board/piyush.jpg">
             </div>
         </div>
+        
+        <footer> <!-- Footer is new tag in HTML 5 -->
+<!--        Photoshopped version of logo-->
+        <img src="images/logo4.png" id="footer_logo">
+        <div id="divide"></div>
+        <div class="wrapper">
+            <a href="http://twitter.com/minimalmonkey" class="icon-button twitter"><span></span><img class="social_img" src="images/twitter.svg"></a>
+<a href="http://facebook.com" class="icon-button facebook"><span></span><img class="social_img" src="images/facebook.svg"></a>
+<div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
+        </div>
+            
+        <div id="header" class="clearfix" style="margin-top:0px; width:560px;">
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="board.html">Board</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </div>
+            
+	</footer>
+        
+        <div id="copyright">
+        <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja.</p>
+    </div>
         
     </body>
 </html>
