@@ -770,6 +770,10 @@ hr{
 }
 
 @media (max-width: 660px){
+    
+    .history_tile #content{
+        background-color:transparent;
+    }
     .unit{
         font-size: 40px;
     }
