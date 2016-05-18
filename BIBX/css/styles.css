@@ -170,6 +170,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     font-size: 1.2vw;
     font-family: 'Gotham';
     color: #d1d1d1;
+    margin: 15px 0px;
 }
 
 .tile:nth-child(even) img{
