@@ -764,6 +764,9 @@ h5, h6          { font-weight: bolder }
         font-size: 15px;
         position: absolute;
         top: 30px;
+        text-align: center;
+        z-index:0;
+        width: 100%;
     }
     .logo img{
         width: 40px;
@@ -781,7 +784,6 @@ h5, h6          { font-weight: bolder }
         position: relative;
         padding-left: 0;
         background-color: transparent;
-        padding-bottom:100%;
     }
     #map{
         margin: 0!important;
