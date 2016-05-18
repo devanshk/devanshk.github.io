@@ -21,6 +21,7 @@
 */
 
 /* Stop Overscroll. This is a choice. */
+/*
 html{
     overflow: hidden;
     height:100%;
@@ -30,6 +31,7 @@ body{
     height:100%;
     overflow:auto;
 }
+*/
 
 
 /*  Fonts  */
