@@ -139,11 +139,11 @@ h5, h6          { font-weight: bolder }
     top:100%;
     left:50%;
     transform:translateX(-50%);
-    
+
     color:white;
     text-align: center;
     font-family: 'Gotham';
-    
+
     -webkit-transition: all 0.6s;
 	   -moz-transition: all 0.6s;
 	     -o-transition: all 0.6s;
@@ -164,7 +164,7 @@ h5, h6          { font-weight: bolder }
     opacity:0;
     z-index:9998;
     visibility: hidden;
-    
+
     -webkit-transition: all 0.6s;
 	   -moz-transition: all 0.6s;
 	     -o-transition: all 0.6s;
@@ -250,7 +250,7 @@ h5, h6          { font-weight: bolder }
         right:20px;
         margin-top:15px;
     }
-    
+
     header .logo h1{
         float:left;
         margin-right:20px;
@@ -287,7 +287,7 @@ h5, h6          { font-weight: bolder }
         border: solid 1px #1f1f1f;
         padding: 0px 5px;
     }
-    
+
     header nav ul li a:hover{
         color: #adadad;
         border: solid 1px #1f1f1f;
@@ -430,7 +430,7 @@ h5, h6          { font-weight: bolder }
     position: relative;
     overflow: hidden;
     opacity:0;
-    
+
     transition:all .3s linear;
     -webkit-transition:all .3s linear;
     -moz-transition:all .3s linear;
@@ -679,7 +679,7 @@ h5, h6          { font-weight: bolder }
 
 /*  Responsive code  */
 @media (max-width:750px){
-    
+
     .logo h1{
         position: absolute;
         top: 0px;
@@ -715,7 +715,7 @@ h5, h6          { font-weight: bolder }
         height: 50px;
         opacity: 0.8;
     }
-    
+
     header{
         display: block;
         width: 100%;
@@ -788,7 +788,7 @@ h5, h6          { font-weight: bolder }
     #menu_icon{
         margin: 5px !important;
     }
-    
+
 }
 
 @media (max-width: 1099px){
@@ -804,7 +804,7 @@ h5, h6          { font-weight: bolder }
     #map{
         margin: 0!important;
     }
-    
+
     #snapcode{
         width: 50vw;
         height: 50vw;
@@ -815,7 +815,7 @@ h5, h6          { font-weight: bolder }
      .main .work{
         width: 100%;
     }
-    
+
     #snapcode{
         width:75vw;
         height:75vw;
