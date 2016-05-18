@@ -49,10 +49,10 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 /* Sidebar */ 
 #sidebar{
     height:200%;
-    width:250px;
+    width:220px;
     background: #141414;
     position:fixed;
-    left: -250px;
+    left: -220px;
     top: 0px;
     z-index: 9999;
     -webkit-transition: all 0.5s; /* Safari */

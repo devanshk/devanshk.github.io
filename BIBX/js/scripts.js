@@ -80,7 +80,7 @@ function toggleSidebar(){
     }
     else{
         $("#sidebar_cover").css("opacity", 0);
-        $("#sidebar").css("left", '-30%');
+        $("#sidebar").css("left", '-220px');
         setTimeout('$("#sidebar_cover").css("visibility", "hidden");', 200);
     }
 }
