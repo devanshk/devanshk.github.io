@@ -710,11 +710,11 @@ h5, h6          { font-weight: bolder }
     header{
         display: block;
         width: 100%;
-        min-height: 100px;
+        height: 100px;
         padding: 0;
         position: fixed;
         z-index:999;
-        background-color: #eee;
+        background-color: #fafafa;
     }
     header .logo{
       margin: 40px 0 0 30px;
