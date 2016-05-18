@@ -664,6 +664,13 @@ hr{
     #logo{
         height: 50vw;
     }
+    .tile{
+        height: 20vh;
+    }
+    .icon-button{
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 #board_header h1 {
