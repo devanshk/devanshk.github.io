@@ -9,12 +9,12 @@ function pause(a){
     $("#"+a +" video").get(0).pause();
 }
 
-function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
+function hoverVideo(e) {
+    $('video', this).get(0).play();
 }
 
 function hideVideo(e) {
-    $('video', this).get(0).pause(); 
+    $('video', this).get(0).pause();
 }
 
 function b(name, pos, full){
@@ -61,11 +61,11 @@ function generateBoardPics(){
              new b('nandini','Operations', 'Nandini Ramakrishnan'),
              new b('hardik','Mixer', 'Hardik Singh'),
              new b('nikita','Admin', 'Nikita Bokil')];
-    
+
     out= "";
     for (var i=0; i<board.length; i++){
         out += '<div class="board_tile"><div class="board_text"><div class="center_vertical"><h1>'+board[i].full+'</h1><div class="board_hr"></div><h3>'+board[i].pos+'</h3></div></div><img src="images/board/'+board[i].name+'.jpg"></div>'
-        
+
 //        out += '<div class="board_tile"><img src="images/board/'+board[i].name+'.jpg"></div>'
     }
     $("#board_grid").html(out);
@@ -104,7 +104,7 @@ var year=2016;
 var month=10;
 var day=7;
 var hour=6;
-var minute=0; 
+var minute=0;
 var tz=-5; //Offset from UTC
 
 var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
@@ -125,12 +125,12 @@ var todaystring=Date.parse(todaystring1)+(tz*1000*60*60);
 var futurestring1=(montharray[m-1]+" "+d+", "+yr+" "+hr+":"+min);
 var futurestring=Date.parse(futurestring1)-(today.getTimezoneOffset()*(1000*60));
 var dd=futurestring-todaystring;
-    
+
 var dday=Math.floor(dd/(60*60*1000*24)*1);
 var dhour=Math.floor((dd%(60*60*1000*24))/(60*60*1000)*1);
 var dmin=Math.floor(((dd%(60*60*1000*24))%(60*60*1000))/(60*1000)*1);
 var dsec=Math.floor((((dd%(60*60*1000*24))%(60*60*1000))%(60*1000))/1000*1);
-    
+
 if(dday<=0&&dhour<=0&&dmin<=0&&dsec<=0){ //If we've already passed the event time, zero everything out instead of going negative
     //Also our base case
     $("#days").html(0);

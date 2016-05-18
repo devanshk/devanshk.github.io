@@ -2,11 +2,11 @@
     <head>
         <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
-        
+
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
-        
+
         <script type="text/javascript">
         $(function(){
             countdown(year,month,day,hour,minute);
@@ -14,12 +14,12 @@
             setTimeout('$("#cover").hide()', 1500);
         });
         </script>
-        
+
         <script type="text/javascript">
             $(document).ready(function(){
                 // to fade in on page load
                 $("body").css("display", "none");
-                $("body").fadeIn(400); 
+                $("body").fadeIn(400);
                 // to fade out before redirect
                 $('a').click(function(e){
                     redirect = $(this).attr('href');
@@ -30,12 +30,12 @@
                 });
             })
         </script>
-        
+
     </head>
 
-    <body>        
+    <body>
         <div id="cover" onclick="swapBG();"></div>
-        
+
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
@@ -52,7 +52,7 @@
                 </div>
             </center>
         </div>
-        
+
         <!-- Mobile Responsive Magic -->
         <div id="hamburger_icon" onclick="toggleSidebar();"></div>
         <div id="sidebar">
@@ -68,7 +68,7 @@
         </div>
         <div id="sidebar_cover" onclick="toggleSidebar();"></div>
         <!-- Mischief Managed -->
-        
+
         <!-- Snapcode Magic -->
         <div id="snapcode_container">
             <img id="snapcode" src="images/snapcode.png">
@@ -77,11 +77,11 @@
             </div>
         <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
         <!-- Snap U L8r -->
-        
+
         <video id="vid" muted autoplay loop src="videos/bib_bg_b&w.mp4"></video>
-        
+
         <div id="tile1" style="width:100%; height:100%;">
-            
+
             <center>
                 <img id="logo" src="images/logo_new.png" alt="BIB Logo">
             </center>
@@ -127,10 +127,10 @@
                     <p>SECONDS</p>
                 </div>
             </div>
-            
+
             <div class="arrow bounce" onclick='$("html, body").animate({scrollTop: $(".tile").offset().top}, 1000);'></div>
         </div>
-        
+
         <!--The Dance-->
         <div class="tile" id="the_dance">
             <div class="tile_content">
@@ -140,7 +140,7 @@
             </div>
             <img src="images/bg_min.jpg">
         </div>
-        
+
         <!--The Legacy-->
         <div class="tile" id="the_legacy">
             <div class="tile_content">
@@ -150,7 +150,7 @@
             </div>
             <img src="images/board_min.jpg">
         </div>
-        
+
         <!--The Charity-->
         <div class="tile" id="the_charity">
             <div class="tile_content">
@@ -160,16 +160,16 @@
             </div>
             <img class="tile_right" src="images/kids.jpg">
         </div>
-        
-        
+
+
 <!--
         Our Sponsors
-        
+
         <div class="tile">
-        
+
         </div>
 -->
-        
+
         <footer> <!-- Footer is new tag in HTML 5 -->
 <!--        Photoshopped version of logo-->
         <img src="images/logo4.png" id="footer_logo">
@@ -179,7 +179,7 @@
 <a href="http://facebook.com" class="icon-button facebook"><span></span><img class="social_img" src="images/facebook.svg"></a>
 <div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
         </div>
-            
+
         <div id="header" class="clearfix" style="margin-top:0px; width:560px;">
             <ul>
                 <li><a href="history.html">History</a></li>
@@ -190,12 +190,12 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
         </div>
-            
+
 	</footer>
-        
+
         <div id="copyright">
         <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja.</p>
     </div>
-        
+
     </body>
 </html>

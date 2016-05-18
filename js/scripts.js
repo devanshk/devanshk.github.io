@@ -1,3 +1,40 @@
+var gridItems = []
+
+function loadGrid(){
+    $('.work').each(function(i){
+        gridItems[i] = $(this);
+        setTimeout('gridItems['+i.toString()+'].css("opacity","1.0");', 75*i)
+    });
+}
+
+function toggleSnapchat(){
+    var opac = $("#snapcode_cover").css("opacity");
+    if (opac == 0){
+        $("#snapcode_cover").css("visibility", "visible");
+        $("#snapcode_cover").css("opacity", 0.8);
+        $("#snapcode_container").css("top", "20%");
+    }
+    else{
+        $("#snapcode_cover").css("opacity", 0);
+        $("#snapcode_container").css("top", '100%');
+        setTimeout('$("#snapcode_cover").css("visibility", "hidden");', 200);
+    }
+}
+
+function toggleSidebar(){
+    var opac = $("#sidebar_cover").css("opacity");
+    if (opac == 0){
+        $("#sidebar_cover").css("visibility", "visible");
+        $("#sidebar_cover").css("opacity", 0.8);
+        $("#sidebar").css("left", 0);
+    }
+    else{
+        $("#sidebar_cover").css("opacity", 0);
+        $("#sidebar").css("left", '-30%');
+        setTimeout('$("#sidebar_cover").css("visibility", "hidden");', 200);
+    }
+}
+
 var Ring = function (r, color) {
     this.r = r;
     this.s = 10;

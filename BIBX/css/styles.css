@@ -619,25 +619,25 @@ hr{
   100%     { bottom:0; }
 }
 
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
     .tile{
     height:45vh;
     }
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .tile {
         height:30vh;
     }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .board_tile{
         width:30%;
     }
 }
 
-@media only screen and (max-width: 768px){
+@media (max-width: 768px){
     #hamburger_icon{
         visibility: visible;
     }
@@ -815,7 +815,7 @@ body {
 
 #snapcode_container {
     position: fixed;
-    z-index:9999;
+    z-index:99999;
     top:100%;
     left:50%;
     transform:translateX(-50%);

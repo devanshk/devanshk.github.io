@@ -10,43 +10,93 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    
+    <script type="text/javascript">
+            $(document).ready(function(){
+                setTimeout('loadGrid();', 250);
+            })
+        </script>
+    
 </head>
 <body>
 
 	<header>
+        <div id="menu_icon" onclick="toggleSidebar();"></div>
 		<div class="logo">
+            <h1>Devansh Kukreja</h1>
 			<a href="index.html"><img src="img/logo.png" title="Devansh" alt="Devansh"
-				height="180"/></a>
+				height="70"/>
+            </a>
 		</div><!-- end logo -->
-
-		<div id="menu_icon"></div>
 		<nav>
-			<ul>
+			<ul class="center_vertical">
 				<li><a href="index.html" class="selected">Projects</a></li>
 				<li><a href="resumes/Resume_Live.pdf">Resume</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="about.html">About</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
-
-		<div class="footer clearfix">
-			<ul class="social clearfix">
-				<li><a href="https://www.facebook.com/devansh.kukreja" class="fb" data-title="Facebook"></a></li>
-				<!--<li><a href="#" class="google" data-title="Google +"></a></li>-->
-				<!--<li><a href="#" class="behance" data-title="Behance"></a></li>-->
-				<!--<li><a href="#" class="twitter" data-title="Twitter"></a></li>
-				<li><a href="#" class="dribble" data-title="Dribble"></a></li>-->
-				<li><a href="https://github.com/devanshk" class="rss" data-title="GitHub"></a></li>
-
-			</ul><!-- end social -->
-
-			<div class="rights">
-				<p>Copyright © 2015 Devansh Kukreja.</p>
-				<p>Made with <img width= "13px" src="img/heart.svg"> at Carnegie Mellon.</p>
-			</div><!-- end rights -->
-		</div ><!-- end footer -->
 	</header><!-- end header -->
+    
+    <!-- Mobile Responsive Magic -->
+        <div id="hamburger_icon" onclick="toggleSidebar();"></div>
+        <div id="sidebar">
+            <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="board.html">Board</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </div>
+        <div id="sidebar_cover" onclick="toggleSidebar();"></div>
+        <!-- Mischief Managed -->
+    
+    <!-- Social Media Footer -->
+    <div id="social_foot">
+        <p>Made with <img width= "20px" src="img/heart.svg"> at Carnegie Mellon.</p>
+        <ul>
+            <li><a href="https://www.facebook.com/devansh.kukreja"><img src="img/facebook-letter-logo.svg"></a></li>
+            <li><a href="https://github.com/devanshk"><img src="img/github-logo.svg"></a></li>
+            <li><a href="https://play.google.com/store/apps/developer?id=Devansh+Kukreja"><img src="img/google-play-logo.svg"></a></li>
+            <li><img onclick="toggleSnapchat();" src="img/snapchat-logo.svg"></li>
+        </ul>
+    </div>
+    <!-- Socks Back On -->
+    
+    <!-- Snapcode Magic -->
+    <div id="snapcode_container">
+        <img id="snapcode" src="img/snapcode.svg">
+        <h1>Devansh Kukreja</h1>
+        <h3>powerdester</h3>
+        </div>
+    <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
+    <!-- Snap U L8r -->
 
 	<section class="main clearfix">
+        <div class="work">
+			<a href="http://devanshk.github.io/BIBX/index.html">
+				<img src="img/bibx.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Bhangra in the Burgh X: Web Design</h1>
+					</div> </div> </a> </div>
+        
+        <div class="work">
+			<a href="#">
+				<img src="img/infinity.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Infinity Mirror</h1>
+					</div> </div> </a> </div>
+        
+        <div class="work">
+			<a href="http://devanshk.github.io/Hayden-Shoes/index.html">
+				<img src="img/hayden.jpg" class="media" alt=""/>
+				<div class="caption"> <div class="work_title">
+						<h1>Hayden Shoes: Mock Web Design</h1>
+					</div> </div> </a> </div>
+        
 		<div class="work">
 			<a href="https://github.com/devanshk/Pulse">
 				<img src="img/pulse.jpg" class="media" alt=""/>
