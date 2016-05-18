@@ -714,6 +714,7 @@ h5, h6          { font-weight: bolder }
         padding: 0;
         position: fixed;
         z-index:999;
+        background-color: #eee;
     }
     header .logo{
       margin: 40px 0 0 30px;
