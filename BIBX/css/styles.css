@@ -240,6 +240,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     width:100%;
     height:30vw;
     color:white;
+    overflow: hidden;
     background-color: #141414;
     background-image: url(images/bg_min_blur.jpg);
     background-size: cover;
@@ -798,6 +799,13 @@ hr{
         height: 2rem;
         width: 2rem;
     }
+    #content h1{
+        font-size: 20px;
+        margin: 7px 10px;
+    }
+    #content h4{
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 500px){
@@ -813,22 +821,6 @@ hr{
     width:100%;
     text-align: center;
     font-family: 'Gotham'
-}
-#footer {
-    width:100%;
-    height:20%;
-}
-
-#footer img {
-    width:14%;
-    margin-left:47%;
-    margin-top:2%;
-}
-
-#footer a {
-    height:100%;
-    width:60%;
-    float:left;
 }
 
 #social_bar {
@@ -886,4 +878,12 @@ hr{
 
 .clearfix {
     *zoom: 1;
+}
+
+#history_title {
+    margin-top:110px;
+    color:white;
+    font-family: 'Gotham';
+    text-align: center;
+    padding-bottom: 20px;
 }
