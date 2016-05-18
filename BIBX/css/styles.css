@@ -487,6 +487,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
     margin:0px;
+    width: 100%;
+    overflow-x:hidden;
 }
 
 #countdown_container{
@@ -643,6 +645,24 @@ hr{
     }
     #header{
         visibility: hidden;
+    }
+}
+
+@media (max-width: 660px){
+    .unit{
+        font-size: 40px;
+    }
+    #bar{
+        margin-top: -20px;
+    }
+    .unit p{
+        font-size:20px;
+    }
+    #countdown_container{
+        bottom: 80px;
+    }
+    #logo{
+        height: 50vw;
     }
 }
 
