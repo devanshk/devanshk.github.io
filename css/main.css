@@ -77,7 +77,7 @@ body{
 
 /*  General CSS*/
 body{
-    background: #fff;
+    background: #aaaaaa;
 }
 
 .wrapper{
@@ -175,21 +175,14 @@ h5, h6          { font-weight: bolder }
 /* Sidebar */
 #sidebar{
     height:100%;
-    width:30%;
-    background: #141414;
+    width:250px;
+    background: #eee;
     position:fixed;
-    left: -30%;
+    left: -250px;
     top: 0px;
     z-index: 9999;
     -webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
-}
-#sidebar h1{
-    font-family: 'Gotham';
-    text-align: center;
-    font-size: 1.5em;
-    color: #333333;
-    margin-top: 2.5vh;
 }
 #sidebar ul{
     width:100%;
@@ -198,24 +191,24 @@ h5, h6          { font-weight: bolder }
 }
 #sidebar li{
     text-align: center;
-    font-family: 'Gotham';
+    font-family: 'raleway-bold';
     padding: 20px 0px;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
-    
+
     cursor:pointer;
 }
 #sidebar a{
     width:100%;
-    color: white;
+    color: #1f1f1f;
     padding: 20px 34%;
     text-decoration: none;
 }
 #sidebar .active{
-    background-color:#9f8b66;
+    background-color:#2c66c3;
 }
-#sidebar li:hover{
-    background-color:#9f8b66;
+#sidebar .active a{
+    color:white;
 }
 
 #sidebar_cover{
@@ -236,6 +229,9 @@ h5, h6          { font-weight: bolder }
 
 /*  Header  */
 @media (min-width:750px){
+    .main .work .caption{
+        top: 0;
+    }
     header{
         display: block;
         position: absolute;
@@ -451,7 +447,6 @@ h5, h6          { font-weight: bolder }
     display: block;
     width: 100%;
     height: 100%;
-    top: 0;
     left: 0;
     background: #ffffff;
     opacity: 0;
@@ -688,7 +683,7 @@ h5, h6          { font-weight: bolder }
     .logo h1{
         position: absolute;
         top: 0px;
-        margin-top: -10px;
+        margin-top: 7px;
         text-align: center;
         z-index:0;
         width: 100%;
@@ -699,7 +694,8 @@ h5, h6          { font-weight: bolder }
     .logo img{
         position:absolute;
         top:0px;
-        margin-top: -10px;
+        margin-top: 5px;
+        height:40px;
     }
     #menu_icon{
         position:relative;
@@ -710,6 +706,14 @@ h5, h6          { font-weight: bolder }
     }
     .main{
         padding-top: 50px;
+    }
+    .main .work{
+        margin-bottom: 10px;
+    }
+    .main .work .caption{
+        bottom: 0;
+        height: 50px;
+        opacity: 0.8;
     }
     
     header{
@@ -728,7 +732,7 @@ h5, h6          { font-weight: bolder }
     header #menu_icon,
     header .close_menu{
         float: right;
-        margin: 30px 30px 0 0;
+        margin: 5px;
     }
 
     header nav{
@@ -773,6 +777,7 @@ h5, h6          { font-weight: bolder }
         text-align: center;
         z-index:0;
         width: 86%;
+        margin-top: -10px;
     }
     .logo img{
         width: 40px;
