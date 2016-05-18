@@ -478,6 +478,10 @@ body{
     width: 100%;
     overflow-x:hidden;
 }
+html{
+    width: 100%;
+    overflow-x: hidden;
+}
 
 #countdown_container{
     width:68%;
@@ -826,10 +830,6 @@ hr{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background: #141414;
 }
 
 .wrapper {
