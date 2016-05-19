@@ -232,6 +232,10 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 /* History Styling */
+#history_title{
+    margin: 0px 10px;
+}
+
 .history_tile{
     position: relative;
     text-align: center;
