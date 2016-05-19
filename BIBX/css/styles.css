@@ -774,6 +774,9 @@ hr{
     .history_tile #content{
         background-color:transparent;
     }
+    .history_tile video{
+        visibility: hidden;
+    }
     .unit{
         font-size: 40px;
     }
