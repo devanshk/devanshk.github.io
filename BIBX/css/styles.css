@@ -600,6 +600,7 @@ hr{
   background-image: url(images/down_arrow.svg);
   background-size: contain;
   background-repeat: no-repeat;
+    z-index: 999;
 }
 
 .bounce {
@@ -771,6 +772,9 @@ hr{
     #header{
         visibility: hidden;
     }
+    .board_text{
+        height: 30px;
+    }
 }
 
 @media (max-width: 660px){
@@ -822,6 +826,9 @@ hr{
 @media (max-width: 500px){
     .tile{
         height: 130px;
+    }
+    .board_text{
+        height: 25px;
     }
 }
 
