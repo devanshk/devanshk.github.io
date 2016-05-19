@@ -2,6 +2,43 @@ var pos = 0;
 
 var figure = $(".video").hover( hoverVideo, hideVideo );
 
+function countStudentsFunded(){
+    var options = {
+      useEasing : true, 
+      useGrouping : true, 
+      separator : ',', 
+      decimal : '.', 
+      prefix : '', 
+      suffix : '' 
+    };
+    var counter = new CountUp("students_funded", 0, 6437, 0, 2, options);
+    counter.start();
+}
+function countInScholarshipsGiven(){
+    var options = {
+      useEasing : true, 
+      useGrouping : true, 
+      separator : ',', 
+      decimal : '.', 
+      prefix : '$', 
+      suffix : ' mil' 
+    };
+    var counter = new CountUp("in_scholarships_given", 0, 82.5, 0, 4, options);
+    counter.start();
+}
+function countSchoolsAttended(){
+    var options = {
+      useEasing : true, 
+      useGrouping : true, 
+      separator : ',', 
+      decimal : '.', 
+      prefix : '', 
+      suffix : '' 
+    };
+    var counter = new CountUp("schools_attended", 0, 117, 0, 6, options);
+    counter.start();
+}
+
 function play(a){
     $("#"+a +" video").get(0).play();
 }

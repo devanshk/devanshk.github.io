@@ -6,6 +6,8 @@
         
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/countUp.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
         <script type="text/javascript">
             $(document).ready(function(){
@@ -20,6 +22,15 @@
                         document.location.href = redirect
                     });
                 });
+                
+                var options = [
+                    {selector: '#stat_container', offset: 50, callback: function() {
+                        countStudentsFunded();
+                        countInScholarshipsGiven();
+                        countSchoolsAttended();
+                    } }
+                ];
+                Materialize.scrollFire(options);
             })
         </script>
         
@@ -75,10 +86,30 @@
         
         <div id="charity_content" class="clearfix">
             <h1>A Big Idea, A Bold Promise</h1>
-            <h3>The Pittsburgh Promise has made Four Promises:</h3>
+            <h3>The Pittsburgh Promise has made four Promises:</h3>
+            <ol class="clearfix">
+                <li><p>1</p>We will send all eligible urban youth to college or trade school with a scholarship.</li>
+                <li><p>2</p>We promote the reform of urban schools so that our young people are prepared for successful and meaningful lives.</li>
+                <li><p>3</p>We will invest in our region's workforce by preparing the next generation of workers.</li>
+                <li><p>4</p>We raise $250 million to get this work done</li>
+            </ol>
+            
+            <div id="charity_divider"></div>
+            
+            <div id="stat_container" class="clearfix">
+                <div class="stat_unit"><p id="students_funded">0</p>Students Funded</div>
+                <div class="stat_unit"><p id="in_scholarships_given">$0 mil</p>In Scholarships Given</div>
+                <div class="stat_unit"><p id="schools_attended">0</p>Schools Attended</div>
+            </div>
+            
+            <div id="charity_divider"></div>
+            
+                
+            <div id="charity_bigblock" class="clearfix">For more information about The Pittsburgh Promise, visit <a href="www.pittsburghpromise.org">www.pittsburghpromise.org</a>
+            </div>
         </div>
         
-        <footer> <!-- Footer is new tag in HTML 5 -->
+        <footer class="clearfix" style="position:relative; margin-top:25vw; "> <!-- Footer is new tag in HTML 5 -->
 <!--        Photoshopped version of logo-->
         <img src="images/logo4.png" id="footer_logo">
         <div id="divide"></div>

@@ -405,9 +405,6 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 #charity_header{
-    -webkit-filter: grayscale(60%);
-    filter: grayscale(60%);
-    filter: hue-rotate(50%);
     position:relative;
     z-index:0;
 }
@@ -484,6 +481,7 @@ body{
     margin:0px;
     width: 100%;
     overflow-x:hidden;
+    font-family: 'Gotham'
 }
 html{
     width: 100%;
@@ -743,7 +741,7 @@ hr{
 
 @media (min-width: 1200px) {
     .tile{
-    height:330px;
+        height:330px;
     }
 }
 
@@ -859,6 +857,7 @@ hr{
 #footer_logo {
     width:14%;
     margin-left:43%;
+    margin-right:43%;
     margin-top:2%;
 }
 
@@ -917,14 +916,74 @@ hr{
     padding-bottom: 20px;
 }
 
-#charity_content h1 {
-    position:absolute;
-    font-family: 'Gotham_Med';
-    font-size: 3.5vw;
-    top: 40vw;
-    font-weight: 100;
+#charity_content{
+    position: relative;
+    margin-top: -26vw;
     padding: 10px 10%;
     width: 100%;
-    text-align:center;
+    text-align: center;
+    background-color:#fefefe;
+    border:solid 40px #fcedd0;
+    border-width: 0px 40px;
+    padding-bottom: 50px;
+    margin-bottom:-25vw;
+}
+
+#charity_content h1 {
+    font-family: 'Gotham_Med';
+    font-size: 3.5vw;
+    font-weight: 100;
     color: #479fd3;
+}
+
+#charity_content h3{
+    margin-top:10px;
+}
+
+#charity_content ol {
+    list-style: none;
+    text-align: left;
+    margin-top:20px;
+}
+#charity_content li{
+    margin: 10px;
+    float:left;
+    display:table;
+    vertical-align: middle;
+    width: 100%;
+}
+#charity_content li p{
+    float:left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #1ba6d9;
+    font-family: 'Gotham_Med';
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    color:white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.stat_unit {
+    float:left;
+    width: 33%;
+}
+
+.stat_unit p{
+    font-size:40px;
+    font-family: 'Gotham_Med';
+    color: #1ba6d9;
+}
+
+#charity_bigblock {
+    margin-top:75px;
+}
+
+#charity_divider {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height:1px;
+    background-color: #1ba6d9;
 }
