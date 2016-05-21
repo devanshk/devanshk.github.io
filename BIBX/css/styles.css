@@ -806,6 +806,9 @@ hr{
     .board_text{
         height: 30px;
     }
+    #logo{
+        height: 50vw;
+    }
 }
 
 @media (max-width: 660px){
@@ -827,9 +830,6 @@ hr{
     }
     #countdown_container{
         bottom: 120px;
-    }
-    #logo{
-        height: 50vw;
     }
     .tile{
         height: 160px;
