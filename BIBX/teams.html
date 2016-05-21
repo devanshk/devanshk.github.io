@@ -6,11 +6,11 @@
         
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/countUp.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
-        
         <script type="text/javascript">
             $(document).ready(function(){
-                generateBoardPics();
                 // to fade in on page load
                 $("body").css("display", "none");
                 $("body").fadeIn(400); 
@@ -24,6 +24,7 @@
                 });
             })
         </script>
+        
     </head>
 
     <body>
@@ -33,10 +34,10 @@
                 <div id="header" class="clearfix">
                     <ul>
                         <li><a href="history.html">History</a></li>
-                        <li><a href="board.html" class="active">Board</a></li>
+                        <li><a href="board.html">Board</a></li>
                         <li><a href="charity.html">Charity</a></li>
                         <li><a class="logo" href="index.html"></a></li>
-                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="teams.html" class="active">Teams</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="sponsors.html">Sponsors</a></li>
                     </ul>
@@ -50,9 +51,9 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="history.html">History</a></li>
-                <li class="active"><a href="board.html">Board</a></li>
+                <li><a href="board.html">Board</a></li>
                 <li><a href="charity.html">Charity</a></li>
-                <li><a href="teams.html">Teams</a></li>
+                <li class="active"><a href="teams.html">Teams</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
@@ -68,27 +69,22 @@
         <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
         <!-- Snap U L8r -->
         
-        <div id="board_header" style="z-index:0;">
-            <div id="cover_ellipse" style="background-color:#141414; z-index:0;"></div>
-            <img src="images/board_min.jpg">
-            <h1>Meet Our Team</h1>
+        <div id="charity_header" class="clearfix" style="z-index:0;">
+            <div id="cover_ellipse" style="background-color:#141414;"></div>
+            <img src="images/crowd.jpg">
         </div>
         
-        <div id="board_grid" class="clearfix" style="position: relative;">
-            <div class="board_tile">
-                <div class="board_text">
-                    <div class="center_vertical">
-                        <h1>Piyush Puri</h1>
-                        <div class="board_hr"></div>
-                        <h3>Co-Chair</h3>
-                    </div>
-                
-                </div>
-                <img src="images/board/piyush.jpg">
-            </div>
+        <div id="teams_line" class="clearfix">
+            <h1>We're still selecting teams to join us</h1>
+            <h3>Enterested in applying? Download our registration packet.</h3>
+            
+            <div id="charity_divider" style="background-color: #eee;"></div>
+            
+            <a href="res/sponsorship.pdf"><button class="download hvr-sweep-to-right">Download</button></a>
+            
         </div>
         
-        <footer>
+        <footer class="clearfix" style="position:relative; margin-top:35vw; ">
         <img src="images/logo4.png" id="footer_logo">
         <div id="divide"></div>
         <div class="wrapper">
@@ -111,9 +107,9 @@
             
 	</footer>
         
-        <a href="https://devanshk.github.io"> <div id="copyright">
+        <a href="https://devanshk.github.io"><div id="copyright">
             <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja</p>
-        </div></a>
+        </div> </a>
         
     </body>
 </html>

@@ -494,7 +494,7 @@ html{
     margin-left: 16%;
     margin-right:16%;
     position: absolute;
-    bottom: 200;
+    bottom: 200px;
     z-index: 10;
 }
 
@@ -655,7 +655,10 @@ hr{
 	background-color: #3B5998;
 }
 .snapchat span {
-	background-color: #fffc01;
+	background-color: #f4e100;
+}
+.instagram span {
+	background-color: #ff0180;
 }
 
 /* Icons */
@@ -683,14 +686,25 @@ hr{
 .icon-button .icon-snapchat {
 	color: #fffc01;
 }
+.icon-button .icon-instagram {
+	color: #ff0180;
+}
 .icon-button:hover .icon-twitter,
 .icon-button:hover .icon-facebook,
-.icon-button:hover .icon-snapchat {
+.icon-button:hover .icon-snapchat,
+.icon-button:hover .icon-instagram{
 	color: white;
 }
 .social_img:hover {
     -webkit-filter: brightness(10000%) grayscale(100%);
     z-index: 99999;
+}
+
+.instagram .social_img{
+    background-image: url(../images/instagram.png);
+    background-size: contain;
+    height:55px;
+    width:55px;
 }
 
 #snapcode {
@@ -737,6 +751,20 @@ hr{
   25%, 75% { bottom:15px; }
   50%      { bottom:20px; }
   100%     { bottom:0; }
+}
+
+@media (max-width: 1099px){
+    #snapcode{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media(max-width: 550px){
+    #snapcode{
+        width: 75vw;
+        height:75vw;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -811,6 +839,18 @@ hr{
     .icon-button{
         height: 2rem;
         width: 2rem;
+    }
+    .instagram .social_img{
+        background-image: url(../images/instagram.png);
+        background-size: contain;
+        height:30px;
+        width:30px;
+    }
+    .icon-button:hover span {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        margin: -1rem;
     }
     #content h1{
         font-size: 20px;
@@ -986,4 +1026,91 @@ hr{
     margin-top: 20px;
     height:1px;
     background-color: #1ba6d9;
+}
+
+#teams_line {
+    position: relative;
+    margin-top: -26vw;
+    padding: 10px 10%;
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    border-width: 0px 40px;
+    padding-bottom: 50px;
+    margin-bottom:-25vw;
+    background-color: #141414;
+}
+
+#teams_line h1{
+    color: #9f8b66;
+}
+#teams_line h3{
+    color: #eee;
+    font-size: 1.6vw;
+}
+
+#teams_line h1{
+    font-family: 'Gotham_Med';
+    font-size: 3.5vw;
+    font-weight: 100;
+}
+
+
+/* Beta Button Magic */
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #9f8b66;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.download {
+    border-radius: 0px;
+    background:transparent;
+    font-size: 3vw;
+    font-family: 'Gotham';
+    border: solid 1px #c1c1c1;
+    padding:8px 25px;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+    color: #c3c1c1;
+    text-decoration: none;
+    margin-top: 10px;
 }
