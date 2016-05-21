@@ -138,8 +138,8 @@ function toggleSnapchat(){
 
 
 var year=2016;
-var month=10;
-var day=7;
+var month=11;
+var day=19;
 var hour=6;
 var minute=0;
 var tz=-5; //Offset from UTC
