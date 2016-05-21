@@ -35,6 +35,11 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     padding-bottom:5px;
     text-align: center;
     margin-top: 20px;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+#copyright:hover{
+    background-color: #777;
 }
 
 
@@ -1113,4 +1118,8 @@ hr{
     color: #c3c1c1;
     text-decoration: none;
     margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
 }
