@@ -751,129 +751,6 @@ hr{
 	        transition: all 0.6s;
 }
 
-@-webkit-keyframes bounce {
-  0%       { bottom:5px; }
-  25%, 75% { bottom:15px; }
-  50%      { bottom:20px; }
-  100%     { bottom:0; }
-}
-
-@media (max-width: 1099px){
-    #snapcode{
-        width: 50vw;
-        height: 50vw;
-    }
-}
-
-@media(max-width: 550px){
-    #snapcode{
-        width: 75vw;
-        height:75vw;
-    }
-}
-
-@media (min-width: 1200px) {
-    .tile{
-        height:330px;
-    }
-}
-
-@media (max-width: 1000px) {
-    .tile {
-        height:300px;
-    }
-}
-
-@media (max-width: 900px){
-    .tile{
-        height: 230px;
-    }
-}
-
-@media (max-width: 600px) {
-    .board_tile{
-        width:30%;
-    }
-}
-
-@media (max-width: 768px){
-    #hamburger_icon{
-        visibility: visible;
-    }
-    #header{
-        visibility: hidden;
-    }
-    .board_text{
-        height: 30px;
-    }
-    #logo{
-        height: 50vw;
-    }
-}
-
-@media (max-width: 660px){
-    
-    .history_tile #content{
-        background-color:transparent;
-    }
-    .history_tile video{
-        visibility: hidden;
-    }
-    .unit{
-        font-size: 40px;
-    }
-    #bar{
-        margin-top: -20px;
-    }
-    .unit p{
-        font-size:10px;
-    }
-    #countdown_container{
-        bottom: 120px;
-    }
-    .tile{
-        height: 160px;
-    }
-    .tile p{
-        margin: 5px 0px;
-    }
-    .button{
-        padding: 5px 15px;
-    }
-    
-    .icon-button{
-        height: 2rem;
-        width: 2rem;
-    }
-    .instagram .social_img{
-        background-image: url(../images/instagram.png);
-        background-size: contain;
-        height:30px;
-        width:30px;
-    }
-    .icon-button:hover span {
-        width: 2rem;
-        height: 2rem;
-        border-radius: 2rem;
-        margin: -1rem;
-    }
-    #content h1{
-        font-size: 20px;
-        margin: 7px 10px;
-    }
-    #content h4{
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 500px){
-    .tile{
-        height: 130px;
-    }
-    .board_text{
-        height: 25px;
-    }
-}
 
 #board_header h1 {
     color:white;
@@ -1122,4 +999,250 @@ hr{
 
 a {
     text-decoration: none;
+}
+
+#contact_left {
+    position: relative;
+    float:left;
+    height:50%;
+    width:50%;
+    background-image: url(images/skyline.jpg);
+    background-size: cover;
+}
+
+#contact_right {
+    float:left;
+    height:50%;
+    width:50%;
+    background-color: #eee;
+}
+
+#contact_right h1 {
+    text-align: center;
+    width:100%;
+    font-family: 'Gotham_Med';
+    margin-top: 30px;
+}
+
+#contact_divider {
+    width:20%;
+    margin-left:40%;
+    margin-top:10px;
+    height:2px;
+    background-color: #9f8b66;
+}
+
+#contact_left h1 {
+    font-family: 'Gotham';
+    font-weight: 100;
+    color: #eee;
+    font-size: 20px;
+    margin-top:10px;
+}
+
+#contactleft_divider {
+    width:40%;
+    margin-top:10px;
+    height:1px;
+    background-color: #c1a482;
+}
+
+#left_center {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    margin-left: 5%;
+}
+
+#contact_cityTitle {
+    width:100%;
+    height:60px;
+    background-color: #9f8b66;
+    line-height: 60px;
+    text-align: center;
+    color:#eee;
+    font-size: 30px
+}
+
+#contact {
+    margin-top:100px
+}
+
+#city_map {
+    position:relative;
+    height:40%;
+    width:100%;
+    background-color:gray;
+}
+
+input[type=text], input[type=email], textarea{
+    border: none;
+    border-bottom: solid 1px #a2a2a2;
+    background-color: transparent;
+    padding: 5px;
+    font-family: 'Gotham';
+}
+
+input[type=submit]{
+    border: none;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px 25px;
+    font-family: 'Gotham';
+    margin-top:10px;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+
+input[type=submit]:hover{
+    border: solid 1px #a2a2a2;
+    background-color: transparent;
+    color: #1f1f1f;
+}
+#twit:hover {
+    color: #00aced;
+}
+
+#insta:hover {
+    color: #ff0180;
+}
+
+#snap:hover {
+    color: #fffc01;
+}
+
+@-webkit-keyframes bounce {
+  0%       { bottom:5px; }
+  25%, 75% { bottom:15px; }
+  50%      { bottom:20px; }
+  100%     { bottom:0; }
+}
+
+@media (max-width: 1099px){
+    #snapcode{
+        width: 50vw;
+        height: 50vw;
+    }
+}
+
+@media(max-width: 550px){
+    #snapcode{
+        width: 75vw;
+        height:75vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tile{
+        height:330px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .tile {
+        height:300px;
+    }
+}
+
+@media (max-width: 900px){
+    .tile{
+        height: 230px;
+    }
+}
+
+@media (max-width: 600px) {
+    .board_tile{
+        width:30%;
+    }
+}
+
+@media (max-width: 768px){
+    #hamburger_icon{
+        visibility: visible;
+    }
+    #header{
+        visibility: hidden;
+    }
+    .board_text{
+        height: 30px;
+    }
+    #logo{
+        height: 50vw;
+    }
+    
+    #contact_left{
+        width: 100%;
+        height:200px;
+        margin-top:0px;
+    }
+    #contact_left h1{
+        font-size:15px;
+    }
+    #contact_right{
+        width: 100%;
+    }
+}
+
+@media (max-width: 660px){
+    
+    .history_tile #content{
+        background-color:transparent;
+    }
+    .history_tile video{
+        visibility: hidden;
+    }
+    .unit{
+        font-size: 40px;
+    }
+    #bar{
+        margin-top: -20px;
+    }
+    .unit p{
+        font-size:10px;
+    }
+    #countdown_container{
+        bottom: 120px;
+    }
+    .tile{
+        height: 160px;
+    }
+    .tile p{
+        margin: 5px 0px;
+    }
+    .button{
+        padding: 5px 15px;
+    }
+    
+    .icon-button{
+        height: 2rem;
+        width: 2rem;
+    }
+    .instagram .social_img{
+        background-image: url(../images/instagram.png);
+        background-size: contain;
+        height:30px;
+        width:30px;
+    }
+    .icon-button:hover span {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 2rem;
+        margin: -1rem;
+    }
+    #content h1{
+        font-size: 20px;
+        margin: 7px 10px;
+    }
+    #content h4{
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px){
+    .tile{
+        height: 130px;
+    }
+    .board_text{
+        height: 25px;
+    }
 }

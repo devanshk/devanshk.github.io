@@ -1,0 +1,197 @@
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+        <link href='https://fonts.googleapis.com/css?family=Suranna' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro:500' rel='stylesheet' type='text/css'>
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css"/>
+        <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        
+        <script type="text/javascript">
+            $(document).ready(function(){
+                // to fade in on page load
+                $("body").css("display", "none");
+                $("body").fadeIn(400); 
+                // to fade out before redirect
+                $('a').click(function(e){
+                    redirect = $(this).attr('href');
+                    e.preventDefault();
+                    $('body').fadeOut(400, function(){
+                        document.location.href = redirect
+                    });
+                });
+            });
+        </script>
+        
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 14,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(40.444425, -79.976202), // Pittsburgh
+
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.province","elementType":"labels.text.fill","stylers":[{"color":"#e3b141"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#e0a64b"}]},{"featureType":"administrative.locality","elementType":"labels.text.stroke","stylers":[{"color":"#0e0d0a"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#d1b995"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#12120f"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"lightness":"-77"},{"gamma":"4.48"},{"saturation":"24"},{"weight":"0.65"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"lightness":29},{"weight":0.2}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#f6b044"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#4f4e49"},{"weight":"0.36"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#c4ac87"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#262307"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#a4875a"},{"lightness":16},{"weight":"0.16"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#deb483"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#0f252e"},{"lightness":17}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#080808"},{"gamma":"3.14"},{"weight":"1.07"}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('city_map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.443436, -79.944952),
+                    map: map,
+                    icon: 'images/cmu.png',
+                    title: 'Carnegie Mellon'
+                });
+                
+                var marker2 = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.443760, -79.960363),
+                    map: map,
+                    icon: 'images/pitt.png',
+                    title: 'Pitt'
+                });
+                
+                var marker3 = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.445093, -79.956384),
+                    map: map,
+                    icon: 'images/bibx.png',
+                    title: 'BIBX'
+                });
+                
+                var marker4 = new google.maps.Marker({
+                    position: new google.maps.LatLng(40.441092, -79.957616),
+                    map: map,
+                    icon: 'images/food.png',
+                    title: 'Good Food'
+                });
+            }
+        </script>
+        
+    </head>
+
+    <body>        
+        <!--Here's the navbar-->
+        <div id="header_wrapper">
+            <center>
+                <div id="header" class="clearfix">
+                    <ul>
+                        <li><a href="" class="active">History</a></li>
+                        <li><a href="board.html">Board</a></li>
+                        <li><a href="charity.html">Charity</a></li>
+                        <li><a class="logo" href="index.html"></a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                    </ul>
+                </div>
+            </center>
+        </div>
+        <!-- Mobile Responsive Magic -->
+        <div id="hamburger_icon" onclick="toggleSidebar();"></div>
+        <div id="sidebar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="history.html">History</a></li>
+                <li><a href="board.html">Board</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </div>
+        <div id="sidebar_cover" onclick="toggleSidebar();"></div>
+        <!-- Mischief Managed -->
+        <!-- Snapcode Magic -->
+        <div id="snapcode_container">
+            <img id="snapcode" src="images/snapcode.png">
+            <h1>Bhangra in the Burgh X</h1>
+            <h3>bibx</h3>
+            </div>
+        <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
+        <!-- Snap U L8r -->
+        
+        <div id="contact" class="clearfix">
+            <div id="contact_left">
+                <div id="left_center">
+                    <h1 style="font-family: 'Gotham_Med';">BHANGRA IN THE BURGH X</h1>
+                    <div id="contactleft_divider"></div>
+                    <h1 style="color: #c1a482">bhangraintheburgh@gmail.com</h1>
+                    
+                    <h1 style="color: #c1a482; float:left; margin-right:10px;">t:</h1>
+                    <h1 id="twit" >@cmubib</h1>
+                    
+                    <h1 style="color: #c1a482; float:left; margin-right:10px;">i:</h1>
+                    <h1 id="insta">bhangraintheburgh</h1>
+                    
+                    <h1 style="color: #c1a482; float:left; margin-right:10px;">s:</h1>
+                    <h1 id="snap">bibx</h1>
+                </div>
+            </div>
+            
+            
+            <div id="contact_right">
+                <h1>Hit Us Up</h1>
+                <div id="contact_divider"></div>
+
+                <form style="width:80%; margin-left:10%; margin-top:30px;" action="MAILTO:bhangraintheburgh@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="Name" size="=20" maxlength="250" placeholder="Name" required="true" style="width: 48%; margin-right:4%; float:left;">
+                    
+                    <input type="text" name="Phone" size="20" maxlength="250" placeholder="Phone" style="width: 48%;">
+                    
+                    <input type="email" name="Email" size="20" maxlength="250" placeholder="your@email.com" required="true" style="width: 100%; margin-top:20px;">
+                    
+                    <textarea name="Message" size="20" placeholder="What's up?" required="true" style="width:100%; margin-top:20px; height:35px;"></textarea>
+
+                    <input type="submit">
+                </form>
+            </div>
+        </div>
+        
+        <div id="contact_cityTitle">Our City</div>
+        <div id="city_map" class="clearfix"></div>
+        
+        <footer class="clearfix">
+        <img src="images/logo4.png" id="footer_logo">
+        <div id="divide"></div>
+        <div class="wrapper">
+            <a href="https://twitter.com/cmubib" class="icon-button twitter"><span></span><img class="social_img" src="images/twitter.svg"></a>
+<a href="https://www.facebook.com/bhangraintheburghofficial/" class="icon-button facebook"><span></span><img class="social_img" src="images/facebook.svg"></a>
+            <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram"><span></span><img class="social_img" src="images/instagram.png"></a>
+<div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
+        </div>
+            
+        <div id="header" class="clearfix" style="margin-top:0px; width:560px;">
+            <ul>
+                <li><a href="history.html">History</a></li>
+                <li><a href="board.html">Board</a></li>
+                <li><a href="charity.html">Charity</a></li>
+                <li><a href="teams.html">Teams</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+        </div>
+            
+	</footer>
+        
+        <a href="https://devanshk.github.io"> <div id="copyright">
+            <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja</p>
+        </div></a>
+        
+    </body>
+</html>
