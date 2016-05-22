@@ -1312,6 +1312,9 @@ input[type=submit]:hover{
         width: 80%;
         font-size:5vw;
     }
+    #contact_right{
+        height: 400px;
+    }
 }
 
 @media (max-width: 600px) {
