@@ -1185,6 +1185,9 @@ input[type=submit]:hover{
 
 @media (max-width: 660px){
     
+    #cover{
+        visibility: hidden;
+    }
     #vid{
         visibility: hidden;
     }
