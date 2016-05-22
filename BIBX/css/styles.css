@@ -1158,6 +1158,7 @@ input[type=submit]:hover{
         width: 75vw;
         height:75vw;
     }
+    
 }
 
 @media (min-width: 1200px) {
@@ -1175,12 +1176,6 @@ input[type=submit]:hover{
 @media (max-width: 900px){
     .tile{
         height: 230px;
-    }
-}
-
-@media (max-width: 600px) {
-    .board_tile{
-        width:30%;
     }
 }
 
@@ -1211,7 +1206,9 @@ input[type=submit]:hover{
     }
 }
 
+
 @media (max-width: 660px){
+    
     .index_social_hacks img{
         -webkit-transform:translateY(-8px);
         transform:translateY(-8px);
@@ -1303,8 +1300,21 @@ input[type=submit]:hover{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px) {
+    .board_tile{
+        width:30%;
+    }
+    .board_hr{
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+    .board_text h1{
+        font-size:2vw;
+    }
+    .board_text h3{
+        font-size:1.8vw;
+    }
     .board_text{
-        height: 25px;
+        height: 40px;
     }
 }
