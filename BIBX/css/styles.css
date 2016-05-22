@@ -1212,6 +1212,10 @@ input[type=submit]:hover{
 }
 
 @media (max-width: 660px){
+    .index_social_hacks img{
+        -webkit-transform:translateY(-8px);
+        transform:translateY(-8px);
+    }
     .parallax-container{
         display:block;
     }
