@@ -1161,7 +1161,7 @@ input[type=submit]:hover{
         visibility: visible;
     }
     #header{
-        visibility: hidden;
+        display: none;
     }
     .board_text{
         height: 30px;
