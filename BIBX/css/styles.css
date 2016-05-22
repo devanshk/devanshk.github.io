@@ -1185,6 +1185,9 @@ input[type=submit]:hover{
 
 @media (max-width: 660px){
     
+    .stat_unit {
+        width: 100%;
+    }
     .history_tile #content{
         background-color:transparent;
     }
