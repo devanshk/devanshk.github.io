@@ -134,7 +134,7 @@ function toggleSnapchat(){
         $("#snapcode_cover").css("opacity", 0);
         $("#snapcode_container").css("top", '150%');
         setTimeout('$("#snapcode_cover").css("visibility", "hidden");', 200);
-        setTimeout('$("#snapcode_container").css("visibility", "hidden");', 900)
+        setTimeout('$("#snapcode_container").css("visibility", "hidden");', 500)
     }
 }
 
