@@ -156,6 +156,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 .parallax img{
     width: 225%;
+    display:none;
     -webkit-filter: brightness(50%) grayscale(80%);
     filter: brightness(100%) grayscale(80%);
     position: absolute;
@@ -164,8 +165,6 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     min-height: 100%;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
 }
 .tile{
     position:relative;
