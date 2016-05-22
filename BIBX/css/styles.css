@@ -1214,6 +1214,9 @@ input[type=submit]:hover{
         width: 100%;
         display:none;
     }
+    .tile{
+        margin-bottom: 15px;
+    }
     
     #cover{
         display:none;
@@ -1273,9 +1276,6 @@ input[type=submit]:hover{
 }
 
 @media (max-width: 500px){
-    .tile{
-        height: 130px;
-    }
     .board_text{
         height: 25px;
     }
