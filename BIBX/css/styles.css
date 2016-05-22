@@ -155,7 +155,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     z-index: -1
 }
 .tile_mobile_img{
-    width: 175%;
+    width: 200%;
     -webkit-filter: brightness(50%) grayscale(80%);
     filter: brightness(100%) grayscale(80%);
     position: absolute;
