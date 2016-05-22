@@ -1301,6 +1301,14 @@ input[type=submit]:hover{
 }
 
 @media (max-width: 600px) {
+    #board_header h1{
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px);
+    }
+    #board_grid{
+        -webkit-transform: translateY(25px);
+        transform: translateY(25px);
+    }
     .board_tile{
         width:30%;
     }
