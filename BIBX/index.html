@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
 
         <script type="text/javascript">
         $(function(){
@@ -26,6 +27,8 @@
                 // to fade in on page load
                 $("body").css("display", "none");
                 $("body").fadeIn(400);
+                
+                $('.parallax').parallax();
 //                // to fade out before redirect
 //                $('a').click(function(e){
 //                    redirect = $(this).attr('href');
@@ -135,7 +138,9 @@
             <div class="arrow bounce" onclick='$("html, body").animate({scrollTop: $(".tile").offset().top}, 1000);'></div>
         </div>
 
-        <img class="tile_mobile_img clearfix" src="images/bg_min.jpg">
+        <div class="parallax-container">
+          <div class="parallax"><img class="tile_mobile_img" src="images/bg_min.jpg"></div>
+        </div>
         
         <!--The Dance-->
         <div class="tile clearfix" id="the_dance">
@@ -147,7 +152,9 @@
             <img src="images/bg_min.jpg">
         </div>
         
-        <img class="tile_mobile_img clearfix" src="images/board_min.jpg">
+        <div class="parallax-container">
+          <div class="parallax"><img class="tile_mobile_img" src="images/board_min.jpg"></div>
+        </div>
 
         <!--The Legacy-->
         <div class="tile clearfix" id="the_legacy">
@@ -159,7 +166,9 @@
             <img src="images/board_min.jpg">
         </div>
         
-        <img class="tile_mobile_img clearfix" src="images/kids.jpg">
+        <div class="parallax-container">
+          <div class="parallax"><img class="tile_mobile_img" src="images/kids.jpg"></div>
+        </div>
 
         <!--The Charity-->
         <div class="tile clearfix" id="the_charity">
