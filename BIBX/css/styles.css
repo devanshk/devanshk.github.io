@@ -143,7 +143,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 .parallax-container{
     position: relative;
     overflow: hidden;
-    height: 300px
+    height: 300px;
+    display:none;
 }
 .parallax{
     position: absolute;
@@ -1213,6 +1214,9 @@ input[type=submit]:hover{
 }
 
 @media (max-width: 660px){
+    .parallax-container{
+        display:block;
+    }
     .tile h1{
         font-size: 30px;
         width: 100%;
