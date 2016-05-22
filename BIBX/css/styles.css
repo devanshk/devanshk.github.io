@@ -154,14 +154,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     bottom: 0;
     z-index: -1
 }
-.tile_mobile_img{
-    width: 200%;
+.parallax img{
+    width: 250%;
     -webkit-filter: brightness(50%) grayscale(80%);
     filter: brightness(100%) grayscale(80%);
     position: absolute;
     left: 50%;
     bottom: 0;
-    min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
