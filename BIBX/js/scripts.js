@@ -131,7 +131,7 @@ function toggleSnapchat(){
     }
     else{
         $("#snapcode_cover").css("opacity", 0);
-        $("#snapcode_container").css("top", '100%');
+        $("#snapcode_container").css("top", '150%');
         setTimeout('$("#snapcode_cover").css("visibility", "hidden");', 200);
     }
 }
