@@ -1199,7 +1199,7 @@ input[type=submit]:hover{
     }
     .tile p{
         width: 100%;
-        font-size:10px;
+        font-size:2.3vw;
         text-align: left !important;
         padding: 0px 20px;
     }
@@ -1215,7 +1215,7 @@ input[type=submit]:hover{
         display:none;
     }
     .tile{
-        margin-bottom: 15px;
+        margin: 25px 0px;
     }
     
     #cover{
