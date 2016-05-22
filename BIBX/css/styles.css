@@ -1240,7 +1240,7 @@ input[type=submit]:hover{
         display:none;
     }
     .tile{
-        margin: 25px 0px;
+        margin: 15vw 0px;
         height: 70vw;
     }
     
