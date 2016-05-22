@@ -723,6 +723,7 @@ hr{
     top:150%;
     left:50%;
     transform:translateX(-50%);
+    visibility: hidden;
     
     color:white;
     text-align: center;
