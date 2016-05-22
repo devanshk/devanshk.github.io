@@ -1301,6 +1301,17 @@ input[type=submit]:hover{
     .history_tile{
         height: 200px
     }
+    #teams_line h1{
+        font-size:8vw;
+        margin-bottom: 10px;
+    }
+    #teams_line h3{
+        font-size:5vw;
+    }
+    .download{
+        width: 80%;
+        font-size:5vw;
+    }
 }
 
 @media (max-width: 600px) {
