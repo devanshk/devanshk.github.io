@@ -139,6 +139,12 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 /*Tile Styling*/
+
+.tile_mobile_img{
+    width: 100%;
+    -webkit-filter: brightness(50%) grayscale(80%);
+    filter: brightness(100%) grayscale(80%);
+}
 .tile{
     position:relative;
     background-color: #141414;
@@ -1186,6 +1192,29 @@ input[type=submit]:hover{
 
 @media (max-width: 660px){
     
+    .tile h1{
+        font-size: 30px;
+        width: 100%;
+        text-align: center !important;
+    }
+    .tile p{
+        width: 100%;
+        font-size:10px;
+        text-align: left !important;
+        padding: 0px 20px;
+    }
+    .tile .button{
+        font-size:15px;
+        text-align: center;
+        float:left !important;
+        margin-left:50%;
+        transform: translateX(-50%);
+    }
+    .tile img{
+        width: 100%;
+        display:none;
+    }
+    
     #cover{
         display:none;
     }
@@ -1194,6 +1223,7 @@ input[type=submit]:hover{
     }
     .stat_unit {
         width: 100%;
+        margin: 10px 0px;
     }
     .history_tile #content{
         background-color:transparent;
@@ -1212,12 +1242,6 @@ input[type=submit]:hover{
     }
     #countdown_container{
         bottom: 120px;
-    }
-    .tile{
-        height: 160px;
-    }
-    .tile p{
-        margin: 5px 0px;
     }
     .button{
         padding: 5px 15px;
