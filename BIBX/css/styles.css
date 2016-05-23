@@ -81,6 +81,9 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     padding: 20px 30px;
     text-decoration: none;
 }
+#sidebar li:hover{
+    background-color: #9f8b66;
+}
 #sidebar img{
     margin-right:10px;
     -webkit-transform: translateY(3px);
