@@ -73,14 +73,17 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     text-align: center;
     font-family: 'Gotham';
     padding: 20px 0px;
-
     cursor:pointer;
 }
 #sidebar a{
     width:100%;
     color: white;
-    padding: 20px 34%;
+    padding: 20px 30px;
     text-decoration: none;
+}
+#sidebar img{
+    margin-right:10px;
+    -webkit-transform: translateY(3px);
 }
 #sidebar .active{
     background-color:#9f8b66;
@@ -165,6 +168,43 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     min-height: 100%;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
+}
+
+.bonus{
+    height:250px !important;
+    background-color: #eee !important;
+    margin: 7px 0px !important;
+}
+.bonus h1{
+    font-size: 8vw;
+    width: 100%;
+    text-align: center !important;
+}
+.bonus .tile_content p{
+    width: 100%;
+    font-size:1.5vw;
+    text-align: left !important;
+    padding: 0px 100px;
+    color: #1f1f1f;
+}
+.bonus a:not(.button){
+    color:#806d4a !important;
+}
+.bonus a:not(.button):hover{
+    color:#b4a17d !important;
+}
+.bonus .button{
+    font-size:15px;
+    text-align: center;
+    float:left !important;
+    margin-left:50%;
+    transform: translateX(-50%);
+    color:#1f1f1f;
+    border: solid 1px #1f1f1f;
+}
+.bonus .button:hover{
+    color:#eee;
+    border: solid 1px #eee;
 }
 .tile{
     position:relative;
@@ -1241,6 +1281,21 @@ input[type=submit]:hover{
     .tile{
         margin: 15vw 0px;
         height: 70vw;
+    }
+    .bonus p{
+        font-size: 15px !important;
+        padding: 0px 30px !important;
+    }
+    .bonus h1{
+        font-size:30px;
+    }
+    .bonus .button{
+        padding: 15px 0px;
+        width: 80%;
+    }
+    .bonus{
+        height: 350px !important;
+        margin: 5px 0px !important;
     }
 
     #cover{
