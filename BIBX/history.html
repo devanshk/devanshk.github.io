@@ -17,6 +17,10 @@
                 // to fade in on page load
                 $("body").css("display", "none");
                 $("body").fadeIn(400); 
+                
+                $('video').on('canplay', function (event) {
+                    $(this).attr('poster', '');
+                });
             });
         </script>
     </head>
@@ -68,7 +72,7 @@
         </div>
         
         <div id="history_9" class="history_tile clearfix" onmouseover="play('history_9');" onmouseout="pause('history_9');">
-            <video src="videos/bib9.mp4" loop muted></video>
+            <video src="videos/bib9.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color:green;"></div>
             
             <div id="content">
@@ -78,7 +82,7 @@
             </div>
         </div>
         <div id="history_8" class="history_tile clearfix" onmouseover="play('history_8');" onmouseout="pause('history_8');">
-            <video src="videos/bib8.mp4" loop muted></video>
+            <video src="videos/bib8.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color:orange"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 8</h4>
@@ -87,7 +91,7 @@
             </div>
         </div>
         <div id="history_7" class="history_tile clearfix" onmouseover="play('history_7');" onmouseout="pause('history_7');">
-            <video src="videos/bib7.mp4" loop muted></video>
+            <video src="videos/bib7.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color:#7B00FF"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 7</h4>
@@ -96,7 +100,7 @@
             </div>
         </div>
         <div id="history_6" class="history_tile clearfix" onmouseover="play('history_6');" onmouseout="pause('history_6');">
-            <video src="videos/bib6.mp4" loop muted></video>
+            <video src="videos/bib6.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color:#FF50FF"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 6</h4>
@@ -105,7 +109,7 @@
             </div>
         </div>
        <div id="history_5" class="history_tile clearfix" onmouseover="play('history_5');" onmouseout="pause('history_5');">
-           <video src="videos/bib5.mp4" loop muted></video>
+           <video src="videos/bib5.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color: teal"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 5</h4>
@@ -114,7 +118,7 @@
             </div>
         </div>
         <div id="history_4" class="history_tile clearfix vcu" onmouseover="play('history_4');" onmouseout="pause('history_4');">
-            <video src="videos/bib4.mp4" loop muted></video>
+            <video src="videos/bib4.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color: blue"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 4</h4>
@@ -123,7 +127,7 @@
             </div>
         </div>
         <div id="history_3" class="history_tile clearfix vcu" onmouseover="play('history_3');" onmouseout="pause('history_3');">
-            <video src="videos/bib3.mp4" loop muted></video>
+            <video src="videos/bib3.mp4" loop muted poster="images/loading.gif"></video>
             <div id="tint" style="background-color: yellow"></div>
             <div id="content">
                 <h4>Bhangra in the Burgh 3</h4>
@@ -152,9 +156,9 @@
         <img src="images/logo4.png" id="footer_logo">
         <div id="divide"></div>
         <div class="wrapper">
-            <a href="https://twitter.com/cmubib" class="icon-button twitter"><span></span><img class="social_img" src="images/twitter.svg"></a>
-<a href="https://www.facebook.com/bhangraintheburghofficial/" class="icon-button facebook"><span></span><img class="social_img" src="images/facebook.svg"></a>
-            <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram"><span></span><img class="social_img" src="images/instagram.png"></a>
+            <a href="https://twitter.com/cmubib" class="icon-button twitter" target="blank"><span></span><img class="social_img" src="images/twitter.svg"></a>
+<a href="https://www.facebook.com/bhangraintheburghofficial/" class="icon-button facebook" target="blank"><span></span><img class="social_img" src="images/facebook.svg"></a>
+            <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram" target="blank"><span></span><img class="social_img" src="images/instagram.png"></a>
 <div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
         </div>
             

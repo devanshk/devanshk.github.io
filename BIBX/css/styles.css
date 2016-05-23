@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Gotham';
   src: url(Gotham_Reg.OTF)
-  format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
+  format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: 'Gotham_Med';
   src: url(Gotham_Med.TTF)
-  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
+  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
   font-family: 'Keep Calm';
   src: url(keep_calm.ttf)
-  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */   
+  format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 @font-face {
@@ -52,7 +52,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     transition: all 0.3s;
 }
 
-/* Sidebar */ 
+/* Sidebar */
 #sidebar{
     height:200%;
     width:220px;
@@ -73,7 +73,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     text-align: center;
     font-family: 'Gotham';
     padding: 20px 0px;
-    
+
     cursor:pointer;
 }
 #sidebar a{
@@ -338,7 +338,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     width:100%;
     -webkit-transition: all 0.3s; /* Safari */
     transition: all 0.3s;
-    
+
     z-index: 1;
 }
 
@@ -751,11 +751,11 @@ hr{
     left:50%;
     transform:translateX(-50%);
     visibility: hidden;
-    
+
     color:white;
     text-align: center;
     font-family: 'Gotham';
-    
+
     -webkit-transition: all 0.9s;
 	   -moz-transition: all 0.9s;
 	     -o-transition: all 0.9s;
@@ -772,7 +772,7 @@ hr{
     opacity:0;
     z-index:9998;
     visibility: hidden;
-    
+
     -webkit-transition: all 0.6s;
 	   -moz-transition: all 0.6s;
 	     -o-transition: all 0.6s;
@@ -1158,7 +1158,7 @@ input[type=submit]:hover{
         width: 75vw;
         height:75vw;
     }
-    
+
 }
 
 @media (min-width: 1200px) {
@@ -1192,7 +1192,7 @@ input[type=submit]:hover{
     #logo{
         height: 50vw;
     }
-    
+
     #contact_left{
         width: 100%;
         height:200px;
@@ -1208,7 +1208,7 @@ input[type=submit]:hover{
 
 
 @media (max-width: 660px){
-    
+
     .index_social_hacks img{
         -webkit-transform:translateY(-8px);
         transform:translateY(-8px);
@@ -1242,7 +1242,7 @@ input[type=submit]:hover{
         margin: 15vw 0px;
         height: 70vw;
     }
-    
+
     #cover{
         display:none;
     }
@@ -1274,7 +1274,7 @@ input[type=submit]:hover{
     .button{
         padding: 5px 15px;
     }
-    
+
     .icon-button{
         height: 2rem;
         width: 2rem;
