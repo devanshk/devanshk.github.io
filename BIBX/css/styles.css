@@ -227,7 +227,6 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 .tile img{
-    height:100%;
     -webkit-filter: brightness(50%) grayscale(100%);
     filter: brightness(100%) grayscale(100%);
 }
@@ -469,7 +468,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 }
 
 #header ul li a.logo {
-    background: url(images/logo4.png);
+    background: url(../images/logo4.png);
     background-repeat:no-repeat;
     background-size: contain;
     height:70px;
