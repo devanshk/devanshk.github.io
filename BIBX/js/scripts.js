@@ -95,7 +95,7 @@ function generateBoardPics(){
              new b('aishwarya','Pitt PR', 'Aishwarya Gaje'),
              new b('kaveen','Finance', 'Kaveen Singh'),
              new b('akhil','Operations', 'Akhil Kemburu'),
-             new b('nandini','Operations', 'Nandini Ramakrishnan'),
+             new b('nandini','Operations', 'Nandini Radhakrishnan'),
              new b('hardik','Mixer', 'Hardik Singh'),
              new b('nikita','Admin', 'Nikita Bokil')];
 
