@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Gotham';
-  src: url(Gotham_Reg.OTF)
+  src: url(gotham_reg.otf)
   format('opentype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 @font-face {
   font-family: 'Gotham_Med';
-  src: url(Gotham_Med.TTF)
+  src: url(gotham_med.ttf)
   format('truetype'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -228,7 +228,13 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 
 .tile img{
     -webkit-filter: brightness(50%) grayscale(100%);
-    filter: brightness(100%) grayscale(100%);
+    filter: brightness(50%) grayscale(100%);
+    -webkit-transition: all 0.3s ease; /* Safari */
+    transition: all 0.3s ease;
+}
+.tile:hover img{
+    -webkit-filter: brightness(60%) grayscale(0%);
+    filter: brightness(60%) grayscale(0%);
 }
 
 .tile h1{
@@ -418,8 +424,8 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 /*NavBar Styling*/
 #header_wrapper {
     width:100%;
-    position:absolute;
-    z-index:10;
+    position:fixed;
+    z-index:999999;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7), rgba(0,0,0,0)); /* Standard syntax */
     text-transform: uppercase;
 }
@@ -1136,6 +1142,12 @@ a {
 
 #contact {
     margin-top:100px
+}
+
+#contact_left img{
+    float:left;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
 }
 
 #city_map {
