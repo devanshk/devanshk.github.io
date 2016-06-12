@@ -1,0 +1,371 @@
+html{
+    background-color: white;
+    font-family: 'Source Sans Pro'
+}
+h1{
+    font-size: 30px;
+}
+b{
+    color: #962f30;
+    font-weight: bolder;
+}
+button{
+    padding: 10px 15px;
+    background: white;
+    color: #962f30;
+    font-size: 12px;
+    border: solid 2px white;
+    border-radius: 999px;
+    cursor: pointer;
+    fill: #962f30;
+    
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3 ease all;
+}
+button:hover{
+    color: white;
+    background: transparent;
+    fill: white;
+}
+button svg{
+    margin-right:5px;
+    transform: translateY(2px);
+}
+
+button[class ~= "alt"]{
+    color: white;
+    border-color: #962f30;
+    fill: white;
+    background: #962f30;
+}
+button[class ~= "alt"]:hover{
+    color: #962f30;
+    background: transparent;
+    fill: #962f30;
+}
+
+.get_started{
+    font-size:15px;
+    margin-left:50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+header {
+/*    background-color: #f6f5f7;*/
+    position:fixed;
+    z-index:999;
+    background-color: white;
+    height: 75px;
+    width: 80%;
+    padding:0px 10%;
+    box-shadow: 0px 1px 10px rgba(50,0,0,1);
+    
+    overflow: hidden;
+    -webkit-transition: 0.3s ease all;
+    transition: 0.3 ease all;
+}
+header ul{
+    list-style: none;
+    float:right;
+    height:75px;
+    text-align: center;
+    line-height: 75px;
+    color: #5e5e5e;
+}
+header ul a{
+    text-decoration: none;
+    color:inherit;
+    font-size: 16px;
+    font-weight: bolder;
+    float:left;
+    margin-left: 30px;
+    fill: #5e5e5e;
+}
+header svg{
+    transform:translateY(4px);
+    margin-right:5px;
+}
+header a:hover{
+    color: #ed181a;
+    fill: #ed181a;
+}
+
+/* Header Logo */
+header img{
+    height: 21px;
+    margin-top: 27px;
+}
+
+#hero {
+    position:relative;
+    height: 753px;
+    background-image: url(../images/gallery/grading_desaturated_blurred.jpg);
+    background-size: cover;
+    text-align: center;
+    color:white;
+}
+#hero #tint{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: rgba(133,0,0,0.51);
+}
+#hero h1 {
+    font-size: 45px;
+    padding-top:50px;
+    margin: 0px 20px;
+}
+#hero button{
+    margin-top:20px;
+}
+
+#comparison h1{
+    width:100%;
+    font-size:30px;
+    position:absolute;
+    margin: 0px;
+    bottom: 48vw;
+    padding-top:0px;
+}
+#hero h3{
+    font-size:23px;
+    font-weight: 300;
+    margin-top:10px;
+    padding: 0px 30px;
+}
+
+#comparison img{
+    position:absolute;
+    bottom:0;
+    width:80vw;
+    left:10vw;
+    box-shadow: 1px 30px 50px rgba(75,0,0,1);
+}
+
+#comparison {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:55vw;
+    z-index:1;
+    clear:both;
+    overflow:hidden;
+}
+
+#comparison #left,#right {
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:46.7vw;
+    width:100%;
+    overflow:hidden;
+}
+#comparison #left{
+    z-index:2;
+    width:50%;
+    border-right: solid 2px rgba(133,0,0,0.5);
+}
+
+section {
+    width: 100%;
+/*    height: 450px;*/
+    padding: 100px 0px;
+}
+section h1{
+    color: #3c3c3c;
+}
+section h2{
+    font-size: 20px;
+    color:#9a9a9a;
+    padding: 0px 10%;
+}
+
+#feature_list {
+    width: 86%;
+    margin-left:7%;
+}
+#feature_list li{
+    float:left;
+    width: 33%;
+    margin-top:40px;
+    margin-bottom:10px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 18px;
+    position:relative;
+}
+
+#features h3 {
+    font-size: 20px;
+    margin-top:50px;
+    color:#9a9a9a;
+}
+#features .material-icons {
+    font-size:45px;
+    margin-right:10px;
+    color: #962f30;
+    transform: translateY(14px);
+}
+
+.showcase{
+    margin-top:40px;
+    margin-bottom:40px;
+}
+.showcase li img{
+    float:left;
+}
+
+#universities li img{
+    width: 20%;
+    margin-left:2.5%;
+}
+#universities{
+    margin-left:5%;
+}
+
+#companies li img{
+    width: 40%;
+    margin-left: 6%;
+}
+
+#meet_the_team{
+    position:relative;
+    width: 90%;
+    padding-left:5%;
+    padding-right:5%;
+}
+#meet_the_team h2{
+    text-align: left;
+    padding-left: 0px;
+}
+#meet_the_team img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#meet_the_team li{
+    width: 18%;
+    float:left;
+    margin-left: 2%;
+}
+#meet_the_team b{
+    color:black;
+}
+#meet_the_team h3{
+    font-weight: 100
+}
+
+#past_team li{
+    width: 12%;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+#past_team li img{
+    margin-bottom:6px;
+}
+
+/* -- Responsive Magic CSS -- */
+#hamburger_icon{
+    width:40px;
+    height:40px;
+    position:fixed;
+    right:15px;
+    top:15px;
+    background-image: url(../images/hamburger.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 99;
+    display: none;
+}
+#sidebar{
+    margin-top: 20px;
+    transform: translateX(13.5%);
+}
+#sidebar li{
+    width: 100vw;
+    margin: -5px 0px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* -- Media Queries -- */
+@media (min-width: 1024px) {
+    #comparison img{
+        width: 820px;
+        left: calc((100vw - 820px)/2)
+    }
+    #comparison{
+        height: 564px;
+    }
+    #comparison #left,#right {
+        height: 478px
+    }
+    #comparison h1{
+        bottom: 491px;
+    }   
+}
+
+@media (max-width: 1024px) {
+    #past_team li{
+        width: 18%;
+    }
+}
+
+@media (max-width: 845px) {
+    header #main_nav{
+        display: none;
+    }
+    #hamburger_icon{
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    #current_team li{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    #features .material-icons {
+        font-size:30px;
+        transform: translateY(10px);
+    }
+    #features li{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 679px) {
+    #past_team li{
+        font-size: 10px;
+    }
+    #feature_list li{
+        width: 50%;
+        line-height: 18px;
+        position:relative;
+    }
+    #feature_list li:nth-child(odd){
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 455px) {
+    #past_team li{
+        font-size: 2vw;
+    }
+    #hero button{
+        float:none;
+        padding: 20px 30px;
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    #comparison h1{
+        font-size: 6vw;
+    }
+    #hero{
+        height: 640px;
+    }
+}
