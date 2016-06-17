@@ -3123,3 +3123,49 @@ Copyright (c) 2014 Daniel Eden
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
+
+
+/* -- Custom Additions by Devansh -- */
+@-webkit-keyframes gear-moves {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+@-moz-keyframes gear-moves {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+.gear {
+    background: url('../images/gear.png') no-repeat 0 0;
+    height: 48px;
+    width: 48px;
+	margin: 50px auto;
+	
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: normal;
+    -moz-animation-delay: 0;
+    -moz-animation-play-state: running;
+    -moz-animation-fill-mode: forwards;
+
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-delay: 0;
+    -webkit-animation-play-state: running;
+    -webkit-animation-fill-mode: forwards;
+	
+    -moz-animation-name: gear-moves;
+    -moz-animation-duration: 5s;
+
+    -webkit-animation-name: gear-moves;
+    -webkit-animation-duration: 5s;
+}

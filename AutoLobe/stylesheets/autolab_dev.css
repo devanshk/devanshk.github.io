@@ -57,6 +57,24 @@ button[class ~= "alt"]:hover{
     margin-top: 50px;
 }
 
+#documentation_error{
+    position: fixed;
+    top:50%;
+    transform: translateY(-50%);
+    width:80%;
+    font-weight: 800;
+    margin-left: 10%;
+}
+#documentation_error h1{
+    color: #1f1f1f;
+}
+#documentation_error img{
+    width:30%;
+    overflow:hidden;
+    float:right;
+    transform: translateY(-25%);
+}
+
 /* -- Navbar CSS -- */
 header {
     position:fixed;
@@ -103,6 +121,17 @@ header img{
     margin-top: 27px;
 }
 
+header[class ~= "alt"]{
+    background: #c62525;
+}
+header[class ~= "alt"] a{
+    color: #eee;
+    fill: #eee;
+}
+header[class ~= "alt"] a:hover{
+    color: white;
+    fill: white;
+}
 /* -- Hero Unit CSS -- */
 #hero {
     position:relative;
@@ -118,7 +147,7 @@ header img{
     position:absolute;
     top:0;
     left:0;
-    background-color: rgba(133,0,0,0.51);
+    background-color: rgba(133,0,0,0.65);
 }
 #hero h1 {
     font-size: 45px;
@@ -222,6 +251,34 @@ section h2{
     transform: translateY(14px);
 }
 
+/* -- How it Works CSS -- */
+#how_it_works{
+    background-image: url(../images/texture.jpg);
+    background-repeat: repeat;
+    padding: 60px 0px;
+}
+.left{
+    width: 49%;
+    float:left;
+    border-right: solid 1px #801013;
+}
+.right{
+    width: 50%;
+    float:left;
+}
+
+.left h1, .right h1{
+    font-size:25px;
+    color: #efefef;
+}
+.left b, .right b{
+    color:white;
+    font-style: italic;
+}
+.left h2, .right h2{
+    text-align: left;
+}
+
 /* -- Who Uses Autolab and Generic Showcase CSS -- */
 .showcase{
     margin-top:40px;
@@ -281,6 +338,9 @@ section h2{
 }
 
 /* -- Lower Call To Action CSS -- */
+#call_to_action{
+    background-image: url(../images/texture.jpg);
+}
 #call_to_action h1,h4{
     padding: 0px 20px;
 }
@@ -369,6 +429,27 @@ section h2{
     }
     #hamburger_icon{
         display: block;
+    }
+    .right,.left{
+        width:80%;
+        margin-left: 10%;
+        border: none;
+        margin-top: 15px;
+        padding-top:15px;
+        margin-left: 10%;
+        border-top: solid 2px rgba(133,0,0,0.5);
+    }
+    .left h2, .right h2{
+        padding: 0px;
+    }
+    #documentation_error img{
+        width:80%;
+        margin-bottom:0px;
+        float:right;
+        transform: translateY(-25%);
+    }
+    #documentation_error h1{
+        font-size: 25px;
     }
 }
 
