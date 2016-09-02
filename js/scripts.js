@@ -1,5 +1,36 @@
 var gridItems = []
 
+var videoOpen = false;
+var clickingFromCover = true;
+
+function switchVideo(name){
+    $('#vid_container').attr('src',name);
+    $('#vid_container')[0].load();
+    clickingFromCover = false;
+    toggleVideo();
+}
+function toggleVideo(){
+    console.log("toggling video");
+    if (videoOpen){ //Close the video
+        $("#video_cover").css('opacity',0);
+        $("#vid_container").css('opacity',0);
+        $.data(this, 'videoTimer', setTimeout(function() {
+            $("#video_cover").css("visibility","hidden");
+            $("#vid_container").css("visibility","hidden");
+            $("#vid_container").attr('src','null');
+        }, 500));
+    }
+    else if (!clickingFromCover){ //Open the video
+        $("#video_cover").css("visibility","visible");
+        $("#vid_container").css("visibility","visible");
+        $("#video_cover").css('opacity',0.8);
+        $("#vid_container").css('opacity',1);
+        clearTimeout($.data(this,'videoTimer'));
+    }
+    videoOpen = !videoOpen;
+    clickingFromCover = true;
+}
+
 function loadGrid(){
     $('.work').each(function(i){
         gridItems[i] = $(this);

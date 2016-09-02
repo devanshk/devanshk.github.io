@@ -1,11 +1,11 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        
+
         <meta name="Bhangra in the Burgh X">
         <meta name="description" content="Pittsburgh's Premiere Bhangra Competition"/>
         <link rel="icon" type="image/png" href="images/favicon.png"/>
-        
+
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/countUp.js"></script>
@@ -15,13 +15,13 @@
             $(document).ready(function(){
                 // to fade in on page load
                 $("body").css("display", "none");
-                $("body").fadeIn(400); 
+                $("body").fadeIn(400);
             })
         </script>
-        
+
     </head>
 
-    <body>
+    <body id="sponsors">
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
@@ -38,7 +38,7 @@
                 </div>
             </center>
         </div>
-        
+
         <!-- Mobile Responsive Magic -->
         <div id="hamburger_icon" onclick="toggleSidebar();"></div>
         <div id="sidebar">
@@ -62,22 +62,27 @@
             </div>
         <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
         <!-- Snap U L8r -->
-        
+
         <div id="charity_header" class="clearfix" style="z-index:0;">
             <div id="cover_ellipse" style="background-color:#141414;"></div>
             <img src="images/auditorium.jpg">
         </div>
-        
-        <div id="teams_line" class="clearfix">
-            <h1>We love our sponsors.</h1>
-            <h3>Want to be a part of something amazing?<br>Download the sponsorship packet.</h3>
-            
-            <div id="charity_divider" style="background-color: #eee;"></div>
-            
-            <a href="res/sponsorship.pdf"><button class="download hvr-sweep-to-right">Download</button></a>
-            
+
+        <div id="teams_line" class="sponsor_line">
+            <img src="images/garaag_logo.svg">
+            <p style="color:white;">Founded in 1983, Garaga is one of the leading manufacturers of garage doors and overhead doors in Canada. Garaga designs and manufactures superior garage doors for the residential, commercial, agricultural and industrial markets. Garaga's distribution network spans across Canada, the United States, Central & South America and the Middle East.</p>
+            <hr>
         </div>
-        
+
+        <div id="teams_line" class="clearfix">
+            <h1>We're still looking for sponsors.</h1>
+            <h3>Want to be a part of something amazing?<br>Download the sponsorship packet.</h3>
+
+            <div id="charity_divider" style="background-color: #eee;"></div>
+
+            <a href="res/sponsorship.pdf"><button class="download hvr-sweep-to-right">Download</button></a>
+        </div>
+
 <!--
         <footer class="clearfix" style="position:relative; margin-top:35vw; ">
         <img src="images/logo4.png" id="footer_logo">
@@ -88,7 +93,7 @@
             <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram" target="blank"><span></span><img class="social_img" src="images/instagram.png"></a>
 <div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
         </div>
-            
+
         <div id="header" class="clearfix" style="margin-top:0px; width:480px;">
             <ul>
                 <li><a href="history.html">History</a></li>
@@ -99,15 +104,15 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
         </div>
-            
+
 	</footer>
 -->
-        
+
 <!--
         <a href="https://devanshk.github.io"> <div id="copyright">
             <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja</p>
         </div></a>
 -->
-        
+
     </body>
 </html>

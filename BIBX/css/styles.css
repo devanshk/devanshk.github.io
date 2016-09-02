@@ -1013,9 +1013,30 @@ hr{
     font-weight: 100;
 }
 
-
-/* Beta Button Magic */
-
+/* -- Sponsor Styling -- */
+#sponsors #teams_line{
+  margin-top:0;
+  margin-bottom:0;
+  height:auto;
+  padding-bottom: 0;
+}
+#sponsors #charity_header{
+  margin-bottom:-25vw;
+}
+#sponsors .sponsor_line{
+  margin-bottom:7vw!important;
+}
+.sponsor_line img{
+  width: 50%;
+}
+.sponsor_line p{
+  font-size: 1.6vw;
+}
+.sponsor_line hr{
+  width: 100%;
+  height:1px;
+  margin:10px 0px;
+}
 /* Sweep To Right */
 .hvr-sweep-to-right {
   display: inline-block;
@@ -1383,6 +1404,17 @@ input[type=submit]:hover{
     }
     #contact_right{
         height: 400px;
+    }
+
+    .sponsor_line img{
+      width: 100%;
+    }
+    .sponsor_line p{
+      font-size: 3vw;
+      line-height: 4vw;
+    }
+    .sponsor_line hr{
+      margin:5vw 0;
     }
 }
 
