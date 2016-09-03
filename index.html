@@ -15,6 +15,10 @@
     <script type="text/javascript">
         $(document).ready(function(){
             setTimeout('loadGrid();', 250);
+						$(window).resize(function() {
+								viewWidth = $(window).width();
+								if (viewWidth > 750) $('header').css('height','');
+				    });
         })
     </script>
 
@@ -46,6 +50,13 @@
 				<li><a href="about.html">About</a></li>
 			</ul>
 		</nav><!-- end navigation menu -->
+
+		<ul id="categories">
+				<li class="selected" onclick="filter('all',this)">All</li>
+				<li onclick="filter('app',this)">Mobile</li>
+				<li onclick="filter('video',this)">Video</li>
+				<li onclick="filter('alg',this)">Algorithm</li>
+		</ul>
 	</header><!-- end header -->
 
     <!-- Mobile Responsive Magic -->
@@ -86,107 +97,107 @@
 
 	<section class="main clearfix">
 
-		<div class="work" onclick="switchVideo('vid/tedx.mp4');">
+		<div class="work app video" onclick="switchVideo('vid/tedx.mp4');">
 			<img src="img/tedxeps.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>TEDx EPS Youth App</h1>
 				</div> </div> </div>
 
-		<div class="work" onclick="switchVideo('vid/circletwerk.mp4');">
+		<div class="work app video" onclick="switchVideo('vid/circletwerk.mp4');">
 			<img src="img/circletwerk.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>Android Loader Library</h1>
 				</div> </div> </div>
 
-		<div class="work">
+		<div class="work web">
 			<a href="https://www.skurt.com">
 			<img src="img/skurt.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>Skurt: Web Development</h1>
 				</div> </div> </a> </div>
 
-    <div class="work">
+    <div class="work web">
 			<a href="http://www.bhangraintheburgh.org">
 				<img src="img/bibx.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Bhangra in the Burgh X: Web Design</h1>
 					</div> </div> </a> </div>
 
-		<div class="work" onclick="switchVideo('vid/saturn.mp4');">
+		<div class="work video" onclick="switchVideo('vid/saturn.mp4');">
 			<img src="img/saturn.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>Epic Collaborative Final Project</h1>
 				</div> </div> </div>
 
-    <div class="work">
+    <div class="work ece">
 			<a href="#">
 				<img src="img/infinity.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Infinity Mirror</h1>
 					</div> </div> </a> </div>
 
-    <div class="work" onclick="switchVideo('vid/vgo.mp4');">
+    <div class="work video" onclick="switchVideo('vid/vgo.mp4');">
 			<img src="img/vgo.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>BIB X DJ Reveal</h1>
 				</div> </div> </div>
 
-    <div class="work">
+    <div class="work web">
 			<a href="http://devanshk.github.io/Hayden-Shoes/index.html">
 				<img src="img/hayden.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Hayden Shoes: Mock Web Design</h1>
 					</div> </div> </a> </div>
 
-		<div class="work" onclick="switchVideo('vid/raas.mp4');">
+		<div class="work video" onclick="switchVideo('vid/raas.mp4');">
 			<img src="img/raas.jpg" class="media" alt=""/>
 			<div class="caption"> <div class="work_title">
 					<h1>Raas Recruitment Video</h1>
 				</div> </div> </div>
 
-		<div class="work">
+		<div class="work alg">
 			<a href="https://github.com/devanshk/Pulse">
 				<img src="img/pulse.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Pulse: An AudioVisualizer Game</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work app">
 			<a href="https://github.com/devanshk/Duco">
 				<img src="img/duco.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Duco: Tinder for Art</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work app">
 			<a href="#">
 				<img src="img/freakency.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Freakency: Digital Whack-A-Mole</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work app">
 			<a href="http://devpost.com/software/medsync-android">
 				<img src="img/medsync.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>MedSync: Prescriptions Reimagined</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work app">
 			<a href="https://github.com/devanshk/Aware">
 				<img src="img/aware.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Aware: Motion Gesture Reaction</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work app">
 			<a href="http://devpost.com/software/assist">
 				<img src="img/assist.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">
 						<h1>Assist: Veteran Healthcare Aid</h1>
 					</div> </div> </a> </div>
 
-		<div class="work">
+		<div class="work alg">
 			<a href="#">
 				<img src="img/afis.jpg" class="media" alt=""/>
 				<div class="caption"> <div class="work_title">

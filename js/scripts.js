@@ -2,6 +2,24 @@ var gridItems = []
 
 var videoOpen = false;
 var clickingFromCover = true;
+var menuOpen = false;
+
+function filter(cat, el){
+  $("#categories li").removeClass("selected");
+  $(el).addClass("selected")
+  $( ".work" ).each(function( index ) {
+    if ($(this).hasClass(cat) || cat=='all'){
+      $(this).css('width','');
+    }
+    else {
+      $(this).css('width','0');
+    }
+  });
+
+  if ($('header').css('height') == '320px'){
+    toggleSidebar();
+  }
+}
 
 function switchVideo(name){
     $('#vid_container').attr('src',name);
@@ -53,17 +71,25 @@ function toggleSnapchat(){
 }
 
 function toggleSidebar(){
-    var opac = $("#sidebar_cover").css("opacity");
-    if (opac == 0){
-        $("#sidebar_cover").css("visibility", "visible");
-        $("#sidebar_cover").css("opacity", 0.8);
-        $("#sidebar").css("left", 0);
+    // Now toggles new menubar menu
+    var hei = $('header').css('height');
+    if (hei != '320px'){ //open it
+      $('header').css('height','320px');
     }
     else{
-        $("#sidebar_cover").css("opacity", 0);
-        $("#sidebar").css("left", '-250px');
-        setTimeout('$("#sidebar_cover").css("visibility", "hidden");', 200);
+      $('header').css('height','54px');
     }
+    // var opac = $("#sidebar_cover").css("opacity");
+    // if (opac == 0){
+    //     $("#sidebar_cover").css("visibility", "visible");
+    //     $("#sidebar_cover").css("opacity", 0.8);
+    //     $("#sidebar").css("left", 0);
+    // }
+    // else{
+    //     $("#sidebar_cover").css("opacity", 0);
+    //     $("#sidebar").css("left", '-250px');
+    //     setTimeout('$("#sidebar_cover").css("visibility", "hidden");', 200);
+    // }
 }
 
 var Ring = function (r, color) {
@@ -72,7 +98,7 @@ var Ring = function (r, color) {
     this.color = color;
 };
 
-var requestAnimationFrame =  
+var requestAnimationFrame =
         window.requestAnimationFrame ||
         window.webkitRequestAnimationFrame ||
         window.mozRequestAnimationFrame ||
@@ -135,20 +161,20 @@ window.addEventListener("keydown", function (event) {
 }, true);
 
 var render = function() {
-    
+
     var c = document.getElementById("canvas");
     var ctx = c.getContext("2d");
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(0,0,1000,1000);
-    
+
     var a1 = 3*Math.PI/4;
     var a2 = Math.PI/4;
     var a3 = 7*Math.PI/4;
     var a4 = 5*Math.PI/4;
-    
+
     ctx.beginPath();
 //    console.log("before the stuff");
-    
+
     for (i=0; i<shapeCount; i+=1){
 //        console.log("during the stuff");
         a = Math.cos(a1)*r+x;
@@ -173,7 +199,7 @@ var render = function() {
         a4-=increment;
     }
 //    console.log("after the stuff");
-    
+
     ctx.beginPath();
     ctx.arc(95,50,40,0,2*Math.PI);
     ctx.stroke();
