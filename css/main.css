@@ -33,7 +33,6 @@ body{
 }
 */
 
-
 /*  Fonts  */
 @font-face {
     font-family: 'raleway-regular';
@@ -171,6 +170,7 @@ h5, h6          { font-weight: bolder }
 
 header{
   transition:all .3s ease;
+  top:0;
 }
 /* Category Filters */
 header #categories{
@@ -716,8 +716,10 @@ header #categories .selected{
     .logo img{
         position:absolute;
         top:0px;
+        width: 40px;
+        height: 40px;
         margin-top: 5px;
-        height:40px;
+        left: 10px;
     }
     #menu_icon{
         position:relative;
@@ -747,7 +749,6 @@ header #categories .selected{
         box-shadow: 0px 0px 10px #888888;
     }
     header .logo{
-      margin: 40px 0 0 30px;
       display: inline-block;
     }
     header .logo h1{
@@ -792,7 +793,7 @@ header #categories .selected{
         font-family: "raleway-bold";
     }
     header #categories{
-      top:185px;
+      top:212px;
       width:412px;
       margin:auto;
       position:relative;
@@ -807,6 +808,12 @@ header #categories .selected{
 }
 
 @media (max-width: 500px){
+    header .logo{
+        margin: 40px 0 0 30px;
+    }
+    header #categories{
+        top:185px;
+    }
     .logo h1{
         font-size: 15px;
         position: absolute;
@@ -814,7 +821,6 @@ header #categories .selected{
         text-align: center;
         z-index:0;
         width: 86%;
-        margin-top: -10px;
     }
     .logo img{
         width: 40px;
