@@ -20,9 +20,15 @@ span{
     color:#990000;
 }
 
+header h1{
+    margin-top:13px;
+}
+
 section{
 /*    background: #514691 !important;*/
     background: #24375f !important;
+    background:#FDFDFD;
+    position:relative;
 }
 
 section::after{
@@ -32,9 +38,9 @@ section::after{
     left: 0;
     bottom: 0;
     border-bottom: 300px solid transparent;
-/*    border-right: 5000px solid #514691;*/
     border-right: 5000px solid #24375f;
     margin-bottom: -299px;
+    background: #f8f8f8;
 }
 
 #hello_image{
@@ -126,6 +132,7 @@ input[type=text], input[type=email], textarea{
     padding: 5px;
     font-family: 'raleway-regular';
     margin: 0.5vw 0;
+    color:white;
 }
 
 input[type=submit]{

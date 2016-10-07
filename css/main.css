@@ -181,6 +181,7 @@ header #categories{
     left:50%;
     top:74px;
     transform:translateX(-50%);
+    width: 420px;
 }
 
 header #categories li{
@@ -794,7 +795,7 @@ header #categories .selected{
     }
     header #categories{
       top:212px;
-      width:412px;
+      width:420px;
       margin:auto;
       position:relative;
       z-index:9999;
@@ -812,7 +813,14 @@ header #categories .selected{
         margin: 40px 0 0 30px;
     }
     header #categories{
-        top:185px;
+        top:190px;
+        width: 84vw;
+    }
+    header #categories li{
+      margin-right:4.0vw;
+      font-size: 2.8vw;
+      letter-spacing: 0.2vw;
+      padding: 0.0vw 1.0vw;
     }
     .logo h1{
         font-size: 15px;

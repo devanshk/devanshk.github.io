@@ -23,7 +23,7 @@
             $('.parallax').parallax();
         })
     </script>
-    
+
     <!-- Compiled and minified JavaScript -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
 
@@ -40,12 +40,12 @@
 </head>
 <body>
 
-    <div id="announcement">This Page Under Construction</div>
-    
+    <div id="announcement" style="display:none;">This Page Under Construction</div>
+
 	<header>
         <div id="menu_icon" onclick="toggleSidebar();"></div>
 		<div class="logo">
-            <h1>Devansh Kukreja</h1>
+            <h1 style="color:#4b4848;">Devansh Kukreja</h1>
 			<a href="index.html"><img src="img/logo.png" title="Devansh" alt="Devansh"
 				height="70"/>
             </a>
@@ -64,14 +64,20 @@
     <img id="hello_image" src="img/cutout.png">
     <div id="hello_content">
         <h1><span style="color:#24375f;">°</span>Hi</h1>
-        <h2>My name is Devansh Kukreja.<br>I'm a 19 year old student at<br><span>Carnegie Mellon University.</span></h2>
-        <br>
-        <h2>I'm looking for a <span style="color:#24375f;">summer internship</span></h2>
+        <h2>My name is Devansh Kukreja.<br>I'm a sophomore CS/IS student at<br><span>Carnegie Mellon University.</span></h2>
     </div>
-    
-    
-    <img class="diag_top" src="img/top_diag.svg" style="margin-top:88vh;">
-    <section style="background:#FDFDFD; position:relative; z-index:2; height:10vw; padding-bottom:350px;">
+
+
+    <img class="diag_top" src="img/top_diag.svg" style="margin-top:91vh;">
+
+    <section>
+        <h1 style="width:100%; text-align:center; padding-top:5vh;">Life is short and the world is wide.</h1>
+    </section>
+
+    <section style="background:#f8f8f8 !important; height:40vh; margin-top:11vh"></section>
+
+    <img class="diag_top" src="img/top_diag.svg">
+    <section style="padding-bottom:350px;">
         <h1>Say Hi Back!</h1>
         <h2>We could make something amazing, I want to hear from you!</h2>
         <form  action="https://formspree.io/devanshkukreja1@gmail.com" method="post">
@@ -86,9 +92,9 @@
             <input type="submit" value="send" name="nah">
         </form>
     </section>
-    
+
     <!-- Actual Content Ends -->
-    
+
     <div id="hamburger_icon" onclick="toggleSidebar();"></div>
 
     <!-- Social Media Footer -->
@@ -111,6 +117,6 @@
         </div>
     <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
     <!-- Snap U L8r -->
-    
+
 </body>
 </html>
