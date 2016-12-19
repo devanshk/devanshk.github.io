@@ -181,7 +181,7 @@ header #categories{
     left:50%;
     top:74px;
     transform:translateX(-50%);
-    width: 420px;
+    width: 440px;
 }
 
 header #categories li{
@@ -795,7 +795,7 @@ header #categories .selected{
     }
     header #categories{
       top:212px;
-      width:420px;
+      /*width:440px;*/
       margin:auto;
       position:relative;
       z-index:9999;
