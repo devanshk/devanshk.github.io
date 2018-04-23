@@ -60,6 +60,13 @@ function b(name, pos, full){
     this.full = full;
 }
 
+function t(back, front, name, url){
+    this.back = back;
+    this.front = front;
+    this.name = name;
+    this.url = url;
+}
+
 function swapBG(){
     pos++;
     if (pos%5 == 0){            $("#logo").attr("src","images/xxx.svg");
@@ -106,6 +113,25 @@ function generateBoardPics(){
 //        out += '<div class="board_tile"><img src="images/board/'+board[i].name+'.jpg"></div>'
     }
     $("#board_grid").html(out);
+}
+
+function generateTeamPics(){
+    roster = [new t('aeg_back.png', 'aeg_front.png', 'Anakh-E-Gabroo', 'https://www.facebook.com/AEGBhangra/'),
+              new t('buckeye_back.png','buckeye_front.png', 'Buckeye Bhangra', 'https://www.facebook.com/BuckeyeBhangra/'),
+              new t('columbia_back.png','columbia_front.png', 'Columbia Bhangra', 'https://www.facebook.com/columbiabhangra/'),
+              new t('fcb_back.png','fcb_front.png', 'First Class Bhangra', 'https://www.facebook.com/FirstClassBhangra/'),
+              new t('kpgd_back.png','kpgd_front.png', 'Khirre Phul Gulab De', 'https://www.facebook.com/Khirre-Phul-Gulab-De-123506194381444/'),
+              new t('mob_back.png','mob_front.png', 'Ministry of Bhangra','https://www.facebook.com/MOBChicago/'),
+              new t('umd_back.jpg','umd_front.png', 'Terrapind Bhangra','https://www.facebook.com/terrapind.bhangra'),
+              new t('unc_back.png','unc_front.png', 'UNC Bhangra Elite','https://www.facebook.com/bhangraelite/')];
+
+    out= "";
+    for (var i=roster.length-1; i>=0; i--){
+        out += '<a href="'+roster[i].url+'" target="blank"> <div class="atvImg"> <img src="images/teams/'+roster[i].back+'"> <div class="atvImg-layer" data-img="images/teams/'+roster[i].back+'"></div> <div class="atvImg-layer" data-img="images/teams/'+roster[i].front+'"></div> </div> </a>'
+
+//        out += '<div class="board_tile">cd<img src="images/board/'+board[i].name+'.jpg"></div>'
+    }
+    $("#teams_grid").html(out);
 }
 
 function toggleSidebar(){

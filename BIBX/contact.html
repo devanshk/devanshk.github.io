@@ -1,29 +1,40 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        
+
         <meta name="Bhangra in the Burgh X">
         <meta name="description" content="Pittsburgh's Premiere Bhangra Competition"/>
         <link rel="icon" type="image/png" href="images/favicon.png"/>
-        
+
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/scripts.js"></script>
-        
+
         <script type="text/javascript">
             $(document).ready(function(){
                 // to fade in on page load
                 $("body").css("display", "none");
-                $("body").fadeIn(400); 
+                $("body").fadeIn(400);
             });
         </script>
-        
+
+        <!-- Google Analytics Yo -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-79429422-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-        
+
         <script type="text/javascript">
             // When the window has finished loading create our google map below
             google.maps.event.addDomListener(window, 'load', init);
-        
+
             function init() {
                 // Basic options for a simple Google Map
                 // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
@@ -34,12 +45,12 @@
                     // The latitude and longitude to center the map (always required)
                     center: new google.maps.LatLng(40.444425, -79.976202), // Pittsburgh
 
-                    // How you would like to style the map. 
+                    // How you would like to style the map.
                     // This is where you would paste any style found on Snazzy Maps.
                     styles: [{"featureType":"all","elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#000000"},{"lightness":40}]},{"featureType":"all","elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#000000"},{"lightness":16}]},{"featureType":"all","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#000000"},{"lightness":17},{"weight":1.2}]},{"featureType":"administrative.province","elementType":"labels.text.fill","stylers":[{"color":"#e3b141"}]},{"featureType":"administrative.locality","elementType":"labels.text.fill","stylers":[{"color":"#e0a64b"}]},{"featureType":"administrative.locality","elementType":"labels.text.stroke","stylers":[{"color":"#0e0d0a"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"color":"#d1b995"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":20}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":21}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"color":"#12120f"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"lightness":"-77"},{"gamma":"4.48"},{"saturation":"24"},{"weight":"0.65"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"lightness":29},{"weight":0.2}]},{"featureType":"road.highway.controlled_access","elementType":"geometry.fill","stylers":[{"color":"#f6b044"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#4f4e49"},{"weight":"0.36"}]},{"featureType":"road.arterial","elementType":"labels.text.fill","stylers":[{"color":"#c4ac87"}]},{"featureType":"road.arterial","elementType":"labels.text.stroke","stylers":[{"color":"#262307"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#a4875a"},{"lightness":16},{"weight":"0.16"}]},{"featureType":"road.local","elementType":"labels.text.fill","stylers":[{"color":"#deb483"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#000000"},{"lightness":19}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#0f252e"},{"lightness":17}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#080808"},{"gamma":"3.14"},{"weight":"1.07"}]}]
                 };
 
-                // Get the HTML DOM element that will contain your map 
+                // Get the HTML DOM element that will contain your map
                 // We are using a div with id="map" seen below in the <body>
                 var mapElement = document.getElementById('city_map');
 
@@ -53,21 +64,21 @@
                     icon: 'images/cmu.png',
                     title: 'Carnegie Mellon'
                 });
-                
+
                 var marker2 = new google.maps.Marker({
                     position: new google.maps.LatLng(40.443760, -79.960363),
                     map: map,
                     icon: 'images/pitt.png',
                     title: 'Pitt'
                 });
-                
+
                 var marker3 = new google.maps.Marker({
                     position: new google.maps.LatLng(40.445093, -79.956384),
                     map: map,
                     icon: 'images/bibx.png',
                     title: 'BIBX'
                 });
-                
+
                 var marker4 = new google.maps.Marker({
                     position: new google.maps.LatLng(40.441092, -79.957616),
                     map: map,
@@ -76,10 +87,10 @@
                 });
             }
         </script>
-        
+
     </head>
 
-    <body>        
+    <body>
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
@@ -119,20 +130,20 @@
             </div>
         <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
         <!-- Snap U L8r -->
-        
+
         <div id="contact" class="clearfix">
             <div id="contact_left">
                 <div id="left_center">
                     <h1 style="font-family: 'Gotham_Med';">BHANGRA IN THE BURGH X</h1>
                     <div id="contactleft_divider"></div>
                     <h1 style="color: #c1a482">bhangraintheburgh@gmail.com</h1>
-                    
+
                     <h1 style="color: #c1a482; float:left; margin-right:10px;">t:</h1>
                     <h1 id="twit" >@cmubib</h1>
-                    
+
                     <h1 style="color: #c1a482; float:left; margin-right:10px;">i:</h1>
                     <h1 id="insta">bhangraintheburgh</h1>
-                    
+
 <!--
                     <img src="images/snap_gold.svg" height="25px">
                     <h1 style="float:left; margin-right:1.1vw; color:#9f8b66; margin-left:0.4vw;">:</h1>
@@ -141,29 +152,29 @@
                     <h1 id="snap">bib10</h1>
                 </div>
             </div>
-            
-            
+
+
             <div id="contact_right">
                 <h1>Hit Us Up</h1>
                 <div id="contact_divider"></div>
-                
+
                 <form  action="https://formspree.io/bhangraintheburgh@gmail.com" method="post" style="width:80%; margin-left:10%; margin-top:30px;">
                     <input type="text" name="name" placeholder="Name" required="true" style="width: 48%; margin-right:4%; float:left;">
-                    
+
                     <input type="text" name="phone" size="20" maxlength="250" placeholder="Phone" style="width: 48%;">
-                    
+
                     <input type="email" name="_replyto" placeholder="your@email.com" required="true" style="width: 100%; margin-top:20px;">
-                    
+
                     <textarea name="message" size="20" placeholder="What's up?" required="true" style="width:100%; margin-top:20px; height:35px;"></textarea>
 
                     <input type="submit" value="send" name="nah">
                 </form>
             </div>
         </div>
-        
+
         <div id="contact_cityTitle">Our City</div>
         <div id="city_map" class="clearfix"></div>
-        
+
         <footer class="clearfix">
         <img src="images/logo4.png" id="footer_logo">
         <div id="divide"></div>
@@ -173,7 +184,7 @@
             <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram" target="blank"><span></span><img class="social_img" src="images/instagram.png"></a>
 <div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
         </div>
-            
+
         <div id="header" class="clearfix" style="margin-top:0px; width:480px;">
             <ul>
                 <li><a href="history.html">History</a></li>
@@ -184,12 +195,12 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
         </div>
-            
+
 	</footer>
-        
+
         <a href="https://devanshk.github.io"> <div id="copyright">
             <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja</p>
         </div></a>
-        
+
     </body>
 </html>

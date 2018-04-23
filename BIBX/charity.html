@@ -1,11 +1,11 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
-        
+
         <meta name="Bhangra in the Burgh X">
         <meta name="description" content="Pittsburgh's Premiere Bhangra Competition"/>
         <link rel="icon" type="image/png" href="images/favicon.png"/>
-        
+
         <link rel="stylesheet" href="css/styles.css" type="text/css"/>
         <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/countUp.js"></script>
@@ -15,8 +15,8 @@
             $(document).ready(function(){
                 // to fade in on page load
                 $("body").css("display", "none");
-                $("body").fadeIn(400); 
-                
+                $("body").fadeIn(400);
+
                 var options = [
                     {selector: '#stat_container', offset: 50, callback: function() {
                         countStudentsFunded();
@@ -27,10 +27,21 @@
                 Materialize.scrollFire(options);
             })
         </script>
-        
+
+        <!-- Google Analytics Yo -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-79429422-1', 'auto');
+          ga('send', 'pageview');
+        </script>
+
     </head>
 
-    <body>        
+    <body>
         <!--Here's the navbar-->
         <div id="header_wrapper">
             <center>
@@ -47,7 +58,7 @@
                 </div>
             </center>
         </div>
-        
+
         <!-- Mobile Responsive Magic -->
         <div id="hamburger_icon" onclick="toggleSidebar();"></div>
         <div id="sidebar">
@@ -71,13 +82,13 @@
             </div>
         <div id="snapcode_cover" onclick="toggleSnapchat()"></div>
         <!-- Snap U L8r -->
-        
+
         <div id="charity_header" style="z-index:0;">
             <div id="cover_ellipse" style="background-color:#fefefe; border:solid 40px #fcedd0; border-width: 0px 40px;"></div>
             <img src="images/kids5.jpg">
             <img id="charity_logo" src="images/pittsburgh_promise.svg">
         </div>
-        
+
         <div id="charity_content" class="clearfix">
             <h1>A Big Idea, A Bold Promise</h1>
             <h3>The Pittsburgh Promise has made four Promises:</h3>
@@ -87,33 +98,33 @@
                 <li><p>3</p>We will invest in our region's workforce by preparing the next generation of workers.</li>
                 <li><p>4</p>We raise $250 million to get this work done</li>
             </ol>
-            
+
             <div id="charity_divider"></div>
-            
+
             <div id="stat_container" class="clearfix">
                 <div class="stat_unit"><p id="students_funded">0</p>Students Funded</div>
                 <div class="stat_unit"><p id="in_scholarships_given">$0 mil</p>In Scholarships Given</div>
                 <div class="stat_unit"><p id="schools_attended">0</p>Schools Attended</div>
             </div>
-            
+
             <div id="charity_divider"></div>
-                
+
             <div id="charity_bigblock" class="clearfix">For more information about The Pittsburgh Promise, visit <a href="http://www.pittsburghpromise.org">www.pittsburghpromise.org</a>
             </div>
         </div>
-        
+
         <footer class="clearfix" style="position:relative; margin-top:25vw; ">
         <img src="images/logo4.png" id="footer_logo">
         <div id="divide"></div>
         <div class="wrapper">
             <a href="https://twitter.com/cmubib" class="icon-button twitter" target="blank"><span></span><img class="social_img" src="images/twitter.svg"></a>
 <a href="https://www.facebook.com/bhangraintheburghofficial/" class="icon-button facebook" target="blank"><span></span><img class="social_img" src="images/facebook.svg"></a>
-            
+
             <a href="https://www.instagram.com/bhangraintheburgh/" class="icon-button instagram" target="blank"><span></span><img class="social_img" src="images/instagram.png"></a>
-            
+
 <div class="icon-button snapchat" onclick="toggleSnapchat()"><span></span><img class="social_img" src="images/snapchat.svg"></div>
         </div>
-            
+
         <div id="header" class="clearfix" style="margin-top:0px; width:480px;">
             <ul>
                 <li><a href="history.html">History</a></li>
@@ -124,12 +135,12 @@
                 <li><a href="sponsors.html">Sponsors</a></li>
             </ul>
         </div>
-            
+
 	</footer>
-        
+
         <a href="https://devanshk.github.io"> <div id="copyright">
             <p>Made with <img width= "13px" src="images/heart.svg"> by Devansh Kukreja</p>
         </div></a>
-        
+
     </body>
 </html>

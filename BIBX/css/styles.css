@@ -311,6 +311,29 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
     color: #f2d9ab;
 }
 
+#dateTime{
+    margin-bottom:120px;
+    height:20px;
+    width:70%
+}
+#dateTime h1{
+    color:white;
+    font-weight: 100;
+    font-size: 20px;
+    font-family: 'Gotham';
+    letter-spacing: 3px;
+    opacity:0.4;
+    float:left;
+}
+#tile1 center #dateTime a{
+    float:left;
+    margin-top:-5px;
+    margin-left:40px;
+    padding: 1.5vw 4vw;
+    opacity:0.6;
+    border-radius: 20px;
+}
+
 /* History Styling */
 #history_title{
     margin: 0px 10px;
@@ -487,6 +510,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #charity_header{
     position:relative;
     z-index:0;
+    margin-top:-20vw;
 }
 #charity_header img{
     width: 100%;
@@ -549,7 +573,7 @@ src: url("Proxima_Nova_Regular.otf") format("opentype");
 #logo{
     height: 40vh;
     width:auto;
-    margin-top: 20vh;
+    margin-top: 16.1vh;
     opacity: 0.9;
     z-index: 10;
 }
@@ -578,6 +602,23 @@ html{
     z-index: 10;
 }
 
+#hero_quickbar{
+    position:relative;
+    display:block;
+    width: 48vw;
+    -webkit-transition: all 0.3s; /* Safari */
+    transition: all 0.3s;
+}
+#tile1 #hero_quickbar .button{
+    margin:0 2vw;
+    font-size:1vw;
+    cursor:pointer;
+    opacity:0.8;
+    width:20vw;
+    line-height:3vw;
+    float:left;
+}
+
 #vid{
     position: fixed;
     left:0;
@@ -587,6 +628,20 @@ html{
     z-index: -100;
     -webkit-filter: brightness(20%);
     filter: brightness(20%);
+}
+
+#action_btns{
+    width: 100%;
+    margin-left: 32.8%;
+}
+#action_btns a{
+    font-size: 1.2vw;
+    display: block;
+    width: 15%;
+    line-height: 3vw;
+    float: left;
+    margin-right: 20px;
+    cursor:pointer;
 }
 
 .unit{
@@ -669,16 +724,17 @@ hr{
 }
 
 .arrow {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left:-20px;
-  width: 40px;
-  height: 40px;
-  background-image: url(images/down_arrow.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left:-20px;
+    width: 1px;
+    height: 1px;
+    background-image: url(images/down_arrow.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
     z-index: 999;
+    opacity:0.7
 }
 
 .bounce {
@@ -828,13 +884,17 @@ hr{
 }
 
 
-#board_header h1 {
+#board_header h1, #charity_header h1 {
     color:white;
     position:absolute;
     bottom:25%;
     width:100%;
     text-align: center;
     font-family: 'Gotham'
+}
+#charity_header h1{
+  bottom:33%;
+  font-size:2.7vw;
 }
 
 #charity_header #charity_logo {
@@ -1011,6 +1071,27 @@ hr{
     font-family: 'Gotham_Med';
     font-size: 3.5vw;
     font-weight: 100;
+}
+.teams_second{
+  margin-top:32vh !important;
+}
+
+#teams_grid{
+  margin-top:-21vw;
+  margin-left:5%;
+}
+.atvImg{
+  width: 18.8vw;
+  height: 13.3333vw;
+  float:left;
+  margin:1.5vw;
+}
+
+.atvImg-layers, .atvImg-shine{
+  border-radius: 0 !important;
+}
+.atvImg-shine{
+  display:none !important;
 }
 
 /* -- Sponsor Styling -- */
@@ -1226,6 +1307,12 @@ input[type=submit]:hover{
         width: 50vw;
         height: 50vw;
     }
+
+    .atvImg{
+      width: 25vw;
+      height: 16.77777vw;
+      margin:1.5vw;
+    }
 }
 
 @media(max-width: 550px){
@@ -1238,7 +1325,7 @@ input[type=submit]:hover{
 
 @media (min-width: 1200px) {
     .tile{
-        height:330px;
+        height:400px;
     }
 }
 
@@ -1266,6 +1353,7 @@ input[type=submit]:hover{
     }
     #logo{
         height: 50vw;
+        margin-top:2vh;
     }
 
     #contact_left{
@@ -1279,6 +1367,30 @@ input[type=submit]:hover{
     #contact_right{
         width: 100%;
     }
+
+    #action_btns{
+        margin-left:15%;
+        margin-top:-2vh;
+    }
+    #action_btns a{
+        line-height: 8vw;
+        margin-bottom:1vw;
+        font-size: 3vw;
+        width:70%;
+    }
+    .teams_second{
+      margin-top: -10vw !important
+    }
+    #countdown_container{
+        bottom:25vh;
+    }
+
+    .atvImg{
+      width: 41vw;
+      margin: 2vw;
+      height: 27.3333vw;
+    }
+
 }
 
 
@@ -1358,9 +1470,6 @@ input[type=submit]:hover{
     .unit p{
         font-size:10px;
     }
-    #countdown_container{
-        bottom: 120px;
-    }
     .button{
         padding: 5px 15px;
     }
@@ -1397,6 +1506,9 @@ input[type=submit]:hover{
     }
     #teams_line h3{
         font-size:5vw;
+    }
+    .teams_second{
+      margin-top: 30vh !important
     }
     .download{
         width: 80%;
